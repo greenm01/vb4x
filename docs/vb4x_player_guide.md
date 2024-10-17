@@ -1,6 +1,7 @@
-# VB4X Player Guide
+# VB4X Specification v0.1
 
 Written by Mason A. Green
+2024
 
 # 1\.0 Introduction
 
@@ -130,7 +131,7 @@ Carriers hold up to three fighter squadrons and are assigned to regular ship squ
 
 ### 2\.4.2 Scouts
 
-Scouts are small drones outfitted with advanced sensors that aid with electronic warfare. They give a boost to their Task Force during combat operations.
+Scouts are autonomous drones outfitted with advanced sensors that aid with electronic warfare. They give a boost to their Task Force during combat operations.
 
 Multiple scouts assigned to a task force do not lend additional benefits in combat, although it may be prudent to tactically place Scouts in more than one squadron in the event of destruction.
 
@@ -203,8 +204,6 @@ Armies garrison your colonies and eradicate invaders. Their orders are to take n
 9. Update
 
 # 4\.0 Movement
-
-
 
 # 5\.0 Combat
 
@@ -352,17 +351,15 @@ Technology upgrades may be purchased in the first and sixth months of the Terran
 
 # 8\.0 Diplomacy & Subversion
 
-
-
 # 9\.0 Asset Tables
 
 ## 9\.1 Imperial Navy
 
-PC = Production Point Cost, MC = Maintenance Cost, AS = Attack Strength, DS = Defensive Strength,
+PC = Production Cost, MC = Maintenance Cost, AS = Attack Strength, DS = Defensive Strength,
 
-CC= Command Cost, CR = Command Rating, CV = Carry Capacity
+CC= Command Cost, CR = Command Rating, CV = Carry Limit
 
-| Class            | Name             | PC               | MC               | AS               | DS               | CC               | CR               | CV               |
+| Class            | Name             | PC               | MC               | AS               | DS               | CC               | CR               | CL               |
 | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- |
 | CT               | Corvette         | 2                | 0\.1             | 1                | 2                | 1                | 2                | 0                |
 | FF               | Frigate          | 3                | 0\.2             | 2                | 3                | 2                | 3                | 0                |
