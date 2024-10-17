@@ -177,13 +177,13 @@ Space Marines are ferocious devil dogs that capture enemy planets. They deploy i
 
 Armies garrison your colonies and eradicate invaders. Their orders are to take no prisoners and protect the colony at all cost.
 
-## 2\.5 Asset Construction, Repair, and Upgrades
+## 2\.5 Asset Construction, Repair, and Tech Upgrades
 
 Asset construction, repair, and tech upgrades are performed at planetary and orbital shipyards. Construction capacity at the yard is limited by the colony's total production capacity value, regardless of PP in the Empire's treasury.
 
-Orbital shipyards located in uninhabited gas systems are limited by the mining capacity of the system.
+Orbital shipyards stationed in uninhabited gas systems are limited by the mining capacity of the system.
 
-The number of turns required to construct an asset, unless otherwise specified, is equal to the PC times 0.5 (rounded down). They remain docked in the shipyard through the entire process. If the construction yard is destroyed, the assets are destroyed.
+The number of turns required to construct an asset, unless otherwise specified, is equal to the PC times 0.5 (rounded down). They remain docked in the shipyard through the construction period. If the yard is destroyed, the assets are destroyed along with the PP invested.
 
 The act of raising Armies and Space Marines, building Ground Betteries, and installing Planetary Shields does not require a shipyard.
 
@@ -279,9 +279,7 @@ All of an Empire’s fleets arriving at a star system in the same turn, and flee
 
 Task Forces assume the highest ROE of any fleet in their force.
 
-Task Forces are composed of individual squadrons led by a single flagship with a valid command rating (CR). All ships in a squadron act as a single unit and are crippled or destroyed together. Their AS and DS factors are summed together for battle. This gives an Empire tactical flexibility regarding which ships are grouped within a squadron, mixed and matched with various capabilities and special modifiers.
-
-Fighter squadrons protecting their home system join their Empire's respective Task Force as regular squadrons. Hostile carriers deploy their own fighter squadrons in a similar fashion.
+Fighter squadrons patrolling non-hostile systems join their Empire's respective Task Force as regular squadrons. Hostile carriers deploy their own fighter squadrons in a similar fashion.
 
 Fleets that are cloaked, and remain undetected, may continue traveling in hyperspace through a contested star system. Otherwise the fleet will join their Empire’s respective Task Force for battle.
 
@@ -313,17 +311,17 @@ The CER multiplied by AS represents the number of hits received by the enemy.
 
 - Homeworld planetary shields (**\-2)** (to the enemy's roll, all rounds)
 
-All Task Force ships fire on one another simultaneously. Each empire receiving AS hits will decide which squadrons are crippled or destroyed if their squadron DS is breached. Crippled squadrons reduce their AS by multiplying by 0.5, rounded up the nearest whole number. Destroyed squadrons are no longer a factor and the Task Force loses their associated die roll modifiers (e.g. Scouts).
+Empires receiving hits will decide which of their own squadrons are crippled or destroyed. Crippled squadrons reduce their AS by multiplying by 0.5, rounded up the nearest whole number. Destroyed squadrons are no longer a factor and the Task Force loses their associated die roll modifiers (e.g. Scouts).
 
-All hits must be applied, although there may hits that are ineffective if a squadron’s DS blocks it.
+All hits are be applied, although some hits may be ineffective if a squadron’s DS blocks it.
 
 In computer moderated play, the algorithm will apply damage to squadrons with the lowest AS in order to sustain maximum offensive power for the Task Force. Die roll modifiers are a factor in the calculation.
 
 Squadrons are not reduced and destroyed until all other squadrons in the Task Force are already crippled.
 
-Critical hits are the exception to the aforementioned rule. The computer moderator will reduce a squadron with the highest rated AS regardless of combat state if DS is breached.
+Critical hits are the exception to the aforementioned rule. The squadron with the highest rated AS is reduced.
 
-**Note**: Starbases do not join a Task Force. If an enemy Task Force has orders to bombard, invade, or blitz a colony the Starbase will engage with the hostile fleet from orbit as described in this section. Substitute Task Force and Squadron with Starbase in the battle procedure.
+**Note**: Starbases do not join a Task Force. If an enemy Task Force has orders to bombard, invade, or blitz a colony, and there are no surviving defensive squadrons, the Starbase will battle with the enemy solo, as described in this section.
 
 Merchant Marine ships are screened behind the Task Force during combat operations, and rejoin their surviving fleets during a retreat. If the fleet is destroyed they are captured as spoils of war.
 
