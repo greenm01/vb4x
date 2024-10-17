@@ -177,6 +177,16 @@ Space Marines are ferocious devil dogs that capture enemy planets. They deploy i
 
 Armies garrison your colonies and eradicate invaders. Their orders are to take no prisoners and protect the colony at all cost.
 
+### 2\.5 Asset Construction, Repair, and Upgrades
+
+Asset construction, repair, and tech upgrades are performed at planetary and orbital shipyards. Construction capacity at the yard is limited by the colony's total production capacity value, regardless of PP in the Empire's treasury.
+
+Orbital shipyards located in uninhabited gas systems are limited by the mining capacity of the system.
+
+The number of turns required to construct an asset, unless otherwise specified, is equal to the PC times 0.5 (rounded down). They remain docked in the shipyard through the entire process. If the construction yard is destroyed, the assets are destroyed.
+
+The act of raising Armies and Space Marines, building Ground Betteries, and installing Planetary Shields does not require a shipyard.
+
 # 3\.0 Turn Sequence
 
 1. Economics
@@ -332,12 +342,6 @@ The unit of account is the Production Point (PP).
 ## 6\.2 Trading & Mining
 
 ## 6\.3 Asset Maintenance Costs
-
-## 6\.4 Ship Construction, Repair, and Upgrades
-
-Ship construction, repair, and tech upgrades are performed at planetary and orbital shipyards. Construction capacity at the yard is limited by the colony's total production capacity value, regardless of PP in the Empire's treasury.
-
-The number of turns required to complete ship orders is equal to the unit PC times 0.5 (rounded down). Construction takes time. Ships remain docked in the shipyard through the entire process. If the construction yard is destroyed, the ships are destroyed in their slipways and the invested PPs are lost.
 
 # 7\.0 Technology & Research
 
