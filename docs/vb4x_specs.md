@@ -101,8 +101,6 @@ Squadrons are only commissioned in systems with a functioning shipyard.
 
 Squadrons are grouped together into fleets for the purpose of traversing jump lanes. Fleets may be joined or split off (creating new fleets) for strategic purposes in any non-hostile system. There is no limit to the number of squadrons assigned to a fleet.
 
-Merchant Marine ships, Orbital Shipyards, and Starbases may join a fleet for escort.
-
 ### 2\.3.4 Task Force
 
 A Task Force is temporary grouping of squadrons organized for combat. After the cesattion of hostilities the task force is disbanded and surviving squadrons return to their respective fleets.
@@ -201,6 +199,12 @@ The act of raising Armies and Space Marines, building Ground Betteries, and inst
 
 # 4\.0 Movement
 
+## 4\.1 Escorts
+
+If Orbital Shipyards or Starbases are ordered to move, they must be accompanied by a fleet escort. They can not move across jump lanes solo.
+
+Merchant Marine ships may join a fleet for escort.
+
 # 5\.0 Combat
 
 ## 5\.1 Basic Principles
@@ -277,7 +281,7 @@ Fleets that are cloaked, and remain undetected, may continue traveling in hypers
 
 Escorted assets and Troop Transports are screened behind the Task Force during combat operations and do not take damage.
 
-Starbases do not join or fight alongside a Task Force. If an enemy fleet has orders to bombard, invade, or blitz a colony, and there are no defensive space assets present, the Starbase will battle the enemy solo in accrodance with Section 5.4.
+Starbases do not join or fight alongside a Task Force. 
 
 ## 5\.3 Retreat
 
@@ -287,7 +291,7 @@ A retreating Task Force will fall back to their original fleet formations and fl
 
 Orphaned fighter squadrons are scuttled if there is no remaining carrier capacity during a retreat.
 
-Escorted assets rejoin their surviving fleets during a retreat. If the fleet was destroyed they are captured as spoils of war.
+Escorted assets rejoin their surviving fleets during a retreat. If the fleet was destroyed they are captured as spoils of war, with the exception of the scenario described in section 5.5.
 
 Starbases do not retreat.
 
@@ -317,7 +321,7 @@ Players receiving hits will decide which of their squadrons are crippled or dest
 
 All hits are applied, although some hits may be left-over and ineffective if a squadron’s DS blocks it.
 
-In computer moderated play, the algorithm will apply damage to squadrons with the lowest AS in order to sustain maximum offensive power for the Task Force. Die roll modifiers are a factor in the calculation.
+In computer moderated play, the algorithm will reduce squadrons with the lowest AS in order to sustain maximum offensive power for the Task Force. Die roll modifiers are a factor in the calculation.
 
 Squadrons are not reduced and destroyed until all other squadrons in the Task Force are already crippled.
 
@@ -327,9 +331,15 @@ After the last round of combat the surviving Task Forces are disbanded and squad
 
 Example Combat Round:
 
-## 5\.5 Planetary Bombardment
+## 5\.5 Starbases
 
-## 5\.6 Planetary Invasion, Blitz, and Ground Combat
+If an enemy fleet has orders to bombard, invade, or blitz a colony, a Starbase provides the first line of planetary defense.
+
+In the special circumstance that an escorted Starbase is orphaned by a retreat, the Starbase will will screen other orphans and go straight to combat with enemy Task Forces.
+
+## 5\.6 Planetary Bombardment
+
+## 5\.7 Planetary Invasion, Blitz, and Ground Combat
 
 # 6\.0 Economics
 
