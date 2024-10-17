@@ -153,7 +153,7 @@ Starbases boost the morale of a colony by XYZ and production by XYZ every turn. 
 
 ### 2\.4.5 Shipyards
 
-There are two classes of shipyards: planetary and orbital. There is no limit to the number of shipyards stationed in a solar system. 
+There are two classes of shipyards: planetary and orbital. There is no limit to the number of shipyards located in a solar system. 
 
 Planetary Shipyards require two months (two turns) to construct and Orbital Shipyards require three months (three turns) to construct. Planetary yards are better shielded by planetary defences and are immobile. Orbital yards may be relocated to adjacent non-hostile systems. Both types are manned and operated by civilian contractors and have no offensive or defensive capability.
 
