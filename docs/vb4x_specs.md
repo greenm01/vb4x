@@ -177,7 +177,7 @@ Space Marines are ferocious devil dogs that capture enemy planets. They deploy i
 
 Armies garrison your colonies and eradicate invaders. Their orders are to take no prisoners and protect the colony at all cost.
 
-### 2\.5 Asset Construction, Repair, and Upgrades
+## 2\.5 Asset Construction, Repair, and Upgrades
 
 Asset construction, repair, and tech upgrades are performed at planetary and orbital shipyards. Construction capacity at the yard is limited by the colony's total production capacity value, regardless of PP in the Empire's treasury.
 
