@@ -113,9 +113,7 @@ Merchant Marine ships and star bases may join a fleet for escort.
 
 ### 2\.3.4 Task Force
 
-All of an Empire’s fleets arriving at a system in the same turn, and all fleets already located in said system, are joined together into a single Task Force when battle commences between two or more hostile Empires.
-
-Fleets that are cloaked, and remain undetected, may continue jumping through hyperspace to a different sector. Otherwise the fleet will join their Empire’s respective Task Force for battle.
+A Task Force is temporary grouping of squadrons for the specialized purpose of combat in a solar system. After the cesattion of hostilities the task force is disbanded and surviving squadrons return to their respective fleets.
 
 Merchant marine ships do not join the Task Force. Refer to Combat procedures in Section 5.
 
@@ -275,7 +273,7 @@ Note that fleets *may* avoid engagement entirely if equipped with cloaking techn
 
 ## 5\.2 Task Force Assignment
 
-All of an Empire’s fleets arriving at a star system in the same turn, and fleets already located in said system, are joined together into a single Task Force when battle commences between two or more enemies.
+All of an Empire’s fleets arriving at a star system in the same turn, and fleets already located in said system, are joined together into a single Task Force when battle commences between two or more enemies. Fleets are temporarily disbanded and their collective squadrons fight fight under the Task Force as a monolith.
 
 Task Forces assume the highest ROE of any fleet in their force.
 
@@ -291,7 +289,7 @@ A retreating Task Force will fall back to their original fleet formations and fl
 
 ## 5\.4 Space Combat
 
-Once Task Forces are committed to battle, combat commences in a series of rounds until one side is completely destroyed or manages a retreat.
+Once Task Forces are formed for battle, combat commences in a series of rounds until one side is completely destroyed or manages a retreat.
 
 Combat action is simultaneous; all assets will have the opportunity to fire on enemy forces at least once, regardless of damage sustained during a round.
 
@@ -322,6 +320,8 @@ Squadrons are not reduced and destroyed until all other squadrons in the Task Fo
 Critical hits are the exception to the aforementioned rule. The squadron with the highest rated AS is reduced.
 
 **Note**: Starbases do not join a Task Force. If an enemy Task Force has orders to bombard, invade, or blitz a colony, and there are no surviving defensive squadrons, the Starbase will battle with the enemy solo, as described in this section.
+
+After the last round of combat the Task Forces are disbanded and squadrons rejoin their original fleets.
 
 Merchant Marine ships are screened behind the Task Force during combat operations, and rejoin their surviving fleets during a retreat. If the fleet is destroyed they are captured as spoils of war.
 
