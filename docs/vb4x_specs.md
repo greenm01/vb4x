@@ -395,4 +395,4 @@ CC= Command Cost, CR = Command Rating, CV = Carry Limit
 | AA               | Armies           | 2                |
 | MM               | Space Marines    | 3                |
 
-# 10\.0 Example Excel Worksheets
+# 10\.0 Play By Excel
