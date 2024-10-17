@@ -209,8 +209,6 @@ The act of raising Armies and Space Marines, building Ground Betteries, and inst
 
 **Rules of Engagement (ROE)**: Dictates how aggressive your fleet will respond when engaging with the enemy from a scale of 0 to 10. The higher the ROE, the more aggressive your fleet will engage with enemy fleets of increasing relative strength to your own. With a low ROE, your fleet will attempt to retreat more readily when engaged in combat. A low ROE does not guarantee survival against a more powerful fleet. Once engaged, fleets have the opportunity to retreat only after the first round of combat.
 
-Note that fleets *may* avoid engagement entirely if equipped with cloaking technology, and remain undetected while transiting *through* a hostile sector.
-
 **Rules Of Engagement Table**
 
 | **ROE**                                              | **ORDERS**                                           |
