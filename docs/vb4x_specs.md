@@ -73,12 +73,6 @@ Colonization takes one turn to complete.
 
 The base game includes a number of imperial classed combatants, listed in Section 9. Feel free to create your own ships and races for asymmetrical warfare or narrative purposes.
 
-It is recommended to maintain the predefined classes and attribute categories, and only tweak the ship names and attribute values for new ships.
-
-Ships that are crippled in battle require repair at a shipyard to restore their combat effectiveness. Older technology ships may be retrofitted with new weapons tech.
-
-Refer to Section 6.4 in regard to ship construction, repair, and upgrades.
-
 #### 2\.3.1.2 Merchant Marine Ships
 
 Merchant marine ships are civilian crewed ships that provide logistal and economic support for the empire. They have no weapons technology or defense, and are easily captured or destroyed by enemy combat ships. Protect them wisely with military escorts.
@@ -93,53 +87,47 @@ Merchant Marine attributes are found in Section 9.
 
 ### 2\.3.2 Squadrons
 
-Combat ships are organized into squadrons. Each squadron is commanded by a flagship with a Command Rating (CR) that will accommodate ships with a Command Cost (CC) that sum to less than or equal to the CR. This enables empires to tactically group various classes of ships together during combat to balance the squadron's Attack Strength (AS), Defensive Strength (DS), and protect special ships.
+Combat ships are organized into squadrons. Each squadron is commanded by a flagship with a Command Rating (CR) that will accommodate ships with a Command Cost (CC) that sum to less than or equal to the CR. This enables players to tactically group various classes of ships to balance combat effectiveness.
 
-Carriers are treated just like any other ship and remain attached to their assigned squadron. Their child fighter squadrons deploy separately and remain wholly independent unit the Task Force is disengaged, returning back to surviving carriers (if there's room) or fight to the death if orphaned in a retreat.
+Squadrons fight as a unit and die as a unit. A squadron's total AS and DS values constitute a sum of all the ships under a flagship's command.
 
-Merchant Marine ships and star bases do not join squadrons.
-
-Squadrons fight as a unit and die as a unit. A squadron's total AS and DS values constitute a sum of all the ships under its command.
-
-In non-hostile systems, ships in a squadron may be reassigned to an already existing squadron if the new flagship's CR allows. Squadrons may constitute a solo flagship. Fighters remain housed within their respective carriers.
+In non-hostile systems, ships in a squadron may be reassigned to an already existing squadron if the new flagship's CR allows. Squadrons may constitute a solo flagship. 
 
 Squadrons are newly commissioned only in systems with a functioning shipyard.
 
+Merchant Marine ships and Starbases do not join squadrons.
+
 ### 2\.3.3 Fleets
 
-Squadrons are grouped together into Fleets for the purpose of traversing jump lanes. Fleets may be joined or split off (creating new fleets) for strategic purposes in any non-hostile system. There is no limit to the number of squadrons assigned to a fleet.
+Squadrons are grouped together into fleets for the purpose of traversing jump lanes. Fleets may be joined or split off (creating new fleets) for strategic purposes in any non-hostile system. There is no limit to the number of squadrons assigned to a fleet.
 
 Merchant Marine ships and star bases may join a fleet for escort.
 
 ### 2\.3.4 Task Force
 
-A Task Force is temporary grouping of squadrons for the specialized purpose of combat in a solar system. After the cesattion of hostilities the task force is disbanded and surviving squadrons return to their respective fleets.
+A Task Force is temporary grouping of squadrons for the specialized purpose of combat. After the cesattion of hostilities the task force is disbanded and surviving squadrons return to their respective fleets.
 
-Merchant marine ships do not join the Task Force. Refer to Combat procedures in Section 5.
+Merchant marine ships aand Starbases do not join a Task Force. Refer to Combat procedures in Section 5.
 
 ## 2\.4 Special Units
 
 ### 2\.4.1 Fighter Squadrons & Carriers
 
-Fighters are commissioned in squadrons. They are small ships unequipped with jump drives and may not move independently between systems.
+Fighters are commissioned in squadrons and guard their home systems. They are small ships that require a carrier to move between systems.
 
-There is no limit on the number of fighter squadrons deployed in a friendly system, and they operate independently from carriers in said system. Moving them to a new system requires a mother ship.
+There is no limit on the number of fighter squadrons deployed in a system, and they operate independently from carriers in said system.
 
-Carriers hold up to three fighter squadrons and are assigned to regular ship squadrons just like other ships. Super carriers can hold up to five fighter squadrons.
+Carriers hold up to three fighter squadrons. Super carriers hold up to five.
 
 ### 2\.4.2 Scouts
 
-Scouts are autonomous drones outfitted with advanced sensors that aid with electronic warfare. They give a boost to their Task Force during combat operations.
-
-Multiple scouts assigned to a task force do not lend additional benefits in combat, although it may be prudent to tactically place Scouts in more than one squadron in the event of destruction.
+Scouts are autonomous drones outfitted with advanced sensors that aid with electronic warfare. They give a boost to Task Forces during combat operations.
 
 ### 2\.4.3 Raider Cloaking
 
 Raiders are the only ships outfitted with cloaking technology. They are not available until cloaking technology is researched and developed.
 
 Fleets containing a Raider have a 33% chance (roll 1 or 2 on a 1D6) of going undetected in hostile systems. The number of Raiders in the fleet does not affect the roll, nor rate multiple chances.
-
-Like scouts, place Raiders in multiple squadrons to distribute risk across the fleet.
 
 ### 2\.4.4 Starbases
 
@@ -179,11 +167,11 @@ Armies garrison your colonies and eradicate invaders. Their orders are to take n
 
 Asset construction, repair, and tech upgrades are performed at planetary and orbital shipyards. Construction capacity at the yard is limited by the colony's total production capacity value, regardless of PP in the Empire's treasury.
 
-All military ship assets may be upgraded with weapons tech unless otherwise specified. Ground units and planetary shields are not.
+Military ships may be upgraded with weapons tech unless otherwise specified. Ground units and planetary shields may not.
 
 Orbital shipyards stationed in uninhabited gas systems are limited by the mining capacity of the system.
 
-The number of turns required to construct an asset, unless otherwise specified, is equal to the PC times 0.5 (rounded down). They remain docked in the shipyard through the construction period. If the yard is destroyed, the assets are destroyed along with the PP invested.
+The number of turns required to construct an asset, unless otherwise specified, is equal to the PC times 0.5 (rounded down). Assets remain docked in the shipyard through the construction period. If the yard is destroyed, the uncomissioned assets are destroyed along with the PP invested.
 
 The act of raising Armies and Space Marines, building Ground Betteries, and installing Planetary Shields does not require a shipyard.
 
@@ -239,7 +227,9 @@ Note that fleets *may* avoid engagement entirely if equipped with cloaking techn
 
 **Undamaged**: A unit’s hull integrity and life support systems are fully operational. No restrictions.
 
-**Crippled**: When an undamaged military unit’s Defense Strength (DS) is overcome (breached) in battle, that unit’s primary defense shielding is compromised and will find itself in a reduced, crippled combat state. Subsequent damage sustained equal in full to DS will result in a catastrophic, unrecoverable, loss of hull integrity, i.e. destruction. DS is a fixed constant value that shall not be reduced at any time during sustained combat operations.
+**Crippled**: When an undamaged military unit’s Defense Strength (DS) is overcome (breached) in battle, that unit’s primary defense shielding is compromised and will find itself in a reduced, crippled combat state. AS is reduced by half. Subsequent damage sustained equal in full to DS will result in a catastrophic, unrecoverable, loss of hull integrity, i.e. destruction. 
+
+DS is a fixed constant that shall not be reduced at any time during sustained combat operations.
 
 **Destroyed**: Dead and unrecoverable.
 
@@ -275,13 +265,13 @@ Note that fleets *may* avoid engagement entirely if equipped with cloaking techn
 
 ## 5\.2 Task Force Assignment
 
-All of an Empire’s fleets arriving at a star system in the same turn, and fleets already located in said system, are joined together into a single Task Force when battle commences between two or more enemies. Fleets are temporarily disbanded and their collective squadrons fight fight under the Task Force as a monolith.
+All of a player’s fleets arriving at a star system in the same turn, and fleets already located in said system, are joined together into a single Task Force when battle commences between two or more enemies. Fleets are temporarily disbanded and their collective squadrons fight fight under the Task Force as a monolith.
 
 Task Forces assume the highest ROE of any fleet in their force.
 
-Fighter squadrons patrolling friendly systems join their Empire's respective Task Force as regular squadrons. Hostile carriers deploy their own fighter squadrons in a similar fashion.
+Fighter squadrons join their player's respective Task Force as independent squadrons. Hostile carriers deploy their own fighter squadrons in a similar fashion.
 
-Fleets that are cloaked, and remain undetected, may continue traveling in hyperspace through a contested star system. Otherwise the fleet will join their Empire’s respective Task Force for battle.
+Fleets that are cloaked, and remain undetected, may continue traveling in hyperspace through a contested star system. Otherwise the fleet will join their player's respective Task Force for battle.
 
 ## 5\.3 Retreat
 
@@ -291,29 +281,29 @@ A retreating Task Force will fall back to their original fleet formations and fl
 
 ## 5\.4 Space Combat
 
-Once Task Forces are formed for battle, combat commences in a series of rounds until one side is completely destroyed or manages a retreat.
+After Task Forces are formed for battle, combat commences in a series of rounds until one side is completely destroyed or manages a retreat.
 
-Combat action is simultaneous; all assets will have the opportunity to fire on enemy forces at least once, regardless of damage sustained during a round.
+Combat action is simultaneous; all squadrons have the opportunity to fire on enemy forces at least once, regardless of damage sustained during a round.
 
-In the first combat round only, both empires will roll on the Battle Stations Preparedness Table listed in 5.1. The result will be applied as a die roll modifier when rolling for the CER in *round one only*.
+In the first combat round only, both players roll on the Battle Stations Preparedness Table listed in 5.1. The result is applied as a die roll modifier when rolling for the CER in *round one only*.
 
-At the beginning of each combat round, Empires add up the total AS of their remaining squadrons. The total value is then modified by the following:
+At the beginning of each combat round, players add up the total AS of their remaining squadrons. The total value is then modified by the following:
 
-Each empire will roll a die in accordance with The Space Combat Results Table (Exhibit A) to determine their CER, applying modifiers.
+Players roll a die in accordance with The Space Combat Results Table to determine their CER, applying modifiers.
 
-The CER multiplied by AS represents the number of hits received by the enemy.
+The CER multiplied by AS represents the number of enemy hits.
 
 **Die Roll Modifiers**
 
-- Battle Stations Preparedness Table (round one only)
+- Battle Stations Preparedness Table
 
-- Functional Scouts (**\+1)**
+- Scouts (**\+1 max)**
 
-- Homeworld planetary shields (**\-2)** (to the enemy's roll, all rounds)
+- Homeworld shields (**\-2 to the opposing player's roll)** 
 
-Empires receiving hits will decide which of their own squadrons are crippled or destroyed. Crippled squadrons reduce their AS by multiplying by 0.5, rounded up the nearest whole number. Destroyed squadrons are no longer a factor and the Task Force loses their associated die roll modifiers (e.g. Scouts).
+Players receiving hits will decide which of their squadrons are crippled or destroyed. Crippled squadrons reduce their AS by multiplying by 0.5, rounded up the nearest whole number. Destroyed squadrons are no longer a factor and the Task Force loses their associated die roll modifiers (e.g. Scouts).
 
-All hits are be applied, although some hits may be ineffective if a squadron’s DS blocks it.
+All hits are applied, although some hits may be ineffective if a squadron’s DS blocks it.
 
 In computer moderated play, the algorithm will apply damage to squadrons with the lowest AS in order to sustain maximum offensive power for the Task Force. Die roll modifiers are a factor in the calculation.
 
@@ -323,7 +313,7 @@ Critical hits are the exception to the aforementioned rule. The squadron with th
 
 **Note**: Starbases do not join or fight alongside a Task Force. If an enemy fleet has orders to bombard, invade, or blitz a colony, and there are no defensive space assets present, the Starbase will battle the enemy solo. Starbases do not retreat.
 
-After the last round of combat the Task Forces are disbanded and squadrons rejoin their original fleets.
+After the last round of combat the Task Forces are disbanded and squadrons rejoin their assigned fleets.
 
 Merchant Marine ships are screened behind the Task Force during combat operations, and rejoin their surviving fleets during a retreat. If the fleet is destroyed they are captured as spoils of war.
 
