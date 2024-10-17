@@ -129,9 +129,7 @@ Fleets containing a Raider have a 33% chance (roll 1 or 2 on a 1D6) of going und
 
 Starbases are powerful orbital fortresses that facilitate planetary defense and economic development via ground weather modification and advanced telecommunications. These powerful sentinels are limited to one operational unit per solar system.
 
-Starbases require five months (five turns) to construct and require an orbital shipyard. They may be destroyed by hostile forces while under construction. The invested PP are lost forever. Unfinished Starbases may not contribute to defense and their benefits do not incur until 100% completed.
-
-A Starbase may be moved to an adjacent non-hostile solar system.
+Starbases require five months (five turns) to construct and require an orbital shipyard to build. They may be destroyed by hostile forces while under construction. The invested PP are lost forever. Unfinished Starbases may not contribute to defense and their benefits do not incur until 100% complete.
 
 Starbases boost the morale of a colony by XYZ and production by XYZ every turn. Crippled Starbases operate at 50% capacity and contribute half their normal moral and PP to the colony.
 
@@ -141,7 +139,7 @@ There are two classes of shipyards: planetary and orbital. There is no limit to 
 
 Planetary Shipyards require two months (two turns) to construct and Orbital Shipyards require three months (three turns) to construct. 
 
-Planetary yards are better shielded by planetary defences and are immobile. Orbital yards may be relocated to adjacent non-hostile systems. 
+Planetary yards are immobile, although they are defended by planetary resources during an attack.
 
 Both types are manned and operated by civilian contractors and have no offensive or defensive capability.
 
@@ -201,7 +199,7 @@ The act of raising Armies and Space Marines, building Ground Betteries, and inst
 
 ## 4\.1 Escorts
 
-If Orbital Shipyards or Starbases are ordered to move, they must be accompanied by a fleet escort. They can not move across jump lanes solo.
+If Orbital Shipyards or Starbases are ordered to move, they must be accompanied by a fleet escort. They can not move across jump lanes unassisted.
 
 Merchant Marine ships may join a fleet for escort.
 
@@ -335,7 +333,7 @@ Example Combat Round:
 
 If an enemy fleet has orders to bombard, invade, or blitz a colony, a Starbase provides the first line of planetary defense.
 
-In the special circumstance that an escorted Starbase is orphaned by a retreat, the Starbase will will screen other orphans and go straight to combat with enemy Task Forces.
+In the special circumstance that an escorted Starbase is orphaned by a retreat, the Starbase will screen other orphans and go straight to combat against enemy forces.
 
 ## 5\.6 Planetary Bombardment
 
