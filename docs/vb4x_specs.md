@@ -321,7 +321,7 @@ Squadrons are not reduced and destroyed until all other squadrons in the Task Fo
 
 Critical hits are the exception to the aforementioned rule. The squadron with the highest rated AS is reduced.
 
-**Note**: Starbases do not join a Task Force. If an enemy fleet has orders to bombard, invade, or blitz a colony, and there are no defensive space assets present, the Starbase will battle with the enemy solo. Follow the combat procedure in this section.
+**Note**: Starbases do not join or fight alongside a Task Force. If an enemy fleet has orders to bombard, invade, or blitz a colony, and there are no defensive space assets present, the Starbase will battle the enemy solo. Starbases do not retreat.
 
 After the last round of combat the Task Forces are disbanded and squadrons rejoin their original fleets.
 
