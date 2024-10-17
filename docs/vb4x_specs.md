@@ -161,6 +161,8 @@ Ground batteries are the only units that are constructed in the span of a single
 
 Troop transports are large size ships used to taxi Space Marines from one planet to another. It holds one Marine division and is not armed. This ship will drop troops on an enemy planet during an invasion or blitz.
 
+Troop Transports are not assigned to squadrons.
+
 Space Marines are ferocious devil dogs that capture enemy planets. They deploy in division sized units and will never surrender or abandon one of their own.
 
 Armies garrison your colonies and eradicate invaders. Their orders are to take no prisoners and protect the colony at all cost.
