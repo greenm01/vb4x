@@ -216,20 +216,21 @@ Armies garrison your colonies and eradicate invaders. Their orders are to take n
 
 Note that fleets *may* avoid engagement entirely if equipped with cloaking technology, and remain undetected while transiting *through* a hostile sector.
 
-| **Rules Of Engagement Table** |
-| ----------------------------- |
-| **ROE**                       |
-| 00                            |
-| 01                            |
-| 02                            |
-| 03                            |
-| 04                            |
-| 05                            |
-| 06                            |
-| 07                            |
-| 08                            |
-| 09                            |
-| 10                            |
+**Rules Of Engagement Table**
+
+| **ROE**                                              | **ORDERS**                                           |
+| ---------------------------------------------------- | ---------------------------------------------------- |
+| 00                                                   | Avoid all hostile forces. (Non-combat forces)        |
+| 01                                                   | Engage forces only if they are defenseless.          |
+| 02                                                   | Engage forces only if your AS is 4:1 or better.      |
+| 03                                                   | Engage forces only if your AS is 3:1 or better.      |
+| 04                                                   | Engage forces only if your AS is 2:1 or better.      |
+| 05                                                   | Engage forces only if your AS is 3:2 or better.      |
+| 06                                                   | Engage hostile forces of equal or inferior strength. |
+| 07                                                   | Engage hostile forces even if outgunned 3:2.         |
+| 08                                                   | Engage hostile forces even if outgunned 2:1.         |
+| 09                                                   | Engage hostile forces even if outgunned 3:1.         |
+| 10                                                   | Engage hostile forces regardless of their size.      |
 
 **Combat State**: Combat ships are either undamaged or reduced in a crippled state. The reduction cycle goes from undamaged to crippled to destroyed.
 
@@ -239,34 +240,35 @@ Note that fleets *may* avoid engagement entirely if equipped with cloaking techn
 
 **Destroyed**: Dead and unrecoverable.
 
-**TABLES**:
+**Space Combat Results Table**
 
-| **Space Combat Results Table** |
-| ------------------------------ |
-| **Modified 1D10 Die Roll**     |
-| 0, 1, 2                        |
-| 3, 4                           |
-| 5, 6                           |
-| 7, 8                           |
-| 9                              |
-| 9+                             |
+| **Modified 1D10 Die Roll**            | **Combat Effectiveness Rating (CER)** |
+| ------------------------------------- | ------------------------------------- |
+| 0, 1, 2                               | One Quarter (0.25) (round up)         |
+| 3, 4                                  | One Half (0.50) (round up)            |
+| 5, 6                                  | Three Quarters (0.75) (round up)      |
+| 7, 8                                  | One (1)                               |
+| 9                                     | One\* (1)                             |
+| 9+                                    | One (1)                               |
 
 \* If the die roll is a natural nine before any required modification, then a critical hit is achieved
 
-| **Battle Stations Preparedness Table** |
-| -------------------------------------- |
-| 1D6 Roll                               |
-| 1,2                                    |
-| 3,4                                    |
-| 5,6                                    |
+**Battle Stations Preparedness Table**
 
-| **Ground Combat Results Table** |
-| ------------------------------- |
-| **Modified 1D10 Die Roll**      |
-| Less than zero, 0, 1, 2         |
-| 3, 4, 5, 6                      |
-| 7, 8                            |
-| 9 or more                       |
+| **1D6 Roll**                          | **Battle Stations Modifier**          |
+| ------------------------------------- | ------------------------------------- |
+| 1,2                                   | Fleets are unprepared for battle (-1) |
+| 3,4                                   | Fleets are prepared for battle (0)    |
+| 5,6                                   | Fleets are fully prepared (1)         |
+
+**Ground Combat Results Table**
+
+| **Modified 1D10 Die Roll**            | **Combat Effectiveness Rating (CER)** |
+| ------------------------------------- | ------------------------------------- |
+| Less than zero, 0, 1, 2               | One Half (0.5) (round up)             |
+| 3, 4, 5, 6                            | One (1)                               |
+| 7, 8                                  | One and a half (1.5) (round up)       |
+| 9 or more                             | Two (2)                               |
 
 ## 5\.2 Task Force Assignment
 
@@ -397,8 +399,3 @@ CC= Command Cost, CR = Command Rating, CV = Carry Capacity
 | MM               | Space Marines    | 3                |
 
 # 10\.0 Example Excel Worksheets
-
-
-
-
-
