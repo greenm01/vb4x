@@ -20,7 +20,7 @@ Esterian Conquest was a bulletin board system (BBS) door game from the early 199
 
 VB4X should be simple enough to run from a well organized Excel spreadsheet. It's just data and your imagination, after all.
 
-Read the drat player manual here (work in progress)
+[Read the draft PLAYER MANUAL here (work in progress)](https://github.com/greenm01/vb4x/blob/main/docs/vb4x_player_guide.md)
 
 
 
