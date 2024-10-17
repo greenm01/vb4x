@@ -75,13 +75,13 @@ The base game includes a number of imperial classed combatants, listed in Sectio
 
 It is recommended to maintain the predefined classes and attribute categories, and only tweak the ship names and attribute values for new ships.
 
-Ships that are crippled in battle require repair at a ship yard to restore their combat effectiveness. Older technology ships may be retrofitted with new weapons tech.
+Ships that are crippled in battle require repair at a shipyard to restore their combat effectiveness. Older technology ships may be retrofitted with new weapons tech.
 
 Refer to Section 6.4 in regard to ship construction, repair, and upgrades.
 
 #### 2\.3.1.2 Merchant Marine Ships
 
-Merchant marine ships are civilian crewed ships that expand and fill the coffers of the empire. They have no weapons technology or defense, and are easily captured or destroyed by enemy combat ships. Protect them wisely with military escorts.
+Merchant marine ships are civilian crewed ships that provide logistal and economic support for the empire. They have no weapons technology or defense, and are easily captured or destroyed by enemy combat ships. Protect them wisely with military escorts.
 
 **Environmental Transformation And Colonization (ETAC)** ships are used to terraform and colonize uninhabited planets. After colonization they are scrapped and used by the colony.
 
@@ -103,7 +103,7 @@ Squadrons fight as a unit and die as a unit. A squadron's total AS and DS values
 
 In non-hostile systems, ships in a squadron may be reassigned to an already existing squadron if the new flagship's CR allows. Squadrons may constitute a solo flagship. Fighters remain housed within their respective carriers.
 
-Squadrons are newly commissioned only in systems with a functioning ship yard.
+Squadrons are newly commissioned only in systems with a functioning shipyard.
 
 ### 2\.3.3 Fleets
 
@@ -145,25 +145,19 @@ Like scouts, place Raiders in multiple squadrons to distribute risk across the f
 
 ### 2\.4.4 Starbases
 
-Starbases are powerful orbital fortresses that facilitate planetary defense and economic development via ground weather modification and advanced telecommunications. These powerful sentinels are limited to one operational unit per colony.
+Starbases are powerful orbital fortresses that facilitate planetary defense and economic development via ground weather modification and advanced telecommunications. These powerful sentinels are limited to one operational unit per solar system.
 
-Because of mass restrictions and continuous supply requirements, star bases are not equipped with jump drives and may not move out of their home systems.
+Starbases require five months (five turns) to construct and require an orbital shipyard. They may be destroyed by hostile forces while under construction. The invested PP are lost forever. Unfinished Starbases may not contribute to defense and their benefits do not incur until 100% completed.
 
-Starbases require five months (five turns) to build at a shipyard, and may be destroyed by hostile forces while under construction. The invested PP are lost forever. Unfinished Starbases may not contribute to defense and their benefits do not incur until 100% completed.
+A Starbase may be moved to an adjacent non-hostile solar system, and may be upgraded with weapons tech at 50% of the current PC.
 
-Starbases may be upgraded with weapons tech at 50% of the current PC.
+Starbases boost the morale of a colony by XYZ and production by XYZ every turn. Crippled Starbases operate at 50% capacity and contribute half their normal moral and PP to the colony.
 
-Starbases boost the morale of a colony by XYZ and production by XYZ every turn.
+### 2\.4.5 Shipyards
 
-Crippled Starbases operate at 50% capacity and contribute half their normal moral and PP to the colony.
+There are two classes of shipyards: planetary and orbital. There is no limit to the number of shipyards stationed in a solar system. 
 
-### 2\.4.5 Ship Yards
-
-There are two classifications of ship yards: planetary and orbital. There is no limit to the number of ship yards that may be constructed at a colony. Like Star Bases, they may not be moved out of their home systems.
-
-Ship yards require three months (three turns) to construct and are vulnerable to attack. They are manned and operated by civilian contractors and have no offensive or defensive capability.
-
-Refer to Section 6.4 in regard to ship construction, repair, and upgrades.
+Planetary Shipyards require two months (two turns) to construct and Orbital Shipyards require three months (three turns) to construct. Planetary yards are better shielded by planetary defences and are immobile. Orbital yards may be relocated to adjacent non-hostile systems. Both types are manned and operated by civilian contractors and have no offensive or defensive capability.
 
 ### 2\.4.6 Planetary Shields & Ground Batteries
 
@@ -343,7 +337,7 @@ The unit of account is the Production Point (PP).
 
 Ship construction, repair, and tech upgrades are performed at planetary and orbital shipyards. Construction capacity at the yard is limited by the colony's total production capacity value, regardless of PP in the Empire's treasury.
 
-The number of turns required to complete ship orders is equal to the unit PC times 0.5 (rounded down). Construction takes time. Ships remain docked in the ship yard through the entire process. If the construction yard is destroyed, the ships are destroyed in their slipways and the invested PPs are lost.
+The number of turns required to complete ship orders is equal to the unit PC times 0.5 (rounded down). Construction takes time. Ships remain docked in the shipyard through the entire process. If the construction yard is destroyed, the ships are destroyed in their slipways and the invested PPs are lost.
 
 # 7\.0 Technology & Research
 
