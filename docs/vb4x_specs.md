@@ -97,19 +97,15 @@ In non-hostile systems, ships in a squadron may be reassigned to an already exis
 
 Squadrons are only commissioned in systems with a functioning shipyard.
 
-Merchant Marine ships and Starbases do not join squadrons.
-
 ### 2\.3.3 Fleets
 
 Squadrons are grouped together into fleets for the purpose of traversing jump lanes. Fleets may be joined or split off (creating new fleets) for strategic purposes in any non-hostile system. There is no limit to the number of squadrons assigned to a fleet.
 
-Merchant Marine ships and star bases may join a fleet for escort.
+Merchant Marine ships, Orbital Shipyards, and Starbases may join a fleet for escort.
 
 ### 2\.3.4 Task Force
 
 A Task Force is temporary grouping of squadrons organized for combat. After the cesattion of hostilities the task force is disbanded and surviving squadrons return to their respective fleets.
-
-Merchant marine ships aand Starbases do not join a Task Force. Refer to Combat procedures in Section 5.
 
 ## 2\.4 Special Units
 
@@ -145,7 +141,11 @@ Starbases boost the morale of a colony by XYZ and production by XYZ every turn. 
 
 There are two classes of shipyards: planetary and orbital. There is no limit to the number of shipyards located in a solar system. 
 
-Planetary Shipyards require two months (two turns) to construct and Orbital Shipyards require three months (three turns) to construct. Planetary yards are better shielded by planetary defences and are immobile. Orbital yards may be relocated to adjacent non-hostile systems. Both types are manned and operated by civilian contractors and have no offensive or defensive capability.
+Planetary Shipyards require two months (two turns) to construct and Orbital Shipyards require three months (three turns) to construct. 
+
+Planetary yards are better shielded by planetary defences and are immobile. Orbital yards may be relocated to adjacent non-hostile systems. 
+
+Both types are manned and operated by civilian contractors and have no offensive or defensive capability.
 
 ### 2\.4.6 Planetary Shields & Ground Batteries
 
@@ -275,11 +275,21 @@ Fighter squadrons join their player's respective Task Force as independent squad
 
 Fleets that are cloaked, and remain undetected, may continue traveling in hyperspace through a contested star system. Otherwise the fleet will join their player's respective Task Force for battle.
 
+Escorted assets and Troop Transports are screened behind the Task Force during combat operations and do not take damage.
+
+Starbases do not join or fight alongside a Task Force. If an enemy fleet has orders to bombard, invade, or blitz a colony, and there are no defensive space assets present, the Starbase will battle the enemy solo in accrodance with Section 5.4.
+
 ## 5\.3 Retreat
 
 A Task Force may retreat from combat only after the first round of combat, in accordance with their ROE, and between rounds thereafter. The ROE is fixed at the beginning of combat and through all subsequent rounds.
 
 A retreating Task Force will fall back to their original fleet formations and flee to the closest non-hostile star system.
+
+Orphaned fighter squadrons are scuttled if there is no remaining carrier capacity during a retreat.
+
+Escorted assets rejoin their surviving fleets during a retreat. If the fleet was destroyed they are captured as spoils of war.
+
+Starbases do not retreat.
 
 ## 5\.4 Space Combat
 
@@ -305,19 +315,15 @@ The CER multiplied by AS represents the number of enemy hits.
 
 Players receiving hits will decide which of their squadrons are crippled or destroyed. Crippled squadrons reduce their AS by multiplying by 0.5, rounded up the nearest whole number. Destroyed squadrons are no longer a factor and the Task Force loses their associated die roll modifiers (e.g. Scouts).
 
-All hits are applied, although some hits may be ineffective if a squadron’s DS blocks it.
+All hits are applied, although some hits may be left-over and ineffective if a squadron’s DS blocks it.
 
 In computer moderated play, the algorithm will apply damage to squadrons with the lowest AS in order to sustain maximum offensive power for the Task Force. Die roll modifiers are a factor in the calculation.
 
 Squadrons are not reduced and destroyed until all other squadrons in the Task Force are already crippled.
 
-Critical hits are the exception to the aforementioned rule. The squadron with the highest rated AS is reduced.
+Critical hits are the exception to the aforementioned rule. The squadron with the highest rated AS is reduced, regardless of DS.
 
-**Note**: Starbases do not join or fight alongside a Task Force. If an enemy fleet has orders to bombard, invade, or blitz a colony, and there are no defensive space assets present, the Starbase will battle the enemy solo. Starbases do not retreat.
-
-After the last round of combat the Task Forces are disbanded and squadrons rejoin their assigned fleets.
-
-Merchant Marine ships are screened behind the Task Force during combat operations, and rejoin their surviving fleets during a retreat. If the fleet is destroyed they are captured as spoils of war.
+After the last round of combat the Task Forces are disbanded and squadrons rejoin their assigned fleets. Fighter squadrons return to their carriers unless they are orphaned, in which case they are scuttled.
 
 Example Combat Round:
 
