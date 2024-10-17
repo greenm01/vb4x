@@ -279,7 +279,7 @@ All of an Empire’s fleets arriving at a star system in the same turn, and flee
 
 Task Forces assume the highest ROE of any fleet in their force.
 
-Fighter squadrons patrolling non-hostile systems join their Empire's respective Task Force as regular squadrons. Hostile carriers deploy their own fighter squadrons in a similar fashion.
+Fighter squadrons patrolling friendly systems join their Empire's respective Task Force as regular squadrons. Hostile carriers deploy their own fighter squadrons in a similar fashion.
 
 Fleets that are cloaked, and remain undetected, may continue traveling in hyperspace through a contested star system. Otherwise the fleet will join their Empire’s respective Task Force for battle.
 
