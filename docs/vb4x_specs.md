@@ -111,7 +111,7 @@ A Task Force is temporary grouping of squadrons organized for combat. After the 
 
 ### 2\.4.1 Fighter Squadrons & Carriers
 
-Fighters are commissioned in squadrons and freely patrol their home systems. They are small ships that require a carrier to move between systems.
+Fighters are commissioned in squadrons and freely patrol solar systems. They are small ships that require a carrier to move between systems.
 
 There is no limit on the number of fighter squadrons deployed in a system, and they operate independently from carriers in said system.
 
@@ -325,7 +325,7 @@ Squadrons are not reduced and destroyed until all other squadrons in the Task Fo
 
 Critical hits are the exception to the aforementioned rule. The squadron with the highest rated AS is reduced, regardless of DS.
 
-After the last round of combat the Task Forces are disbanded and squadrons rejoin their assigned fleets. Fighter squadrons return to their carriers unless they are orphaned, in which case they are scuttled.
+After the last round of combat the surviving Task Forces are disbanded and squadrons rejoin their assigned fleets. 
 
 Example Combat Round:
 
