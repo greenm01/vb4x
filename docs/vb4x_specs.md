@@ -147,7 +147,7 @@ Starbases are powerful orbital fortresses that facilitate planetary defense and 
 
 Starbases require five months (five turns) to construct and require an orbital shipyard. They may be destroyed by hostile forces while under construction. The invested PP are lost forever. Unfinished Starbases may not contribute to defense and their benefits do not incur until 100% completed.
 
-A Starbase may be moved to an adjacent non-hostile solar system, and may be upgraded with weapons tech at 50% of the current PC.
+A Starbase may be moved to an adjacent non-hostile solar system.
 
 Starbases boost the morale of a colony by XYZ and production by XYZ every turn. Crippled Starbases operate at 50% capacity and contribute half their normal moral and PP to the colony.
 
@@ -178,6 +178,8 @@ Armies garrison your colonies and eradicate invaders. Their orders are to take n
 ## 2\.5 Asset Construction, Repair, and Tech Upgrades
 
 Asset construction, repair, and tech upgrades are performed at planetary and orbital shipyards. Construction capacity at the yard is limited by the colony's total production capacity value, regardless of PP in the Empire's treasury.
+
+All military ship assets may be upgraded with weapons tech unless otherwise specified. Ground units and planetary shields are not.
 
 Orbital shipyards stationed in uninhabited gas systems are limited by the mining capacity of the system.
 
