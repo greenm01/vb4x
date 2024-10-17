@@ -57,11 +57,11 @@ Only one homeworld is allowed per Empire.
 
 ### 2\.2.1 Planet Attributes
 
-TODO: explain planet properties, similar to VBAM.
+TODO: explain planet properties and formation.
 
 ### 2\.2.2 Terraforming and Colonization
 
-Terraforming time takes XYZ turns to complete. ETACs may be destroyed by hostile forces when caught in the act.
+Terraforming time takes XYZ turns to complete. 
 
 Colonization takes one turn to complete.
 
@@ -71,7 +71,9 @@ Colonization takes one turn to complete.
 
 #### 2\.3.1.1 Combat Ships
 
-The base game includes a number of imperial classed combatants, listed in Section 9. Feel free to create your own ships and races for asymmetrical warfare or narrative purposes.
+The base game includes a number of imperial classed combatants, listed in Section 9. 
+
+Feel free to create your own ships and races for asymmetrical warfare or narrative purposes.
 
 #### 2\.3.1.2 Merchant Marine Ships
 
@@ -79,9 +81,9 @@ Merchant marine ships are civilian crewed ships that provide logistal and econom
 
 **Environmental Transformation And Colonization (ETAC)** ships are used to terraform and colonize uninhabited planets. After colonization they are scrapped and used by the colony.
 
-**Trader** ships earn Production Points (PP) by trading between colonies within the empire or with diplomatic trade partners. They must have an uncontested travel path back across jump lanes to an empire controlled colony.
+**Trader** ships earn Production Points (PP) by trading between colonies within the empire or with trade partners. They must have an uncontested path back across jump lanes to a friendly colony in order facilitate merchant activity. Systems may only have one trader assigned per empire.
 
-**Miner** ships earn PP by harvesting raw materials from inhospitable, unoccupied systems. They must have an uncontested travel path back across jump lanes to an empire controlled colony.
+**Miner** ships earn PP by harvesting raw materials from inhospitable, unoccupied gas systems. They must have an uncontested path back across jump lanes to a friendly colony in order to deliver raw materials. Systems may only have one miner assigned per empire.
 
 Merchant Marine attributes are found in Section 9.
 
@@ -89,11 +91,11 @@ Merchant Marine attributes are found in Section 9.
 
 Combat ships are organized into squadrons. Each squadron is commanded by a flagship with a Command Rating (CR) that will accommodate ships with a Command Cost (CC) that sum to less than or equal to the CR. This enables players to tactically group various classes of ships to balance combat effectiveness.
 
-Squadrons fight as a unit and die as a unit. A squadron's total AS and DS values constitute a sum of all the ships under a flagship's command.
+Squadrons fight as a unit and die as a unit. A squadron's total AS and DS values constitute a sum of all the ships under a flagship's command (including itself).
 
 In non-hostile systems, ships in a squadron may be reassigned to an already existing squadron if the new flagship's CR allows. Squadrons may constitute a solo flagship. 
 
-Squadrons are newly commissioned only in systems with a functioning shipyard.
+Squadrons are only commissioned in systems with a functioning shipyard.
 
 Merchant Marine ships and Starbases do not join squadrons.
 
@@ -105,7 +107,7 @@ Merchant Marine ships and star bases may join a fleet for escort.
 
 ### 2\.3.4 Task Force
 
-A Task Force is temporary grouping of squadrons for the specialized purpose of combat. After the cesattion of hostilities the task force is disbanded and surviving squadrons return to their respective fleets.
+A Task Force is temporary grouping of squadrons organized for combat. After the cesattion of hostilities the task force is disbanded and surviving squadrons return to their respective fleets.
 
 Merchant marine ships aand Starbases do not join a Task Force. Refer to Combat procedures in Section 5.
 
@@ -113,7 +115,7 @@ Merchant marine ships aand Starbases do not join a Task Force. Refer to Combat p
 
 ### 2\.4.1 Fighter Squadrons & Carriers
 
-Fighters are commissioned in squadrons and guard their home systems. They are small ships that require a carrier to move between systems.
+Fighters are commissioned in squadrons and freely patrol their home systems. They are small ships that require a carrier to move between systems.
 
 There is no limit on the number of fighter squadrons deployed in a system, and they operate independently from carriers in said system.
 
