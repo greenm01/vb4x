@@ -295,11 +295,11 @@ Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by 
 
 Orphaned fighter squadrons are scuttled if there is no carrier capacity available for a retreat.
 
-Troop transports are captured and the Space Marines enslaved if their assigned escort fleet was destroyed or the transports were unescorted.
+Troop transports are captured and the Space Marines enslaved if their escort fleet was destroyed or the transports were unescorted at the commencement of hostilities.
 
-Merchant Marine Ships rejoin their original surviving escort fleets. If the fleet was destroyed or the ships were unescorted before combat, they are orphaned and captured as spoils of war.
+Merchant Marine Ships rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
 
-Like Starbases, Orbital Shipyards are too large to retreat in an orderly manner. They are scuttled.
+Like Starbases, Orbital Shipyards are too large to retreat in an expidited manner. They are rigged to self detonate before cature.
 
 This section is null if Section 5.3.1 is in effect.
 
