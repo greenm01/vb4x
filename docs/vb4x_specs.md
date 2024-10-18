@@ -11,7 +11,7 @@ Upstart Houses battle over a small region of space to dominate usurpers and seiz
 
 The game is designed to facilitate remote play between friends over email via Excel and Python scripting. Future releases will be server/client based and written in Rust.
 
-VB4X is intended to be a relatively simple and flexible framework; adapt it to your own requirements.
+VB4X is a flexible framework; adapt it to your own requirements.
 
 VB4X pays homage and incorporates ideas from the following great titles:
 
