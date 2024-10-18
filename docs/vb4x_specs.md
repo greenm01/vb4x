@@ -241,7 +241,7 @@ DS is a fixed constant that shall not be reduced at any time during sustained co
 
 | **Modified 1D10 Die Roll**            | **Combat Effectiveness Rating (CER)** |
 | ------------------------------------- | ------------------------------------- |
-| 0, 1, 2                               | One Quarter (0.25) (round up)         |
+| Less than zero, 0, 1, 2               | One Quarter (0.25) (round up)         |
 | 3, 4                                  | One Half (0.50) (round up)            |
 | 5, 6                                  | Three Quarters (0.75) (round up)      |
 | 7, 8                                  | One (1)                               |
@@ -250,13 +250,15 @@ DS is a fixed constant that shall not be reduced at any time during sustained co
 
 \* If the die roll is a natural nine before any required modification, then a critical hit is achieved
 
-**Battle Stations Preparedness Table**
+**Battle Stations Table**
 
 | **1D6 Roll**                          | **Battle Stations Modifier**          |
 | ------------------------------------- | ------------------------------------- |
-| 1,2                                   | Fleets are unprepared for battle (-1) |
-| 3,4                                   | Fleets are prepared for battle (0)    |
-| 5,6                                   | Fleets are fully prepared (1)         |
+| 1                                     | Crews are a distracted mess (-2)      |
+| 2                                     | Crews are scrambling (-1)             |
+| 3,4                                   | Crews are at the ready (0)            |
+| 5                                     | Crews are on point (1)                |
+| 6                                     | Crews are out for blood (2)           |
 
 **Ground Combat Results Table**
 
@@ -305,7 +307,7 @@ This section is null and void if Section 5.3.1 is in effect.
 
 ## 5\.4 Space Combat
 
-After Task Forces are formed for battle, combat commences in a series of rounds until one side is completely destroyed or manages a retreat.
+After Task Forces are aligned for battle, combat commences in a series of rounds until one side is completely destroyed or manages a retreat.
 
 Combat action is simultaneous; all squadrons have the opportunity to fire on enemy forces at least once, regardless of damage sustained during a round.
 
@@ -313,7 +315,7 @@ At the beginning of each combat round, players add up the total AS of their surv
 
 Players roll a die in accordance with The Space Combat Results Table to determine their CER, applying all applicable modifiers.
 
-The CER multiplied by AS represents the number of enemy hits.
+The CER multiplied by AS equals the number of enemy hits.
 
 **Die Roll Modifiers**
 
@@ -321,14 +323,14 @@ The CER multiplied by AS represents the number of enemy hits.
 
 - Scouts active in the Task Force: +1 max
 
-- Homeworld protected by shields in the battle system: -2 to opposing Task Forces   
+- Homeworld protected by shields in the contested system: -2 to opposing Task Forces   
 
 The player who rolled the die will determine where hits are applied within the following restrictions:
 1. If the number of hits equal the opposing squadron's DS, the unit is reduced.
 2. Squadrons are not destroyed until all other squadrons in the Task Force are crippled.
 3. Excess hits may be lost if restrictions apply.
 
-Crippled squadrons reduce their AS by multiplying by 0.5, rounded up the nearest whole number.
+Crippled squadrons multiply their AS by 0.5, rounded up the nearest whole number.
 
 Destroyed squadrons are no longer a factor and the Task Force loses their associated die roll modifiers (e.g. Scouts).
 
@@ -336,9 +338,9 @@ In computer moderated play, the algorithm will reduce squadrons with the greates
 
 ### 5\.4.1 Critical Hits
 
-Critical hits are a special case. Resctiction #2 above is nullified. 
+Critical hits are a special case. Restriction #2 above is nullified. 
 
-Additionally, if a player takes a critical hit and is unable to reduce a unit accordingto condition #1 above, then the squadron with the lowest DS is reduced.
+Additionally, if a player takes a critical hit and is unable to reduce a unit according to condition #1 above, then the squadron with the lowest DS is reduced.
 
 ### 5\.4.2 End of Round
 
