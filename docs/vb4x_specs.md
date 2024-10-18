@@ -301,7 +301,7 @@ Troop transports are captured and the Space Marines enslaved if their escort fle
 
 Merchant Marine Ships rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
 
-Like Starbases, Orbital Shipyards are too large and complex to retreat in an expidited manner. They are rigged to self detonate before capture.
+Like Starbases, Orbital Shipyards are too large and complex to retreat in an expedited manner. They are rigged to self detonate before capture.
 
 This section is null and void if Section 5.3.1 is in effect.
 
