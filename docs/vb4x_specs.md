@@ -147,7 +147,7 @@ Both types are manned and operated by civilian contractors and have no offensive
 
 Planetary shields and Ground Batteries are planet based assets that provide an extra layer of defense to an Empire's colonies.
 
-Planetary shields are restricted to homeworlds and provide system-wide electronic jamming that aids your Task Force in space combat on the home front. They also serve to protect your homeworld from orbital bombardment. They are restricted to one unit per homeworld.
+Planetary shields are restricted to homeworlds and provide system-wide electronic jamming that disrupt hostile forces assulting the mother-system. They also serve to protect your homeworld from orbital bombardment. They are restricted to one unit per homeworld.
 
 Ground batteries are immobile, low-tech, land based units that have the firepower of a battleship at half the cost. They lob kinetic shells into orbit and are not upgraded by technology and research.
 
