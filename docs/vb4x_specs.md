@@ -262,8 +262,7 @@ Attack Strength (AS) represents a unit's offensive firepower and is a mutable pr
 
 Defense Strength (DS) represents a unit's defensive shielding and is a constant property.
 
-**Reduced**
-Degradation of combat state.
+**Reduced**: Degradation of combat state.
 
 **Undamaged**: A unit’s life support systems, hull integrity, and weapons systems are fully operational.
 
