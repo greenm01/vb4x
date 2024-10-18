@@ -277,7 +277,7 @@ Task Forces assume the highest ROE of any fleet in their force.
 
 Fighter squadrons deploy to their player's respective Task Force as independent squadrons.
 
-Fleets that are cloaked, and remain undetected, may continue traveling through jump laned in a contested star system. Otherwise the fleet will join their player's respective Task Force for battle.
+Fleets that are cloaked, and remain undetected, may continue traveling through jump lanes in a contested star system. Otherwise the fleet will join their player's respective Task Force for battle.
 
 Starbases, Orbital Shipyards, Merchant Marine Ships, and Troop Transports are screened behind the Task Force during combat operations and do not engage.
 
