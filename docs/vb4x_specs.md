@@ -269,7 +269,7 @@ DS is a fixed constant that shall not be reduced at any time during sustained co
 
 ## 5\.2 Task Force Assignment
 
-All of a player’s fleets arriving at a star system in the same turn, and fleets already located in said system, are joined together into a single Task Force when battle commences between two or more enemies. Fleets are temporarily disbanded and their collective squadrons fight fight under the Task Force as a monolith.
+All of a player’s fleets arriving at a star system in the same turn, and fleets already located in said system, are joined together into a single Task Force when battle commences between two or more enemies. Fleets are temporarily disbanded and their collective squadrons fight under the Task Force as a monolith.
 
 Task Forces assume the highest ROE of any fleet in their force.
 
