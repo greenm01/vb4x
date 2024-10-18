@@ -256,7 +256,7 @@ DS is a fixed constant that shall not be reduced at any time during sustained co
 | ------------------------------------- | ------------------------------------- |
 | 1                                     | Crews are a distracted mess (-2)      |
 | 2                                     | Crews are scrambling (-1)             |
-| 3,4                                   | Crews are at the ready (0)            |
+| 3, 4                                  | Crews are at the ready (0)            |
 | 5                                     | Crews are on point (1)                |
 | 6                                     | Crews are out for blood (2)           |
 
@@ -275,7 +275,7 @@ All of a player’s fleets arriving at a star system in the same turn, and fleet
 
 Task Forces assume the highest ROE of any fleet in their force.
 
-Fighter squadrons join their player's respective Task Force as independent squadrons. Carriers deploy their fighter squadrons in a similar fashion.
+Fighter squadrons deploy to their player's respective Task Force as independent squadrons.
 
 Fleets that are cloaked, and remain undetected, may continue traveling through jump laned in a contested star system. Otherwise the fleet will join their player's respective Task Force for battle.
 
