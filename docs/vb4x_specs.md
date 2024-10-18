@@ -269,15 +269,15 @@ DS is a fixed constant that shall not be reduced at any time during sustained co
 
 ## 5\.2 Task Force Assignment
 
-All of a player’s fleets arriving at a star system in the same turn, and fleets already located in said system, are joined together into a single Task Force when battle commences between two or more enemies. Fleets are temporarily disbanded and their collective squadrons fight under the Task Force as a monolith.
+All of a player’s fleets arriving at a star system in the same turn, and fleets already located in said system, are joined together into a single Task Force when battle commences. Fleets are temporarily disbanded and their collective squadrons fight under the Task Force as a monolith.
 
 Task Forces assume the highest ROE of any fleet in their force.
 
-Fighter squadrons join their player's respective Task Force as independent squadrons. Hostile carriers deploy their own fighter squadrons in a similar fashion.
+Fighter squadrons join their player's respective Task Force as independent squadrons. Carriers deploy their fighter squadrons in a similar fashion.
 
-Fleets that are cloaked, and remain undetected, may continue traveling in hyperspace through a contested star system. Otherwise the fleet will join their player's respective Task Force for battle.
+Fleets that are cloaked, and remain undetected, may continue traveling through jump laned in a contested star system. Otherwise the fleet will join their player's respective Task Force for battle.
 
-Starbases, Orbital Shipyards, Merchant Marine Ships, and Troop Transports are screened behind the Task Force during combat operations and do not take damage.
+Starbases, Orbital Shipyards, Merchant Marine Ships, and Troop Transports are screened behind the Task Force during combat operations and do not engage.
 
 ## 5\.3 Retreat
 
@@ -299,9 +299,9 @@ Troop transports are captured and the Space Marines enslaved if their escort fle
 
 Merchant Marine Ships rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
 
-Like Starbases, Orbital Shipyards are too large to retreat in an expidited manner. They are rigged to self detonate before cature.
+Like Starbases, Orbital Shipyards are too large and complex to retreat in an expidited manner. They are rigged to self detonate before capture.
 
-This section is null if Section 5.3.1 is in effect.
+This section is null and void if Section 5.3.1 is in effect.
 
 ## 5\.4 Space Combat
 
@@ -309,35 +309,48 @@ After Task Forces are formed for battle, combat commences in a series of rounds 
 
 Combat action is simultaneous; all squadrons have the opportunity to fire on enemy forces at least once, regardless of damage sustained during a round.
 
-In the first combat round only, both players roll on the Battle Stations Preparedness Table listed in 5.1. The result is applied as a die roll modifier when rolling for the CER in *round one only*.
+At the beginning of each combat round, players add up the total AS of their surviving squadrons. The total value is then modified by the following:
 
-At the beginning of each combat round, players add up the total AS of their remaining squadrons. The total value is then modified by the following:
-
-Players roll a die in accordance with The Space Combat Results Table to determine their CER, applying modifiers.
+Players roll a die in accordance with The Space Combat Results Table to determine their CER, applying all applicable modifiers.
 
 The CER multiplied by AS represents the number of enemy hits.
 
 **Die Roll Modifiers**
 
-- Battle Stations Preparedness Table
+- Battle Stations Table: Roll every round
 
-- Scouts (**\+1 max)**
+- Scouts active in the Task Force: +1 max
 
-- Homeworld shields (**\-2 to the opposing player's roll)** 
+- Homeworld protected by shields in the battle system: -2 to opposing Task Forces   
 
-Players receiving hits will decide which of their squadrons are crippled or destroyed. Crippled squadrons reduce their AS by multiplying by 0.5, rounded up the nearest whole number. Destroyed squadrons are no longer a factor and the Task Force loses their associated die roll modifiers (e.g. Scouts).
+The player who rolled the die will determine where hits are applied within the following restrictions:
+1. If the number of hits equal the opposing squadron's DS, the unit is reduced.
+2. Squadrons are not destroyed until all other squadrons in the Task Force are crippled.
+3. Excess hits may be lost if restrictions apply.
 
-All hits are applied, although some hits may be left-over and ineffective if a squadron’s DS blocks it.
+Crippled squadrons reduce their AS by multiplying by 0.5, rounded up the nearest whole number.
 
-In computer moderated play, the algorithm will reduce squadrons with the lowest AS in order to sustain maximum offensive power for the Task Force. Die roll modifiers are a factor in the calculation.
+Destroyed squadrons are no longer a factor and the Task Force loses their associated die roll modifiers (e.g. Scouts).
 
-Squadrons are not reduced and destroyed until all other squadrons in the Task Force are already crippled.
+In computer moderated play, the algorithm will reduce squadrons with the greatest AS to ensure maximum damage, within restrictions.
 
-Critical hits are the exception to the aforementioned rule. The squadron with the highest rated AS is reduced, regardless of DS.
+### 5\.4.1 Critical Hits
 
-After the last round of combat the surviving Task Forces are disbanded and squadrons rejoin their assigned fleets. 
+Critical hits are a special case. Resctiction #2 above is nullified. 
 
-Example Combat Round:
+Additionally, if a player takes a critical hit and is unable to reduce a unit accordingto condition #1 above, then the squadron with the lowest DS is reduced.
+
+### 5\.4.2 End of Round
+
+After all hits are applied and squadrons are appropriately reduced (crippled or destroyed), the next round commences via the same procedure above.
+
+### 5\.4.3 End of Combat
+
+After the last round of combat the surviving Task Forces are disbanded and surviving squadrons rejoin their assigned fleets. 
+
+Retreating Task Forces must comply with the rules in Section 5.3.
+
+### 5\.4.4 Example Combat
 
 ## 5\.5 Starbases
 
