@@ -9,9 +9,7 @@ VB4X is an asychronous turn based wargame of the classic eXplore, eXpand, eXploi
 
 Upstart Houses battle over a small region of space to dominate usurpers and seize the imperial throne. The game begins at the dawn of the third imperium in the year 2001. Each turn comprises one month of a thirteen month [Terran Computational Calendar](<https://www.terrancalendar.com/> "Terran Computational Calendar"). Turns cycle every 24-hours in real life (IRL) time.
 
-The game is designed to facilitate remote play between friends over email via Excel and Python scripting. Future releases will be server/client based and written in Rust.
-
-VB4X is a flexible framework; adapt it to your own requirements.
+The game is designed to facilitate remote play between friends over email via Excel and Python scripting. Future releases will be server/client based and written in Rust. VB4X is a flexible framework; adapt it to your own requirements.
 
 VB4X pays homage and incorporates ideas from the following great titles:
 
