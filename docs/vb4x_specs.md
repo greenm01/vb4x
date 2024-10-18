@@ -277,9 +277,7 @@ Fighter squadrons join their player's respective Task Force as independent squad
 
 Fleets that are cloaked, and remain undetected, may continue traveling in hyperspace through a contested star system. Otherwise the fleet will join their player's respective Task Force for battle.
 
-Escorted assets and Troop Transports are screened behind the Task Force during combat operations and do not take damage.
-
-Starbases do not join or fight alongside a Task Force. 
+Starbases, Orbital Shipyards, Merchant Marine Ships, and Troop Transports are screened behind the Task Force during combat operations and do not take damage.
 
 ## 5\.3 Retreat
 
@@ -289,17 +287,21 @@ A retreating Task Force will fall back to their original fleet formations and fl
 
 ### 5\.3.1 Starbases
 
-Starbases never retreat from a solar systen because of their massive size. They are too slow to maneuver.
+Starbases never retreat from a solar system because of their massive size. They are too slow to maneuver.
 
-If the Starbase was escorted into a solar system at the onset of combat, refer to Section 5.5 for handling orphaned assets. 
+Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by a fleeing Task Force. 
 
-### 5\.3.2 Orphaned Fighters and Other Assets
+### 5\.3.2 Fighter Squadrons, Troop Transports, Merchant Marine Units, and Orbital Shipyards
 
-Orphaned fighter squadrons are scuttled if there is no carrier capacity available.
+Orphaned fighter squadrons are scuttled if there is no carrier capacity available for a retreat.
 
-Screened assets rejoin their surviving escort fleets. If the fleet was destroyed they are orphaned and captured as spoils of war.
+Troop transports are captured and the Space Marines enslaved if their assigned escort fleet was destroyed or the transports were unescorted.
 
-Both of these cases are null if 5.3.1 is in effect.
+Merchant Marine Ships rejoin their original surviving escort fleets. If the fleet was destroyed or the ships were unescorted before combat, they are orphaned and captured as spoils of war.
+
+Like Starbases, Orbital Shipyards are too large to retreat in an orderly manner. They are scuttled.
+
+This section is null if Section 5.3.1 is in effect.
 
 ## 5\.4 Space Combat
 
