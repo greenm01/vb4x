@@ -346,9 +346,9 @@ In computer moderated play, the algorithm will reduce opposing squadrons with th
 
 ### 5\.4.1 Critical Hits
 
-Critical hits are a special case. Restriction /#2 above is nullified. 
+Critical hits are a special case. Restriction \#2 above is nullified. 
 
-Additionally, if a player takes a critical hit and is unable to reduce a unit according to condition /#1 above, then the squadron with the lowest DS is reduced.
+Additionally, if a player takes a critical hit and is unable to reduce a unit according to condition \#1 above, then the squadron with the lowest DS is reduced.
 
 ### 5\.4.2 End of Round
 
