@@ -287,11 +287,19 @@ A Task Force may retreat from combat only after the first round of combat, in ac
 
 A retreating Task Force will fall back to their original fleet formations and flee to the closest non-hostile star system.
 
-Orphaned fighter squadrons are scuttled if there is no remaining carrier capacity during a retreat.
+### 5\.3.1 Starbases
 
-Escorted assets rejoin their surviving fleets during a retreat. If the fleet was destroyed they are captured as spoils of war, with the exception of the scenario described in section 5.5.
+Starbases never retreat from a solar systen because of their massive size. They are too slow to maneuver.
 
-Starbases do not retreat.
+If the Starbase was escorted into a solar system at the onset of combat, refer to Section 5.5 for handling orphaned assets. 
+
+### 5\.3.2 Orphaned Fighters and Other Assets
+
+Orphaned fighter squadrons are scuttled if there is no carrier capacity available.
+
+Screened assets rejoin their surviving escort fleets. If the fleet was destroyed they are orphaned and captured as spoils of war.
+
+Both of these cases are null if 5.3.1 is in effect.
 
 ## 5\.4 Space Combat
 
