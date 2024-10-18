@@ -129,7 +129,7 @@ Fleets containing a Raider have a 33% chance (roll 1 or 2 on a 1D6) of going und
 
 Starbases are powerful orbital fortresses that facilitate planetary defense and economic development via ground weather modification and advanced telecommunications. These powerful sentinels are limited to one operational unit per solar system.
 
-Starbases require five months (five turns) to construct and require an orbital shipyard to build. They may be destroyed by hostile forces while under construction. The invested PP are lost forever. Unfinished Starbases may not contribute to defense and their benefits do not incur until 100% complete.
+Starbases require five months (five turns) to construct and require an orbital shipyard to build.
 
 Starbases boost the morale of a colony by XYZ and production by XYZ every turn. Crippled Starbases operate at 50% capacity and contribute half their normal moral and PP to the colony.
 
