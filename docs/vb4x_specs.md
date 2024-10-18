@@ -379,7 +379,7 @@ Starbases are defensive citadels that are equipped with advanced sensors and mas
 
 ### 5\.5.2 Abandoned Starbase
 
-In the special circumstance that an escorted Starbase is orphaned by a retreating Task Force, the Starbase will screen other orphans and proceed straight to combat against hostile forces in accordance with Section 5.5.1.
+In the special circumstance that a Starbase is orphaned by a retreating Task Force, the Starbase will screen other orphans and proceed straight to combat against hostile forces in accordance with Section 5.5.1.
 
 ## 5\.6 Planetary Bombardment
 
