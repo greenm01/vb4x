@@ -34,7 +34,7 @@ The starmap consists of a 2D hexagonal grid, each a flat-top hex that contains a
 
 The map takes inspiration from VBAM, and the 1st or 2nd edition campaign guides may be used to spawn a random map. The method is briefly explained below.
 
-The center of the map is a special hub occupied by the last holdouts of the former imperial Empire. This system is heavily guarded by fighter squadrons and the home planet and is similarly fortified against invasion. The former Emperor has no offensive Naval assets to speak off, which were scuttled by their crews at the height of the collapse. This is prime territory ripe for the taking. He who controls the hub holds great strategic power.
+The center of the map is a special hub occupied by the last holdouts of the former imperial Empire. This system is heavily guarded by fighter squadrons and the home planet and is similarly fortified against invasion. The former Emperor has no offensive forces to speak of, which were scuttled by their crews at the height of the collapse. This is prime territory ripe for the taking. He who controls the hub holds great strategic power.
 
 Solar systems have special traits and are procedural generated. Some are rocky atmospheric planets similar to earth and prime for colonization, the former occupants nuked by the mad imperial emperor. Others host rocky barren planets with little to no atmosphere that require terraforming before settlement. The remaining solar systems are filled with gas giants, hostile moons, and asteroids belts that are only only good for hosting bases and mining operations.
 
@@ -42,7 +42,9 @@ There are three classes of jump lanes: restricted, minor, and major. The hub is 
 
 Movement across the lanes is explained in Section 4.
 
-Players start the game with one homeworld and 50 Production Points (PP), one spaceport, one shipyard, two ETACs, a cruiser, two destroyers, and a scout. Each player's homeworld should be placed on the outer ring, as far as strategically possible from enemy home sector(s).
+Players start the game with one homeworld and 50 Production Points (PP), one spaceport, one shipyard, one fully loaded ETAC, a cruiser, two destroyers, and a scout. 
+
+Each player's homeworld should be placed on the outer ring, as far as strategically possible from enemy home system(s).
 
 ## 2\.2 Planets
 
@@ -60,15 +62,15 @@ Colonization takes one turn to complete.
 
 ### 2\.3.1 Ships
 
-#### 2\.3.1.1 Combat Ships
+#### 2\.3.1.1 Space Force
 
-The base game includes a number of imperial classed combatants, listed in Section 9.
+The base game includes a number of imperial classed space combatants, listed in Section 9.
 
 Feel free to create your own ships and races for asymmetrical warfare or narrative purposes.
 
-#### 2\.3.1.2 Merchant Marine Ships
+#### 2\.3.1.2 Merchant Marine
 
-Merchant marine ships are civilian crewed ships that provide logistal and economic support for the House. They have no weapons technology or defense, and are easily captured or destroyed by enemy combat ships. Guard them wisely with military escorts.
+The Merchant marine fleet comprises civilian crewed ships that provide commerse and transport services for the House. They have no weapons technology or defense, and are easily captured or destroyed by enemy combat ships. Guard them wisely with military escorts.
 
 Merchant Marine attributes are listed in Section 9.
 
@@ -90,15 +92,13 @@ Miners earn PP by harvesting raw materials from inhospitable, unoccupied gas sys
 
 ##### 2.3.1.2.4 Transport
 
-Transports are large ships used to ferry PUs or Space Marines between systems.
+Transports are large ships used to ferry PUs or Space Marines between systems. They have a CL of one.
 
 This ship will drop Marines on an enemy planet during an invasion or blitz. They also transfer population between colonies.
 
-They have a CL of one.
-
 ### 2\.3.2 Squadrons
 
-Combat ships are organized into squadrons. Each squadron is commanded by a flagship with a Command Rating (CR) that will accommodate ships with a Command Cost (CC) that sum to less than or equal to the CR. This enables players to tactically group various classes of ships to balance combat effectiveness.
+The Space Force is organized by squadrons. Each squadron is commanded by a flagship with a Command Rating (CR) that will accommodate ships with a Command Cost (CC) that sum to less than or equal to the CR. This enables players to tactically group various classes of ships to balance combat effectiveness.
 
 Squadrons fight as a unit and die as a unit. A squadron's total AS and DS values constitute a sum of all the ships under a flagship's command (including itself).
 
@@ -204,7 +204,7 @@ TODO: discuss production capacity.
 
 Ship repairs require a shipyard. The cost of repair equals one quarter (25%) of the unit's PC.
 
-Example: A player wishes to repair a crippled tech-level III Cruiser. The cost is 7 * 0.5 = 3.5 PP.
+Example: A player wishes to repair a crippled tech-level III Cruiser. The cost is 7 * 0.25 = 1.75 PP.
 
 The logistics of repairing a ship planetside and returning it to orbit make it ecoconomically infeasable. Ships may be scrapped at a colony without restriction and earn 50% of the original PC back to the House treasury.
 
@@ -299,11 +299,11 @@ roll at the beginning of every combat round. The fog of war lends to chaos and u
 
 ### 5\.1.4 Combat State
 
-Combat ships are either undamaged, crippled, or destroyed.
+Space Force ships are either undamaged, crippled, or destroyed.
 
-Attack Strength (AS) represents a unit's offensive firepower and is a mutable property.
+Attack Strength (AS) represents a unit's offensive firepower and is a mutable type.
 
-Defense Strength (DS) represents a unit's defensive shielding and is a constant property.
+Defense Strength (DS) represents a unit's defensive shielding and is a constant type.
 
 **Reduced**: Degradation of combat state.
 
@@ -349,7 +349,7 @@ Starbases never retreat from a solar system because of their massive size. They 
 
 Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by a fleeing Task Force.
 
-### 5\.3.2 Fighter Squadrons, Troop Transports, Merchant Marine Units, and Orbital Shipyards
+### 5\.3.2 Fighter Squadrons, Merchant Marine Units, & Shipyards
 
 Orphaned fighter squadrons are scuttled if there is no carrier capacity available during a retreat.
 
@@ -357,11 +357,13 @@ Transports are captured and PUs enslaved if their escort fleet was destroyed or 
 
 Other Merchant Marine Ships rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
 
-Like Starbases, Orbital Shipyards are too large and complex to retreat in an expedited manner. They are rigged to self detonate before capture.
+Like Starbases, Orbital Shipyards are too large and complex to retreat in an expedited manner. They are rigged to self-detonate before capture.
 
 This section is null and void if Section 5.3.1 is in effect.
 
 ## 5\.4 Space Combat
+
+### 5.4.1 Rounds
 
 After Task Forces are aligned for battle, combat commences in a series of rounds until one side is completely destroyed or manages a retreat.
 
@@ -381,7 +383,7 @@ The CER multiplied by AS equals the number of total enemy hits.
 - Cloaked Ambush: +4 (first round only)
 - Opposing homeworld defended by shields: -2
 
-The player who rolled the die will determine where hits are applied within the following restrictions:
+The player who rolled the die will determine where hits are applied within the following **restrictions**:
 
 1. If the number of hits equal the opposing squadron's DS, the unit is reduced.
 2. Squadrons are not destroyed until all other squadrons in the Task Force are crippled.
@@ -393,23 +395,23 @@ Destroyed squadrons are no longer a factor and the Task Force loses their associ
 
 In computer moderated play, the algorithm will reduce opposing squadrons with the greatest AS, within restrictions.
 
-### 5\.4.1 Critical Hits
+### 5\.4.2 Critical Hits
 
 Critical hits are a special case. Restriction \#2 above is nullified.
 
-Additionally, if a player takes a critical hit and is unable to reduce a unit according to condition \#1 above, then the squadron with the lowest DS is reduced.
+Additionally, if a player takes a critical hit and is unable to reduce a unit according to restriction \#1 above, then the squadron with the lowest DS is reduced.
 
-### 5\.4.2 End of Round
+### 5\.4.3 End of Round
 
 After all hits are applied and squadrons are appropriately reduced (crippled or destroyed), the next round commences via the same procedure above.
 
-### 5\.4.3 End of Combat
+### 5\.4.4 End of Combat
 
 After the last round of combat the surviving Task Forces are disbanded and surviving squadrons rejoin their assigned fleets.
 
 Retreating Task Forces must comply with the rules in Section 5.3.
 
-### 5\.4.4 Example Combat
+### 5\.4.5 Example Combat
 
 TODO
 
@@ -452,11 +454,11 @@ Technology upgrades may be purchased in the first and sixth months of the Terran
 
 # 9\.0 Asset Tables
 
-## 9\.1 Imperial Navy
+## 9\.1 Imperial Space Force
 
-PC = Production Cost, MC = Maintenance Cost, AS = Attack Strength, DS = Defensive Strength,
+PC = Production Cost, MC = Maintenance Cost, AS = Attack Strength, 
 
-CC= Command Cost, CR = Command Rating, CL = Carry Limit
+DS = Defensive Strength, CC= Command Cost, CR = Command Rating, CL = Carry Limit
 
 | Class | Name             | PC  | MC    | AS  | DS  | CC  | CR  | CL  |
 |:-----:| ---------------- |:---:|:-----:|:---:|:---:|:---:|:---:|:---:|
@@ -471,7 +473,7 @@ CC= Command Cost, CR = Command Rating, CL = Carry Limit
 | CX    | Super Carrier    | 10  | 1\.5  | 1   | 9   | 4   | 10  | 5   |
 | FR    | Fighter Squadron | 3   | 0\.2  | 3   | 2   | 0   | 0   | 0   |
 | RR    | Raider           | 7   | 0\.5  | 4   | 6   | 3   | 4   | 0   |
-| SC    | Scout            | 5   | 0\.1  | 0   | 1   | 2   | 0   | 0   |
+| SC    | Scout            | 5   | 0\.1  | 0   | 1   | 1   | 0   | 0   |
 | SB    | Starbase         | 50  | 2     | 35  | 50  | 0   | 0   | 0   |
 
 ## 9\.2 Merchant Marine
@@ -484,7 +486,7 @@ CC= Command Cost, CR = Command Rating, CL = Carry Limit
 | SS        | Shipyard  | 25     | 1   | 0   |
 | TT        | Transport | 5      | 0.2 | 1   |
 
-## 9\.3 Ground Based Units
+## 9\.3 Planet Based Units
 
 | **Class** | **Name**         | **PC** | MC  |
 |:---------:| ---------------- |:------:|:---:|
