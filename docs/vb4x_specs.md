@@ -42,7 +42,7 @@ There are three classes of jump lanes: restricted, minor, and major. The hub is 
 
 Movement across the lanes is explained in Section 4.
 
-Players start the game with one homeworld, 50 production points, a planetary shipyard, two ETACs, a cruiser, two destroyers, and a scout. Each player's homeworld should be placed on the outer ring, as far as strategically possible from enemy home sector(s).
+Players start the game with one homeworld and 50 Production Points (PP), one spaceport, one shipyard, two ETACs, a cruiser, two destroyers, and a scout. Each player's homeworld should be placed on the outer ring, as far as strategically possible from enemy home sector(s).
 
 ## 2\.2 Planets
 
@@ -52,7 +52,7 @@ TODO: explain planet properties and formation.
 
 ### 2\.2.2 Terraforming and Colonization
 
-Terraforming time takes XYZ turns to complete. 
+Terraforming time takes XYZ turns to complete.
 
 Colonization takes one turn to complete.
 
@@ -62,7 +62,7 @@ Colonization takes one turn to complete.
 
 #### 2\.3.1.1 Combat Ships
 
-The base game includes a number of imperial classed combatants, listed in Section 9. 
+The base game includes a number of imperial classed combatants, listed in Section 9.
 
 Feel free to create your own ships and races for asymmetrical warfare or narrative purposes.
 
@@ -84,7 +84,7 @@ Combat ships are organized into squadrons. Each squadron is commanded by a flags
 
 Squadrons fight as a unit and die as a unit. A squadron's total AS and DS values constitute a sum of all the ships under a flagship's command (including itself).
 
-In non-hostile systems, ships in a squadron may be reassigned to an already existing squadron if the new flagship's CR allows. Squadrons may constitute a solo flagship. 
+In non-hostile systems, ships in a squadron may be reassigned to an already existing squadron if the new flagship's CR allows. Squadrons may constitute a solo flagship.
 
 Squadrons are only commissioned in systems with a functioning shipyard.
 
@@ -100,11 +100,11 @@ A Task Force is temporary grouping of squadrons organized for combat. After the 
 
 ### 2\.4.1 Fighter Squadrons & Carriers
 
-Fighters are commissioned in squadrons and freely patrol solar systems. They are small ships that require a carrier to move between systems.
+Fighters are small ships commissioned in squadrons that freely patrol a solar system. 
 
 There is no limit on the number of fighter squadrons deployed in a system, and they operate independently from carriers in said system.
 
-Carriers hold up to three fighter squadrons. Super carriers hold up to five.
+Carriers hold up to three fighter squadrons. Super carriers hold up to five. Carriers are constructed in orbital shipyards.
 
 ### 2\.4.2 Scouts
 
@@ -120,21 +120,21 @@ Fleets containing a Raider have a 33% chance (roll 1 or 2 on a 1D6) of going und
 
 Starbases are powerful orbital fortresses that facilitate planetary defense and economic development via ground weather modification and advanced telecommunications. These powerful sentinels are limited to one operational unit per solar system.
 
-Starbases require five months (five turns) to construct and require an orbital shipyard to build.
+Starbases require five months (five turns) to construct at a shipyard.
 
-Starbases boost the morale of a colony by XYZ and production by XYZ every turn. Crippled Starbases operate at 50% capacity and contribute half their normal moral and PP to the colony.
+Starbases boost the morale of a colony by XYZ and production by XYZ every turn. Crippled starbases operate at 50% capacity and contribute half their normal moral and PP to the colony.
 
-### 2\.4.5 Shipyards
+### 2.4.5 Spaceports
 
-There are two classes of shipyards: planetary and orbital. There is no limit to the number of shipyards located in a solar system. 
+Spaceports require two months (two turns) to construct planetside, and are used for launching heavy-lift ships and equipment into orbit.
 
-Planetary Shipyards require two months (two turns) to construct and Orbital Shipyards require three months (three turns) to construct. 
+### 2\.4.6 Shipyards
 
-Planetary yards are immobile, although they are defended by planetary resources during an attack.
+Shipyards are gateways to the stars. They are large bases constructed in orbit and require a spaceport to build over a period of three months (three turns).
 
-Both types are manned and operated by civilian contractors and have no offensive or defensive capability.
+The majority of ship construction and repair will occur at these important facilities. 
 
-### 2\.4.6 Planetary Shields & Ground Batteries
+### 2\.4.7 Planetary Shields & Ground Batteries
 
 Planetary shields and Ground Batteries are planet based assets that provide an extra layer of defense to an player's colonies.
 
@@ -144,7 +144,7 @@ Ground batteries are immobile, low-tech, land based units that have the firepowe
 
 Ground batteries are the only units that are constructed in the span of a single turn. Colonies may build them to no limit.
 
-### 2\.4.7 Troop Transports, Space Marines, & Armies
+### 2\.4.8 Troop Transports, Space Marines, & Armies
 
 Troop transports are large size ships used to taxi Space Marines from one planet to another. It holds one Marine division and is not armed. This ship will drop troops on an enemy planet during an invasion or blitz.
 
@@ -154,17 +154,43 @@ Space Marines are ferocious devil dogs that capture enemy planets. They deploy i
 
 Armies garrison your colonies and eradicate invaders. Their orders are to take no prisoners and protect the colony at all cost.
 
-## 2\.5 Asset Construction, Repair, and Tech Upgrades
+## 2.5 Asset Construction & Repair
 
-Asset construction, repair, and tech upgrades are performed at planetary and orbital shipyards. Construction capacity at the yard is limited by the colony's total production capacity value, regardless of PP in the House's treasury.
+Construction (and repair) of House assets is accomplished planetside or in orbit, with restrictions.  
 
-Military ships may be upgraded with weapons tech unless otherwise specified. Ground units and planetary shields may not.
+The number of turns required to newly construct an asset, unless otherwise specified, is equal to the PC times 0.5 (rounded down). Assets remain decomissioned through the activity period.
 
-Orbital shipyards stationed in uninhabited gas systems are limited by the mining capacity of the system.
+### 2.5.1 Planetside Construction
 
-The number of turns required to construct an asset, unless otherwise specified, is equal to the PC times 0.5 (rounded down). Assets remain docked in the shipyard through the construction period. If the yard is destroyed, the uncomissioned assets are destroyed along with the PP invested.
+The construction capacity of a system is equal to its colony's gross output (current productivity multiplied by mining potential).
 
-The act of raising Armies and Space Marines, building Ground Betteries, and installing Planetary Shields does not require a shipyard.
+Ground units and fighter squadrons are produced via colony industry, distributed across the surface or in underground factories.
+
+Each turn, the maximum number of units under construction planetside is equal to the colony census. Larger population colonies are able to produce faster.
+
+Ships (excluding fighter squadrons) constructed planetside incur a 100% PC increase due to the added cost of orbital launch, and require a spaceport to commission.
+
+### 2.5.2 Planetside Repair
+
+Ground units and fighter squadrons are repaired and refitted planetside.
+
+TODO: discuss production capacity.
+
+### 2.5.3 Orbital Construction
+
+Shipyard construction of a ship in orbit is the standard method of commissioning a vessel, and incurs no penalty.
+
+TODO: discuss production capacity.  
+
+### 2.5.4 Orbital Repair
+
+Ship repairs require a shipyard. The cost of repair equals one quarter (25%) of the unit's PC.
+
+Example: A player wishes to repair a crippled tech-level III Cruiser. The cost is 7 * 0.5 = 3.5 PP.
+
+The logistics of repairing a ship planetside and returning it to orbit make it ecoconomically infeasable. Ships may be scrapped at a colony without restriction and earn 50% of the original PC back to the House treasury.
+
+TODO: discuss production capacity.
 
 # 3\.0 Turn Sequence
 
@@ -199,6 +225,7 @@ Merchant Marine ships may join a fleet for escort.
 ## 5\.1 Basic Principles
 
 ### 5\.1.1 Rules of Engagement (ROE)
+
 ROE dictates how aggressive your fleet will respond when engaging with the enemy from a scale of 0 to 10. The higher the ROE, the more aggressive your fleet will engage with enemy fleets of increasing relative strength to your own. With a low ROE, your fleet will attempt to retreat more readily when engaged in combat. A low ROE does not guarantee survival against a more powerful fleet. Once engaged, fleets have the opportunity to retreat only after the first round of combat.
 
 | **ROE** | **ORDERS**                                             |
@@ -215,31 +242,32 @@ ROE dictates how aggressive your fleet will respond when engaging with the enemy
 | 09      | Engage hostile forces even if outgunned 3:1.           |
 | 10      | Engage hostile forces regardless of their size.        |
 
+### 5\.1.2 Combat Effectiveness Rating (CER)
 
-### 5\.1.2 Combat Effectiveness Rating (CER) 
 A modified 1d10 roll applied to a combat unit’s AS for the purposes of reducing your opponent’s forces. There are two separate CER tables, one for space combat and another for ground combat.
 
-| **Modified 1D10 Die Roll** | **Space Combat CER** |
-| -------------------------- | ------------------------------------- |
-| Less than zero, 0, 1, 2    | One Quarter (0.25) (round up)         |
-| 3, 4                       | One Half (0.50) (round up)            |
-| 5, 6                       | Three Quarters (0.75) (round up)      |
-| 7, 8                       | One (1)                               |
-| 9                          | One\* (1)                             |
-| 9+                         | One (1)                               |
+| **Modified 1D10 Die Roll** | **Space Combat CER**             |
+| -------------------------- | -------------------------------- |
+| Less than zero, 0, 1, 2    | One Quarter (0.25) (round up)    |
+| 3, 4                       | One Half (0.50) (round up)       |
+| 5, 6                       | Three Quarters (0.75) (round up) |
+| 7, 8                       | One (1)                          |
+| 9                          | One\* (1)                        |
+| 9+                         | One (1)                          |
 
 \*If the die roll is a natural nine before any required modification, then a critical hit is achieved
 
-| **Modified 1D10 Die Roll** | **Ground Combat CER** |
-| -------------------------- | ------------------------------------- |
-| Less than zero, 0, 1, 2    | One Half (0.5) (round up)             |
-| 3, 4, 5, 6                 | One (1)                               |
-| 7, 8                       | One and a half (1.5) (round up)       |
-| 9 or more                  | Two (2)                               |
+| **Modified 1D10 Die Roll** | **Ground Combat CER**           |
+| -------------------------- | ------------------------------- |
+| Less than zero, 0, 1, 2    | One Half (0.5) (round up)       |
+| 3, 4, 5, 6                 | One (1)                         |
+| 7, 8                       | One and a half (1.5) (round up) |
+| 9 or more                  | Two (2)                         |
 
 Critial hits do not apply to ground combat.
 
 ### 5\.1.3 Battle Stations Preparadness
+
 A battle stations preparadness modifier is applied to a player's CER
 roll at the beginning of every combat round. The fog of war lends to chaos and unpredictable human behavior under mortal stress.
 
@@ -252,7 +280,8 @@ roll at the beginning of every combat round. The fog of war lends to chaos and u
 | 6            | Crews are out for blood (2)      |
 
 ### 5\.1.4 Combat State
-Combat ships are either undamaged, crippled, or destroyed. 
+
+Combat ships are either undamaged, crippled, or destroyed.
 
 Attack Strength (AS) represents a unit's offensive firepower and is a mutable property.
 
@@ -262,7 +291,7 @@ Defense Strength (DS) represents a unit's defensive shielding and is a constant 
 
 **Undamaged**: A unit’s life support systems, hull integrity, and weapons systems are fully operational.
 
-**Crippled**: When an undamaged unit’s DS is equaled in battle by hits, that unit’s primary defensive shielding is compromised and the unit is reduced to a crippled combat state. AS is reduced by half. 
+**Crippled**: When an undamaged unit’s DS is equaled in battle by hits, that unit’s primary defensive shielding is compromised and the unit is reduced to a crippled combat state. AS is reduced by half.
 
 **Destroyed**: In a crippled combat state, hits equal to DS reduces a unit's state to destroyed. The unit is dead and unrecoverable.
 
@@ -298,7 +327,7 @@ A retreating Task Force will fall back to their original fleet formations and fl
 
 Starbases never retreat from a solar system because of their massive size. They are too slow to maneuver.
 
-Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by a fleeing Task Force. 
+Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by a fleeing Task Force.
 
 ### 5\.3.2 Fighter Squadrons, Troop Transports, Merchant Marine Units, and Orbital Shipyards
 
@@ -330,7 +359,7 @@ The CER multiplied by AS equals the number of total enemy hits.
 - Scouts: +1 max
 - Cloaked Surprise: +3 (first round only)
 - Cloaked Ambush: +4 (first round only)
-- Opposing homeworld defended by shields: -2   
+- Opposing homeworld defended by shields: -2
 
 The player who rolled the die will determine where hits are applied within the following restrictions:
 
@@ -346,7 +375,7 @@ In computer moderated play, the algorithm will reduce opposing squadrons with th
 
 ### 5\.4.1 Critical Hits
 
-Critical hits are a special case. Restriction \#2 above is nullified. 
+Critical hits are a special case. Restriction \#2 above is nullified.
 
 Additionally, if a player takes a critical hit and is unable to reduce a unit according to condition \#1 above, then the squadron with the lowest DS is reduced.
 
@@ -356,7 +385,7 @@ After all hits are applied and squadrons are appropriately reduced (crippled or 
 
 ### 5\.4.3 End of Combat
 
-After the last round of combat the surviving Task Forces are disbanded and surviving squadrons rejoin their assigned fleets. 
+After the last round of combat the surviving Task Forces are disbanded and surviving squadrons rejoin their assigned fleets.
 
 Retreating Task Forces must comply with the rules in Section 5.3.
 
@@ -371,6 +400,7 @@ TODO
 If a hostile fleet has orders to bombard, invade, or blitz a colony, a Starbase is the first line of defense after the Task Force.
 
 Combat will proceed in a smiliar fashion to Section 5.4, with the following restrictions:
+
 1. Starbases are immune from Critial Hits
 2. Starbases deal Critical Hits
 3. Starbases receive an extra +1 die roll modifier
@@ -409,40 +439,40 @@ PC = Production Cost, MC = Maintenance Cost, AS = Attack Strength, DS = Defensiv
 
 CC= Command Cost, CR = Command Rating, CV = Carry Limit
 
-| Class | Name             | PC  | MC   | AS  | DS  | CC  | CR  | CL  |
-| ----- | ---------------- | --- | ---- | --- | --- | --- | --- | --- |
-| CT    | Corvette         | 2   | 0\.1 | 1   | 2   | 1   | 2   | 0   |
-| FF    | Frigate          | 3   | 0\.2 | 2   | 3   | 2   | 3   | 0   |
-| DD    | Destroyer        | 4   | 0\.3 | 3   | 4   | 2   | 4   | 0   |
-| CA    | Cruiser          | 5   | 0\.4 | 4   | 5   | 3   | 6   | 0   |
-| BC    | Battle Cruiser   | 6   | 0\.5 | 4   | 6   | 3   | 8   | 0   |
-| BB    | Battleship       | 8   | 1\.0 | 6   | 8   | 3   | 9   | 0   |
-| DN    | Dreadnought      | 10  | 1\.5 | 9   | 9   | 4   | 10  | 0   |
-| CV    | Carrier          | 8   | 1\.0 | 1   | 6   | 3   | 8   | 3   |
-| CX    | Super Carrier    | 10  | 1\.5 | 1   | 9   | 4   | 10  | 5   |
-| FR    | Fighter Squadron | 3   | 0\.2 | 3   | 2   | 0   | 0   | 0   |
-| RR    | Raider           | 7   | 0\.6 | 4   | 6   | 3   | 4   | 0   |
-| SC    | Scout            | 5   | 0\.2 | 0   | 1   | 2   | 0   | 0   |
-| TT    | Troop Transport  | 4   | 0\.2 | 0   | 1   | 0   | 0   | 3   |
-| SB    | Starbase         | 50  | 2    | 35  | 50  | 0   | 0   | 0   |
+| Class | Name             | PC  | MC    | AS  | DS  | CC  | CR  | CL  |
+|:-----:| ---------------- |:---:|:-----:|:---:|:---:|:---:|:---:|:---:|
+| CT    | Corvette         | 2   | 0\.1  | 1   | 2   | 1   | 2   | 0   |
+| FF    | Frigate          | 3   | 0\.2  | 2   | 3   | 2   | 3   | 0   |
+| DD    | Destroyer        | 4   | 0\.3  | 3   | 4   | 2   | 4   | 0   |
+| CA    | Cruiser          | 5   | 0\.4  | 4   | 5   | 3   | 6   | 0   |
+| BC    | Battle Cruiser   | 6   | 0\.5  | 4   | 6   | 3   | 8   | 0   |
+| BB    | Battleship       | 8   | 1\.0  | 6   | 8   | 3   | 9   | 0   |
+| DN    | Dreadnought      | 10  | 1\.25 | 9   | 9   | 4   | 10  | 0   |
+| CV    | Carrier          | 8   | 1\.0  | 1   | 6   | 3   | 8   | 3   |
+| CX    | Super Carrier    | 10  | 1\.5  | 1   | 9   | 4   | 10  | 5   |
+| FR    | Fighter Squadron | 3   | 0\.2  | 3   | 2   | 0   | 0   | 0   |
+| RR    | Raider           | 7   | 0\.5  | 4   | 6   | 3   | 4   | 0   |
+| SC    | Scout            | 5   | 0\.1  | 0   | 1   | 2   | 0   | 0   |
+| TT    | Troop Transport  | 4   | 0\.2  | 0   | 1   | 0   | 0   | 3   |
+| SB    | Starbase         | 50  | 2     | 35  | 50  | 0   | 0   | 0   |
 
 ## 9\.2 Merchant Marine
 
-| **Class** | **Name**           | **PC** |
-| --------- | ------------------ | ------ |
-| MR        | Miner              | 5      |
-| TR        | Trader             | 6      |
-| ET        | ETAC               | 15     |
-| PY        | Planetary Shipyard | 15     |
-| SS        | Shipyard           | 20     |
+| **Class** | **Name** | **PC** | MC  |
+|:---------:| -------- |:------:|:---:|
+| MR        | Miner    | 5      | 0.5 |
+| TR        | Trader   | 6      | 0.5 |
+| ET        | ETAC     | 15     | 0.5 |
+| SS        | Shipyard | 25     | 1   |
 
 ## 9\.3 Ground Based Units
 
-| **Class** | **Name**         | **PC** |
-| --------- | ---------------- | ------ |
-| PS        | Planetary Shield | 35     |
-| GB        | Ground Batteries | 4      |
-| AA        | Armies           | 2      |
-| MM        | Space Marines    | 3      |
+| **Class** | **Name**         | **PC** | MC  |
+|:---------:| ---------------- |:------:|:---:|
+| PY        | Spaceport        | 20     | 1   |
+| PS        | Planetary Shield | 35     | 2   |
+| GB        | Ground Batteries | 4      | 0.1 |
+| AA        | Armies           | 2      | 0.2 |
+| MM        | Space Marines    | 3      | 0.2 |
 
 # 10\.0 Play By Excel
