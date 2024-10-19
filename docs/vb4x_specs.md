@@ -1,11 +1,10 @@
 # VB4X Specification v0.1
 
 Written by Mason A. Green
-2024
 
 # 1\.0 Introduction
 
-VB4X is an asychronous turn based wargame of the classic eXplore, eXpand, eXploit, and eXterminate (4X) variety.
+VB4X is an asynchronous turn based wargame of the classic eXplore, eXpand, eXploit, and eXterminate (4X) variety.
 
 Upstart Houses battle over a small region of space to dominate usurpers and seize the imperial throne. The game begins at the dawn of the third imperium in the year 2001. Each turn comprises one month of a thirteen month [Terran Computational Calendar](<https://www.terrancalendar.com/> "Terran Computational Calendar"). Turns cycle every 24-hours in real life (IRL) time.
 
@@ -34,7 +33,7 @@ The starmap consists of a 2D hexagonal grid, each a flat-top hex that contains a
 
 The map takes inspiration from VBAM, and the 1st or 2nd edition campaign guides may be used to spawn a random map. The method is briefly explained below.
 
-The center of the map is a special hub occupied by the last holdouts of the former imperial Empire. This system is heavily guarded by fighter squadrons and the home planet and is similarly fortified against invasion. The former Emperor has no offensive forces to speak of, which were scuttled by their crews at the height of the collapse. This is prime territory ripe for the taking. He who controls the hub holds great strategic power.
+The center of the map is a special hub occupied by the last holdouts of the former imperial Empire. This system is heavily guarded by fighter squadrons and the home planet is fortified against invasion. The former Emperor has no offensive ships to speak of, which were scuttled by their crews at the height of the collapse. This is prime territory ripe for the taking. He who controls the hub holds great strategic power.
 
 Solar systems have special traits and are procedural generated. Some are rocky atmospheric planets similar to earth and prime for colonization, the former occupants nuked by the mad imperial emperor. Others host rocky barren planets with little to no atmosphere that require terraforming before settlement. The remaining solar systems are filled with gas giants, hostile moons, and asteroids belts that are only only good for hosting bases and mining operations.
 
@@ -70,7 +69,7 @@ Feel free to create your own ships and races for asymmetrical warfare or narrati
 
 #### 2\.3.1.2 Merchant Marine
 
-The Merchant marine fleet comprises civilian crewed ships that provide commerse and transport services for the House. They have no weapons technology or defense, and are easily captured or destroyed by enemy combat ships. Guard them wisely with military escorts.
+The Merchant marine fleet comprises civilian crewed ships that provide commerce and transport services for the House. They have no weapons technology or defense, and are easily captured or destroyed by enemy combat ships. Guard them wisely with military escorts.
 
 Merchant Marine attributes are listed in Section 9.
 
@@ -78,7 +77,7 @@ Merchant Marine attributes are listed in Section 9.
 
 ETACs are used to terraform and colonize uninhabited planets. After colonization they are scrapped and used by the colony. They have a Carry Limit (CL) of one and must be loaded with a Population Unit (PU) to colonize. Terraforming does not require a PU.
 
-Terraforming and colonization occur on seperate turns, one required each.
+Terraforming and colonization occur on separate turns, one required each.
 
 Note: terraforming is a long process to fully develop a planet. For game purposes terraforming sets the initial conditions for a colony to take root.
 
@@ -112,7 +111,7 @@ Squadrons are grouped together into fleets for the purpose of traversing jump la
 
 ### 2\.3.4 Task Force
 
-A Task Force is temporary grouping of squadrons organized for combat. After the cesattion of hostilities the task force is disbanded and surviving squadrons return to their respective fleets.
+A Task Force is temporary grouping of squadrons organized for combat. After the cessation of hostilities the task force is disbanded and surviving squadrons return to their respective fleets.
 
 ## 2\.4 Special Units
 
@@ -122,9 +121,9 @@ Fighters are small ships commissioned in squadrons that freely patrol a system. 
 
 There is no limit to the number of fighter squadrons deployed in a system.
 
-Because of their fast lightweight nature, fighters are considered to be in a crippled combat state, but withuot a reduction in attack strength (AS).
+Because of their fast lightweight nature, fighters are considered to be in a crippled combat state, but without a reduction in attack strength (AS).
 
-Carriers transport fighter squadrons between systems. Standart carriers hold up to three; super carriers hold up to five. 
+Carriers transport fighter squadrons between systems. Standard carriers hold up to three; super carriers hold up to five.
 
 ### 2\.4.2 Scouts
 
@@ -158,7 +157,7 @@ The majority of ship construction and repair will occur at these important facil
 
 Planetary shields and Ground Batteries are planet based assets that provide an extra layer of defense to an player's colonies.
 
-Planetary shields are restricted to homeworlds and provide system-wide electronic jamming that disrupt hostile forces assulting the mother-system. They also serve to protect your homeworld from orbital bombardment. They are restricted to one unit per homeworld.
+Planetary shields are restricted to homeworlds and provide system-wide electronic jamming that disrupt hostile forces assaulting the mother-system. They also serve to protect your homeworld from orbital bombardment. They are restricted to one unit per homeworld.
 
 Ground batteries are immobile, low-tech, land based units that have the firepower of a battleship at half the cost. They lob kinetic shells into orbit and are not upgraded by technology and research.
 
@@ -176,7 +175,7 @@ Marines fight alongside the Army if garrisoned planetside.
 
 Construction (and repair) of House assets is accomplished planetside or in orbit, with restrictions.  
 
-The number of turns required to newly construct an asset, unless otherwise specified, is equal to the PC times 0.5 (rounded down). Assets remain decomissioned through the activity period.
+The number of turns required to newly construct an asset, unless otherwise specified, is equal to the PC times 0.5 (rounded down). Assets remain decommissioned through the activity period.
 
 ### 2.5.1 Planetside Construction
 
@@ -206,7 +205,7 @@ Ship repairs require a shipyard. The cost of repair equals one quarter (25%) of 
 
 Example: A player wishes to repair a crippled tech-level III Cruiser. The cost is 7 * 0.25 = 1.75 PP.
 
-The logistics of repairing a ship planetside and returning it to orbit make it ecoconomically infeasable. Ships may be scrapped at a colony without restriction and earn 50% of the original PC back to the House treasury.
+The logistics of repairing a ship planetside and returning it to orbit make it economically infeasible. Ships may be scrapped at a colony without restriction and earn 50% of the original PC back to the House treasury.
 
 TODO: discuss production capacity.
 
@@ -282,11 +281,11 @@ A modified 1d10 roll applied to a combat unit’s AS for the purposes of reducin
 | 7, 8                       | One and a half (1.5) (round up) |
 | 9 or more                  | Two (2)                         |
 
-Critial hits do not apply to ground combat.
+Critical hits do not apply to ground combat.
 
-### 5\.1.3 Battle Stations Preparadness
+### 5\.1.3 Battle Stations Preparedness
 
-A battle stations preparadness modifier is applied to a player's CER
+A battle stations preparedness modifier is applied to a player's CER
 roll at the beginning of every combat round. The fog of war lends to chaos and unpredictable human behavior under mortal stress.
 
 | **1D6 Roll** | **Battle Stations Modifier**     |
@@ -299,11 +298,11 @@ roll at the beginning of every combat round. The fog of war lends to chaos and u
 
 ### 5\.1.4 Combat State
 
-Space Force ships are either undamaged, crippled, or destroyed.
+Squadron units are either undamaged, crippled, or destroyed.
 
 Attack Strength (AS) represents a unit's offensive firepower and is a mutable type.
 
-Defense Strength (DS) represents a unit's defensive shielding and is a constant type.
+Defense Strength (DS) represents a unit's defensive shielding and is an immutable type.
 
 **Reduced**: Degradation of combat state.
 
@@ -353,7 +352,7 @@ Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by 
 
 Orphaned fighter squadrons are scuttled if there is no carrier capacity available during a retreat.
 
-Transports are captured and PUs enslaved if their escort fleet was destroyed or the transports were unescorted at the commencement of hostilities. Space Marines never surrender and self-detonate the ship.
+Transports are captured and PUs enslaved if their escort fleet was destroyed or the transports were un-escorted at the commencement of hostilities. Space Marines never surrender and self-detonate the ship.
 
 Other Merchant Marine Ships rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
 
@@ -421,7 +420,7 @@ TODO
 
 If a hostile fleet has orders to bombard, invade, or blitz a colony, a Starbase is the first line of defense after the Task Force.
 
-Combat will proceed in a smiliar fashion to Section 5.4, with the following restrictions:
+Combat will proceed in a similar fashion to Section 5.4, with the following restrictions:
 
 1. If a player rolls a critical hit against a starbase on the first try, re-roll a second time.
 2. Starbases receive an extra +2 die roll modifier.
