@@ -68,15 +68,33 @@ Feel free to create your own ships and races for asymmetrical warfare or narrati
 
 #### 2\.3.1.2 Merchant Marine Ships
 
-Merchant marine ships are civilian crewed ships that provide logistal and economic support for the House. They have no weapons technology or defense, and are easily captured or destroyed by enemy combat ships. Protect them wisely with military escorts.
+Merchant marine ships are civilian crewed ships that provide logistal and economic support for the House. They have no weapons technology or defense, and are easily captured or destroyed by enemy combat ships. Guard them wisely with military escorts.
 
-**Environmental Transformation And Colonization (ETAC)** ships are used to terraform and colonize uninhabited planets. After colonization they are scrapped and used by the colony.
+Merchant Marine attributes are listed in Section 9.
 
-**Trader** ships earn Production Points (PP) by trading between colonies within the House or with trade partners. They must have an uncontested path back across jump lanes to a friendly colony in order facilitate merchant activity. Systems may only have one trader assigned per House.
+##### **2.3.1.2.1 Environmental Transformation And Colonization (ETAC)**
 
-**Miner** ships earn PP by harvesting raw materials from inhospitable, unoccupied gas systems. They must have an uncontested path back across jump lanes to a friendly colony in order to deliver raw materials. Systems may only have one miner assigned per House.
+ETACs are used to terraform and colonize uninhabited planets. After colonization they are scrapped and used by the colony. They have a Carry Limit (CL) of one and must be loaded with a Population Unit (PU) to colonize. Terraforming does not require a PU.
 
-Merchant Marine attributes are found in Section 9.
+Terraforming and colonization occur on seperate turns, one required each.
+
+Note: terraforming is a long process to fully develop a planet. For game purposes terraforming sets the initial conditions for a colony to take root.
+
+##### **2.3.1.2.2 Trader**
+
+Traders earn Production Points (PP) by trading between colonies within the House or with trade partners. They must have an uncontested path back across jump lanes to a House colony in order facilitate merchant activity and earn. Systems may only have one operational trader assigned per House.
+
+##### **2.3.1.2.3 Miner**
+
+Miners earn PP by harvesting raw materials from inhospitable, unoccupied gas systems. They must have an uncontested path back across jump lanes to a House colony in order to deliver raw materials and earn. 
+
+##### 2.3.1.2.4 Transport
+
+Transports are large ships used to ferry PUs or Space Marines between systems.
+
+This ship will drop Marines on an enemy planet during an invasion or blitz. They also transfer population between colonies.
+
+They have a CL of one.
 
 ### 2\.3.2 Squadrons
 
@@ -122,7 +140,7 @@ Fleets containing a Raider have a 33% chance (roll 1 or 2 on a 1D6) of going und
 
 Starbases are powerful orbital fortresses that facilitate planetary defense and economic development via ground weather modification and advanced telecommunications. These powerful sentinels are limited to one operational unit per solar system.
 
-Starbases require five months (five turns) to construct at a shipyard.
+Starbases require five months (five turns) to construct require a shipyard.
 
 Starbases boost the morale of a colony by XYZ and production by XYZ every turn. Crippled starbases operate at 50% capacity and contribute half their normal moral and PP to the colony.
 
@@ -146,17 +164,15 @@ Ground batteries are immobile, low-tech, land based units that have the firepowe
 
 Ground batteries are the only units that are constructed in the span of a single turn. Colonies may build them to no limit.
 
-### 2\.4.8 Troop Transports, Space Marines, & Armies
-
-Troop transports are large size ships used to taxi Space Marines from one planet to another. It holds one Marine division and is not armed. This ship will drop troops on an enemy planet during an invasion or blitz.
-
-Troop Transports are not assigned to squadrons.
+### 2\.4.8 Space Marines & Armies
 
 Space Marines are ferocious devil dogs that capture enemy planets. They deploy in division sized units and will never surrender or abandon one of their own.
 
 Armies garrison your colonies and eradicate invaders. Their orders are to take no prisoners and protect the colony at all cost.
 
-## 2.5 Asset Construction & Repair
+Marines fight alongside the Army if garrisoned planetside.
+
+### 2.5 Asset Construction & Repair
 
 Construction (and repair) of House assets is accomplished planetside or in orbit, with restrictions.  
 
@@ -168,7 +184,7 @@ The construction capacity of a system is equal to its colony's gross output (cur
 
 Ground units and fighter squadrons are produced via colony industry, distributed across the surface or in underground factories.
 
-Each turn, the maximum number of units under construction planetside is equal to the colony census. Larger population colonies are able to produce faster.
+Each turn, the maximum number of units under construction planetside is equal to the colony's Population Unit (PU). Larger population colonies are able to produce faster.
 
 Ships (excluding fighter squadrons) constructed planetside incur a 100% PC increase due to the added cost of orbital launch, and require a spaceport to commission.
 
@@ -311,7 +327,7 @@ Roll for stealth in accordance with Section 2.4.3.
 
 ## 5\.2 Task Force Assignment
 
-All of a player’s fleets arriving at a star system in the same turn, and fleets or squadrons already located in said system, are joined together into a single Task Force when battle commences. Fleets are temporarily disbanded and their collective squadrons fight under the Task Force as a monolith.
+All of a player’s fleets arriving at a star system in the same turn, and fleets and squadrons already located in said system, are joined together into a single Task Force when battle commences. Fleets are temporarily disbanded and their collective squadrons fight under the Task Force as a monolith.
 
 Task Forces assume the highest ROE of any fleet in the force.
 
@@ -319,7 +335,7 @@ Fighter squadrons deploy to their player's respective Task Force as independent 
 
 Fleets that are cloaked, and remain undetected, may continue traveling through jump lanes in a contested star system. Otherwise the fleet will join their player's respective Task Force for battle.
 
-Starbases, Orbital Shipyards, Merchant Marine Ships, and Troop Transports are screened behind the Task Force during combat operations and do not engage.
+Starbases, Orbital Shipyards, and Merchant Marine ships are screened behind the Task Force during combat operations and do not engage.
 
 ## 5\.3 Retreat
 
@@ -337,9 +353,9 @@ Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by 
 
 Orphaned fighter squadrons are scuttled if there is no carrier capacity available during a retreat.
 
-Troop transports are captured and the Space Marines enslaved if their escort fleet was destroyed or the transports were unescorted at the commencement of hostilities.
+Transports are captured and PUs enslaved if their escort fleet was destroyed or the transports were unescorted at the commencement of hostilities. Space Marines never surrender and self-detonate the ship.
 
-Merchant Marine Ships rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
+Other Merchant Marine Ships rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
 
 Like Starbases, Orbital Shipyards are too large and complex to retreat in an expedited manner. They are rigged to self detonate before capture.
 
@@ -405,7 +421,7 @@ If a hostile fleet has orders to bombard, invade, or blitz a colony, a Starbase 
 
 Combat will proceed in a smiliar fashion to Section 5.4, with the following restrictions:
 
-1. If a player rolls a critical hit against a starbase on the first try, reroll a second time.
+1. If a player rolls a critical hit against a starbase on the first try, re-roll a second time.
 2. Starbases receive an extra +2 die roll modifier.
 
 Starbases are defensive citadels that are equipped with advanced sensors and massive artificial intelligence (AI) resources. Their shields are powerful and make them a challenge to strike a critical hit.
@@ -440,7 +456,7 @@ Technology upgrades may be purchased in the first and sixth months of the Terran
 
 PC = Production Cost, MC = Maintenance Cost, AS = Attack Strength, DS = Defensive Strength,
 
-CC= Command Cost, CR = Command Rating, CV = Carry Limit
+CC= Command Cost, CR = Command Rating, CL = Carry Limit
 
 | Class | Name             | PC  | MC    | AS  | DS  | CC  | CR  | CL  |
 |:-----:| ---------------- |:---:|:-----:|:---:|:---:|:---:|:---:|:---:|
@@ -456,17 +472,17 @@ CC= Command Cost, CR = Command Rating, CV = Carry Limit
 | FR    | Fighter Squadron | 3   | 0\.2  | 3   | 2   | 0   | 0   | 0   |
 | RR    | Raider           | 7   | 0\.5  | 4   | 6   | 3   | 4   | 0   |
 | SC    | Scout            | 5   | 0\.1  | 0   | 1   | 2   | 0   | 0   |
-| TT    | Troop Transport  | 4   | 0\.2  | 0   | 1   | 0   | 0   | 3   |
 | SB    | Starbase         | 50  | 2     | 35  | 50  | 0   | 0   | 0   |
 
 ## 9\.2 Merchant Marine
 
-| **Class** | **Name** | **PC** | MC  |
-|:---------:| -------- |:------:|:---:|
-| MR        | Miner    | 5      | 0.5 |
-| TR        | Trader   | 6      | 0.5 |
-| ET        | ETAC     | 15     | 0.5 |
-| SS        | Shipyard | 25     | 1   |
+| **Class** | **Name**  | **PC** | MC  | CL  |
+|:---------:| --------- |:------:|:---:|:---:|
+| MR        | Miner     | 5      | 0.5 | 0   |
+| TR        | Trader    | 6      | 0.5 | 0   |
+| ET        | ETAC      | 15     | 0.5 | 1   |
+| SS        | Shipyard  | 25     | 1   | 0   |
+| TT        | Transport | 5      | 0.2 | 1   |
 
 ## 9\.3 Ground Based Units
 
