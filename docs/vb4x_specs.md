@@ -72,7 +72,7 @@ Merchant marine ships are civilian crewed ships that provide logistal and econom
 
 **Environmental Transformation And Colonization (ETAC)** ships are used to terraform and colonize uninhabited planets. After colonization they are scrapped and used by the colony.
 
-**Trader** ships earn Production Points (PP) by trading between colonies within the House or with trade partners. They must have an uncontested path back across jump lanes to a friendly colony in order facilitate merchant activity. Systems may only have one trader assigned per player.
+**Trader** ships earn Production Points (PP) by trading between colonies within the House or with trade partners. They must have an uncontested path back across jump lanes to a friendly colony in order facilitate merchant activity. Systems may only have one trader assigned per House.
 
 **Miner** ships earn PP by harvesting raw materials from inhospitable, unoccupied gas systems. They must have an uncontested path back across jump lanes to a friendly colony in order to deliver raw materials. Systems may only have one miner assigned per House.
 
@@ -100,11 +100,13 @@ A Task Force is temporary grouping of squadrons organized for combat. After the 
 
 ### 2\.4.1 Fighter Squadrons & Carriers
 
-Fighters are small ships commissioned in squadrons that freely patrol a solar system. 
+Fighters are small ships commissioned in squadrons that freely patrol a system. They are based planetside.
 
-There is no limit on the number of fighter squadrons deployed in a system, and they operate independently from carriers in said system.
+There is no limit to the number of fighter squadrons deployed in a system.
 
-Carriers hold up to three fighter squadrons. Super carriers hold up to five. Carriers are constructed in orbital shipyards.
+Because of their fast lightweight nature, fighters are considered to be in a crippled combat state, but withuot a reduction in attack strength (AS).
+
+Carriers transport fighter squadrons between systems. Standart carriers hold up to three; super carriers hold up to five. 
 
 ### 2\.4.2 Scouts
 
@@ -114,7 +116,7 @@ Scouts are autonomous drones outfitted with advanced sensors that aid with elect
 
 Raiders are the only ships outfitted with cloaking technology. They are not available until cloaking technology is researched and developed.
 
-Fleets containing a Raider have a 33% chance (roll 1 or 2 on a 1D6) of going undetected in hostile systems. The number of Raiders in the fleet does not affect the roll, nor rate multiple chances.
+Fleets containing a Raider have a 33% chance (roll 1 or 2 on a 1D6) of going undetected. The number of Raiders in the fleet does not affect the roll, nor rate multiple chances.
 
 ### 2\.4.4 Starbases
 
@@ -305,9 +307,11 @@ When attacking a solar system, a cloaked fleet is considered to be a surprise.
 
 Both may apply at the same time if opposing fleets are simultaneously cloaked.
 
+Roll for stealth in accordance with Section 2.4.3.  
+
 ## 5\.2 Task Force Assignment
 
-All of a player’s fleets arriving at a star system in the same turn, and fleets already located in said system, are joined together into a single Task Force when battle commences. Fleets are temporarily disbanded and their collective squadrons fight under the Task Force as a monolith.
+All of a player’s fleets arriving at a star system in the same turn, and fleets or squadrons already located in said system, are joined together into a single Task Force when battle commences. Fleets are temporarily disbanded and their collective squadrons fight under the Task Force as a monolith.
 
 Task Forces assume the highest ROE of any fleet in the force.
 
@@ -401,11 +405,10 @@ If a hostile fleet has orders to bombard, invade, or blitz a colony, a Starbase 
 
 Combat will proceed in a smiliar fashion to Section 5.4, with the following restrictions:
 
-1. Starbases are immune from Critial Hits
-2. Starbases deal Critical Hits
-3. Starbases receive an extra +1 die roll modifier
+1. If a player rolls a critical hit against a starbase on the first try, reroll a second time.
+2. Starbases receive an extra +2 die roll modifier.
 
-Starbases are defensive citadels that are equipped with advanced sensors and massive artificial intelligence (AI) resources. Their shields are too powerful to take a critial hit.
+Starbases are defensive citadels that are equipped with advanced sensors and massive artificial intelligence (AI) resources. Their shields are powerful and make them a challenge to strike a critical hit.
 
 ### 5\.5.2 Abandoned Starbase
 
