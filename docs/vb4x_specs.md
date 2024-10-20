@@ -48,21 +48,53 @@ The map takes inspiration from VBAM, and the 1st or 2nd edition campaign guides 
 
 The center of the map is a special hub occupied by the last holdouts of the former imperial Empire. This system is heavily guarded by fighter squadrons and the home planet is fortified against invasion. The former Emperor has no offensive ships to speak of, which were scuttled by their crews at the height of the collapse. This is prime territory ripe for the taking. He who controls the hub holds great strategic power.
 
-Solar systems have special traits and are procedural generated. Some are rocky atmospheric planets similar to earth and prime for colonization, the former occupants nuked by the mad imperial emperor. Others host rocky barren planets with little to no atmosphere that require terraforming before settlement. The remaining solar systems are filled with gas giants, hostile moons, and asteroids belts that are only only good for hosting bases and mining operations.
+Solar systems have special traits and are procedural generated. They are filled with planets, moons, and gas giants that are variable in their suitability for colonization and production.
 
 There are three classes of jump lanes: restricted, minor, and major. The hub is guaranteed to have six jump lanes connecting it to the first ring, making it an important strategic asset. Homeworlds on the outer ring will have three lanes. The number of lanes connecting the other hexes are randomly generated in accordance with VBAM. The class of all lanes are random.
 
 Movement across the lanes is explained in Section 4.
 
-Players start the game with one homeworld and 50 Satoshis (SATs), one spaceport, one shipyard, one fully loaded ETAC, a cruiser, two destroyers, and a scout. 
+Players start the game with one homeworld (Class H2 with rich raw materials and a settlement sized colony of 61 PU) 50 Satoshis (SAT) in the treasury, one spaceport, one shipyard, one fully loaded ETAC, a cruiser, two destroyers, and a scout. 
 
 Each player's homeworld should be placed on the outer ring, as far as strategically possible from enemy home system(s).
 
-## 2\.2 Solar Systems & Planets
+## 2\.2 Solar Systems
 
-TODO: Explain solar system properties and planet formation.
+Solar systems contain various F, G, K, and M class stars that are orbited by at least one terrestrial planet, suitable for colonization and terraforming. Otherwise systems are not charted and of no consequence to the task at hand.
 
-## 2\.3 Ships, Squadrons, Fleets, and Task Forces
+Roll on the planet class and system resources tables below to determine the attributes for each hex on the starmap, excluding homeworlds.
+
+Note that each newly established colony begins as an outpost and has potential to develop into the max Population Unit (PU) for that planet. Transport colonists from larger colonies to smaller colonies to increase population growth over the natural birth rate. 
+
+Colonists love making babies and the population growth rate under normal conditions is 2% per month (turn), up to the max allowed PU for that planet. 
+
+Advances in terraforming tech will allow planets to upgrade class and living conditions.
+
+**Planet Class Table**
+
+| Roll 1D10 | Class | Conditions | Colony Potential | PUs     |
+|:---------:|:-----:| ---------- | ---------------- |:-------:|
+| 0         | E0    | Extreme    | Outpost          | 1-20    |
+| 1         | E1    | Extreme    | Citadel          | 21-60   |
+| 2, 3      | D0    | Desolate   | Settlement       | 61-180  |
+| 4, 5      | D1    | Desolate   | Small            | 181-500 |
+| 6, 7      | H0    | Habitable  | Medium           | 501-1k  |
+| 8*        | H1    | Habitable  | Large            | 1.1k-2k |
+| 9*        | H2    | Habitable  | Very Large       | 2.1k+   |
+
+\*Note: if the roll above is a natural eight (8), add a +1 modifier to your roll on the raw materials table. If the roll is a natural nine (9) add a +2 modifier.
+
+**System Resources Table**
+
+| Mudified Roll 1D10 | Raw       |
+| ------------------ | --------- |
+| 0                  | Very Poor |
+| 2, 3               | Poor      |
+| 4 - 7              | Normal    |
+| 8, 9               | Rich      |
+| 10+                | Very Rich |
+
+## 2.3 Ships, Squadrons, Fleets, and Task Forces
 
 ### 2\.3.1 Ships
 
@@ -86,11 +118,7 @@ ETACs are used to terraform and colonize uninhabited planets. After use they are
 
 Traders earn SATs by trading between colonies within the House or with trade partners. They must have an uncontested path back across jump lanes to a House colony in order facilitate merchant activity and earn. Systems may only have one operational trader assigned per House.
 
-##### **2.3.1.2.3 Miner**
-
-Miners earn SATs by harvesting raw materials from inhospitable, unoccupied gas systems. They must have an uncontested path back across jump lanes to a House colony in order to deliver raw materials and earn. 
-
-##### 2.3.1.2.4 Transport
+##### 2.3.1.2.3 Transport
 
 Transports are large ships used to ferry PTU or Space Marines between systems. They have a CL of one.
 
@@ -128,7 +156,7 @@ Carriers transport fighter squadrons between systems. Standard carriers hold up 
 
 ### 2\.4.2 Scouts
 
-Scouts are autonomous drones outfitted with advanced sensors that aid with electronic warfare. They give a boost to Task Forces during combat operations.
+Scouts are autonomous drones outfitted with advanced sensors that aid with electronic warfare and information gathering. They give a boost to Task Forces during combat operations.
 
 ### 2\.4.3 Raiders
 
@@ -261,13 +289,13 @@ Critical hits do not apply to ground combat.
 A battle stations preparedness modifier is applied to a player's CER
 roll at the beginning of every combat round. The fog of war lends to chaos and unpredictable human behavior under mortal stress.
 
-| **1D6 Roll** | **Battle Stations Modifier**   |
-| ------------ | ------------------------------ |
-| 1            | Crews are in panic mode (-2)   |
-| 2            | Crews are scrambling (-1)      |
-| 3, 4         | Crews are at the ready (0)     |
-| 5            | Crews are on point (+1)        |
-| 6            | Crews are in a frenzy (+2)     |
+| **1D6 Roll** | **Battle Stations Modifier** |
+| ------------ | ---------------------------- |
+| 1            | Crews are in panic mode (-2) |
+| 2            | Crews are scrambling (-1)    |
+| 3, 4         | Crews are at the ready (0)   |
+| 5            | Crews are on point (+1)      |
+| 6            | Crews are in a frenzy (+2)   |
 
 ### 5\.1.4 Combat State
 
@@ -321,13 +349,13 @@ Starbases never retreat from a solar system because of their massive size. They 
 
 Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by a fleeing Task Force.
 
-### 5\.3.2 Fighter Squadrons, Merchant Marine Units, & Shipyards
+### 5\.3.2 Fighter Squadrons & Merchant Marine
 
 Orphaned fighter squadrons are scuttled if there is no carrier capacity available during a retreat.
 
 Transports are captured and colonists enslaved if their escort fleet was destroyed or the transports were un-escorted at the commencement of hostilities. Space Marines never surrender and self-detonate the ship.
 
-Other Merchant Marine Ships rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
+ETACs and traders rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
 
 Like Starbases, Orbital Shipyards are too large and complex to retreat in an expedited manner. They are rigged to self-detonate before capture.
 
@@ -450,13 +478,12 @@ DS = Defensive Strength, CC= Command Cost, CR = Command Rating, CL = Carry Limit
 
 ## 9\.2 Merchant Marine
 
-| **Class** | **Name**        | **PC** | MC  | CL  |
-|:---------:| --------------- |:------:|:---:|:---:|
-| MR        | Miner           | 5      | 0.5 | 0   |
-| TR        | Trader          | 6      | 0.5 | 0   |
-| ET        | ETAC            | 15     | 0.5 | 1   |
-| SS        | Shipyard        | 25     | 1   | 0   |
-| TT        | Troop Transport | 5      | 0.2 | 1   |
+| **Class** | **Name**  | **PC** | MC  | CL  |
+|:---------:| --------- |:------:|:---:|:---:|
+| SS        | Shipyard  | 25     | 1.0 | 1   |
+| ET        | ETAC      | 15     | 0.5 | 1   |
+| TR        | Trader    | 6      | 0.5 | 0   |
+| TT        | Transport | 5      | 0.2 | 1   |
 
 ## 9\.3 Planet Based Units
 
