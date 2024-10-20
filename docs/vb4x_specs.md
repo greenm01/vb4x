@@ -261,13 +261,13 @@ Critical hits do not apply to ground combat.
 A battle stations preparedness modifier is applied to a player's CER
 roll at the beginning of every combat round. The fog of war lends to chaos and unpredictable human behavior under mortal stress.
 
-| **1D6 Roll** | **Battle Stations Modifier**     |
-| ------------ | -------------------------------- |
-| 1            | Crews are a distracted mess (-2) |
-| 2            | Crews are scrambling (-1)        |
-| 3, 4         | Crews are at the ready (0)       |
-| 5            | Crews are on point (1)           |
-| 6            | Crews are out for blood (2)      |
+| **1D6 Roll** | **Battle Stations Modifier**   |
+| ------------ | ------------------------------ |
+| 1            | Crews are in panic mode (-2)   |
+| 2            | Crews are scrambling (-1)      |
+| 3, 4         | Crews are at the ready (0)     |
+| 5            | Crews are on point (+1)        |
+| 6            | Crews are in a frenzy (+2)     |
 
 ### 5\.1.4 Combat State
 
