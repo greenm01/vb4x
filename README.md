@@ -6,4 +6,6 @@ Upstart Houses battle over a small region of space to dominate usurpers and seiz
 
 VB4X is a simple and straight-forward framework that will also enable well organized tabletop play. Tweak it to your needs.
 
+Victory is won by crushing your rivals and earning the most Prestige by end of game.
+
 [Game Specification (work in progress)](https://github.com/greenm01/vb4x/blob/main/docs/vb4x_specs.md)
