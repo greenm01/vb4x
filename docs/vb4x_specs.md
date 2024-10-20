@@ -2,30 +2,43 @@
 
 Written by Mason A. Green
 
-# 1\.0 Introduction
+In memory of Jonathan F. Pratt.
+
+# Introduction
 
 VB4X is an asynchronous turn based wargame of the classic eXplore, eXpand, eXploit, and eXterminate (4X) variety.
 
-Upstart Houses battle over a small region of space to dominate usurpers and seize the imperial throne. The game begins at the dawn of the third imperium in the year 2001. Each turn comprises one month of a thirteen month [Terran Computational Calendar](<https://www.terrancalendar.com/> "Terran Computational Calendar"). Turns cycle every 24-hours in real life (IRL) time.
+Upstart houses battle over a small region of space to dominate usurpers and seize the imperial throne. The game begins at the dawn of the third imperium in the year 2001. Each turn comprises one month of a thirteen month [Terran Computational Calendar](<https://www.terrancalendar.com/> "Terran Computational Calendar"). Turns cycle every 24-hours in real life (IRL) time.
 
 The game is designed to facilitate remote play between friends over email via Excel and Python scripting. Future releases will be server/client based and written in Rust. VB4X is a flexible framework; adapt it to your own requirements.
 
-VB4X pays homage and incorporates ideas from the following great titles:
+VB4X pays homage and is influenced by the following great titles:
 
 - Esterian Conquest (EC)
 - Victory by Any Means (VBAM)
 - Empire of The Sun (EOS)
 - Space Empires 4X (SE4X)
+- Solar Starfire (SSF)
+- Fractal, Beyond the Void (FBV)
 
-Although not required, it is highly recommended to purchase physical copies of these classics to fully appreciate the prior art.
+Although not required, it is highly recommended to purchase physical copies of these classics to fully appreciate the art. Dive deep.
 
-Esterian Conquest was a bulletin board system (BBS) door game from the early 1990's that initially inspired this project.
+Esterian Conquest was a bulletin board system (BBS) door game from the early 1990's that initially inspired this project. EC was THE greatest game of all time (no arguments).
 
 While not intended to be an accounting exercise, there is enough complexity in VB4X to allow for dynamic strategic decision making and surprising outcomes.
 
-Victory is achieved when all homeworlds are captured or subjugated.
+Victory is won by crushing your rivals and earning the most Prestige by end of game.
 
-# 2\.0 Assets
+# 1.0 Turns
+
+Each turn comprises four phases
+
+1. Income phase
+2. Command phase
+3. Conflict phase
+4. End of turn phase
+
+# 2\.0 Game Assets
 
 ## 2\.1 Starmap
 
@@ -41,21 +54,13 @@ There are three classes of jump lanes: restricted, minor, and major. The hub is 
 
 Movement across the lanes is explained in Section 4.
 
-Players start the game with one homeworld and 50 Production Points (PP), one spaceport, one shipyard, one fully loaded ETAC, a cruiser, two destroyers, and a scout. 
+Players start the game with one homeworld and 50 Satoshis (SATs), one spaceport, one shipyard, one fully loaded ETAC, a cruiser, two destroyers, and a scout. 
 
 Each player's homeworld should be placed on the outer ring, as far as strategically possible from enemy home system(s).
 
-## 2\.2 Planets
+## 2\.2 Solar Systems & Planets
 
-### 2\.2.1 Planet Attributes
-
-TODO: explain planet properties and formation.
-
-### 2\.2.2 Terraforming and Colonization
-
-Terraforming time takes XYZ turns to complete.
-
-Colonization takes one turn to complete.
+TODO: Explain solar system properties and planet formation.
 
 ## 2\.3 Ships, Squadrons, Fleets, and Task Forces
 
@@ -75,23 +80,19 @@ Merchant Marine attributes are listed in Section 9.
 
 ##### **2.3.1.2.1 Environmental Transformation And Colonization (ETAC)**
 
-ETACs are used to terraform and colonize uninhabited planets. After colonization they are scrapped and used by the colony. They have a Carry Limit (CL) of one and must be loaded with a Population Unit (PU) to colonize. Terraforming does not require a PU.
-
-Terraforming and colonization occur on separate turns, one required each.
-
-Note: terraforming is a long process to fully develop a planet. For game purposes terraforming sets the initial conditions for a colony to take root.
+ETACs are used to terraform and colonize uninhabited planets. After use they are scrapped and used by the colony to continue the terraforming process. They have a Carry Limit (CL) of one and must be pre-loaded with PTUs to colonize. Terraforming does not require a PU.
 
 ##### **2.3.1.2.2 Trader**
 
-Traders earn Production Points (PP) by trading between colonies within the House or with trade partners. They must have an uncontested path back across jump lanes to a House colony in order facilitate merchant activity and earn. Systems may only have one operational trader assigned per House.
+Traders earn SATs by trading between colonies within the House or with trade partners. They must have an uncontested path back across jump lanes to a House colony in order facilitate merchant activity and earn. Systems may only have one operational trader assigned per House.
 
 ##### **2.3.1.2.3 Miner**
 
-Miners earn PP by harvesting raw materials from inhospitable, unoccupied gas systems. They must have an uncontested path back across jump lanes to a House colony in order to deliver raw materials and earn. 
+Miners earn SATs by harvesting raw materials from inhospitable, unoccupied gas systems. They must have an uncontested path back across jump lanes to a House colony in order to deliver raw materials and earn. 
 
 ##### 2.3.1.2.4 Transport
 
-Transports are large ships used to ferry PUs or Space Marines between systems. They have a CL of one.
+Transports are large ships used to ferry PTU or Space Marines between systems. They have a CL of one.
 
 This ship will drop Marines on an enemy planet during an invasion or blitz. They also transfer population between colonies.
 
@@ -141,7 +142,7 @@ Starbases are powerful orbital fortresses that facilitate planetary defense and 
 
 Starbases require five months (five turns) to construct require a shipyard.
 
-Starbases boost the morale of a colony by XYZ and production by XYZ every turn. Crippled starbases operate at 50% capacity and contribute half their normal moral and PP to the colony.
+Starbases boost the morale of a colony by XYZ and production by XYZ every turn. Crippled starbases operate at 50% capacity and contribute half their normal morale and SATs to the colony.
 
 ### 2.4.5 Spaceports
 
@@ -171,13 +172,15 @@ Armies garrison your colonies and eradicate invaders. Their orders are to take n
 
 Marines fight alongside the Army if garrisoned planetside.
 
-### 2.5 Asset Construction & Repair
+# 3.0 Construction
 
-Construction (and repair) of House assets is accomplished planetside or in orbit, with restrictions.  
+Construction and repair of House assets is accomplished planetside or in orbit, with restrictions.  
 
 The number of turns required to newly construct an asset, unless otherwise specified, is equal to the PC times 0.5 (rounded down). Assets remain decommissioned through the activity period.
 
-### 2.5.1 Planetside Construction
+TODO: Explain construction capacity and rate
+
+## 3.1 Planetside Construction
 
 The construction capacity of a system is equal to its colony's gross output (current productivity multiplied by mining potential).
 
@@ -187,53 +190,33 @@ Each turn, the maximum number of units under construction planetside is equal to
 
 Ships (excluding fighter squadrons) constructed planetside incur a 100% PC increase due to the added cost of orbital launch, and require a spaceport to commission.
 
-### 2.5.2 Planetside Repair
+## 3.2 Planetside Repair
 
 Ground units and fighter squadrons are repaired and refitted planetside.
 
 TODO: discuss production capacity.
 
-### 2.5.3 Orbital Construction
+## 3.3 Orbital Construction
 
 Shipyard construction of a ship in orbit is the standard method of commissioning a vessel, and incurs no penalty.
 
 TODO: discuss production capacity.  
 
-### 2.5.4 Orbital Repair
+## 3.4 Orbital Repair
 
 Ship repairs require a shipyard. The cost of repair equals one quarter (25%) of the unit's PC.
 
-Example: A player wishes to repair a crippled tech-level III Cruiser. The cost is 7 * 0.25 = 1.75 PP.
+Example: A player wishes to repair a crippled tech-level III Cruiser. The cost is 7 * 0.25 = 1.75 SAT.
 
 The logistics of repairing a ship planetside and returning it to orbit make it economically infeasible. Ships may be scrapped at a colony without restriction and earn 50% of the original PC back to the House treasury.
 
-TODO: discuss production capacity.
-
-# 3\.0 Turn Sequence
-
-1. Economics
-
-2. Turn Orders
-
-3. Movement
-
-4. Diplomacy
-
-5. Supply
-
-6. Combat
-
-7. Construction
-
-8. Tech & Research
-
-9. Update
+TODO: discuss production capacity. 
 
 # 4\.0 Movement
 
 ## 4\.1 Escorts
 
-If Orbital Shipyards or Starbases are ordered to move, they must be accompanied by a fleet escort. They can not move across jump lanes unassisted.
+If Shipyards or Starbases are ordered to move, they must be accompanied by a fleet escort. They can not move across jump lanes unassisted.
 
 Merchant Marine ships may join a fleet for escort.
 
@@ -352,7 +335,7 @@ Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by 
 
 Orphaned fighter squadrons are scuttled if there is no carrier capacity available during a retreat.
 
-Transports are captured and PUs enslaved if their escort fleet was destroyed or the transports were un-escorted at the commencement of hostilities. Space Marines never surrender and self-detonate the ship.
+Transports are captured and PTUs enslaved if their escort fleet was destroyed or the transports were un-escorted at the commencement of hostilities. Space Marines never surrender and self-detonate the ship.
 
 Other Merchant Marine Ships rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
 
@@ -437,15 +420,15 @@ In the special circumstance that a Starbase is orphaned by a retreating Task For
 
 # 6\.0 Economics
 
-The unit of account is the Production Point (PP).
+The standard unit of account in VB4X is the Satoshi (SAT), i.e. money. The power of a House is fueled by economic might, which in turn is a function of population growth and harvested resources.
 
-## 6\.1 Colony Production
+## 6\.1 Population Growth
 
 ## 6\.2 Trading & Mining
 
-## 6\.3 Asset Maintenance Costs
+## 6\.3 Maintenance Costs
 
-# 7\.0 Technology & Research
+# 7\.0 Research & Technology
 
 Technology upgrades may be purchased in the first and sixth months of the Terran calendar, i.e. the first and sixth turns of each game year.
 
@@ -477,13 +460,13 @@ DS = Defensive Strength, CC= Command Cost, CR = Command Rating, CL = Carry Limit
 
 ## 9\.2 Merchant Marine
 
-| **Class** | **Name**  | **PC** | MC  | CL  |
-|:---------:| --------- |:------:|:---:|:---:|
-| MR        | Miner     | 5      | 0.5 | 0   |
-| TR        | Trader    | 6      | 0.5 | 0   |
-| ET        | ETAC      | 15     | 0.5 | 1   |
-| SS        | Shipyard  | 25     | 1   | 0   |
-| TT        | Transport | 5      | 0.2 | 1   |
+| **Class** | **Name**        | **PC** | MC  | CL  |
+|:---------:| --------------- |:------:|:---:|:---:|
+| MR        | Miner           | 5      | 0.5 | 0   |
+| TR        | Trader          | 6      | 0.5 | 0   |
+| ET        | ETAC            | 15     | 0.5 | 1   |
+| SS        | Shipyard        | 25     | 1   | 0   |
+| TT        | Troop Transport | 5      | 0.2 | 1   |
 
 ## 9\.3 Planet Based Units
 
