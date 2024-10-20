@@ -1,4 +1,4 @@
-VB4X is an asychronous turn based wargame of the classic eXplore, eXpand, eXploit, and eXterminate (4X) variety for two to nine players. 
+VB4X is an asychronous turn based wargame of the classic eXplore, eXpand, eXploit, and eXterminate (4X) variety for muitiple players. 
 
 The initial release will be playable via Excel over email, with some Pyhon scripting or other tools to facilitate blind game moderation and fog of war. Future releases will be server/client based, and written in Rust.
 
