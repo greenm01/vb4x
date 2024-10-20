@@ -194,13 +194,9 @@ Ships (excluding fighter squadrons) constructed planetside incur a 100% PC incre
 
 Ground units and fighter squadrons are repaired and refitted planetside.
 
-TODO: discuss production capacity.
-
 ## 3.3 Orbital Construction
 
 Shipyard construction of a ship in orbit is the standard method of commissioning a vessel, and incurs no penalty.
-
-TODO: discuss production capacity.  
 
 ## 3.4 Orbital Repair
 
@@ -209,8 +205,6 @@ Ship repairs require a shipyard. The cost of repair equals one quarter (25%) of 
 Example: A player wishes to repair a crippled tech-level III Cruiser. The cost is 7 * 0.25 = 1.75 SAT.
 
 The logistics of repairing a ship planetside and returning it to orbit make it economically infeasible. Ships may be scrapped at a colony without restriction and earn 50% of the original PC back to the House treasury.
-
-TODO: discuss production capacity. 
 
 # 4\.0 Movement
 
