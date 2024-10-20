@@ -184,8 +184,6 @@ TODO: Explain construction capacity and rate
 
 Ground units and fighter squadrons are produced via colony industry, distributed across the surface or in underground factories.
 
-Each turn, the maximum number of units under construction planetside is equal to the colony's Population Unit (PU). Larger population colonies are able to produce faster.
-
 Ships (excluding fighter squadrons) constructed planetside incur a 100% PC increase due to the added cost of orbital launch, and require a spaceport to commission.
 
 ## 3.2 Planetside Repair
@@ -327,7 +325,7 @@ Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by 
 
 Orphaned fighter squadrons are scuttled if there is no carrier capacity available during a retreat.
 
-Transports are captured and PTUs enslaved if their escort fleet was destroyed or the transports were un-escorted at the commencement of hostilities. Space Marines never surrender and self-detonate the ship.
+Transports are captured and colonists enslaved if their escort fleet was destroyed or the transports were un-escorted at the commencement of hostilities. Space Marines never surrender and self-detonate the ship.
 
 Other Merchant Marine Ships rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
 
