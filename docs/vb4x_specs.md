@@ -182,8 +182,6 @@ TODO: Explain construction capacity and rate
 
 ## 3.1 Planetside Construction
 
-The construction capacity of a system is equal to its colony's gross output (current productivity multiplied by mining potential).
-
 Ground units and fighter squadrons are produced via colony industry, distributed across the surface or in underground factories.
 
 Each turn, the maximum number of units under construction planetside is equal to the colony's Population Unit (PU). Larger population colonies are able to produce faster.
