@@ -497,7 +497,11 @@ Additionally, if a player takes a critical hit and is unable to reduce a unit ac
 
 ### 5\.4.3 End of Round
 
-After all hits are applied and squadrons are appropriately reduced (crippled or destroyed), the next round commences via the same procedure above.
+After all hits are applied and squadrons are appropriately reduced (crippled or destroyed), recalculate the totel AS of all Task Forces.
+
+Check each Task Force's ROE on the table in Section 5.1.1 by comparing AS strengths and determine if a retreat is warrented. If more than one Task Force remains in the fight, the next round commences via the same procedure as described above. 
+
+Otherwise proceed to End of Combat.
 
 ### 5\.4.4 End of Combat
 
