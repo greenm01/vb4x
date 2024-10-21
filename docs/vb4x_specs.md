@@ -232,7 +232,7 @@ TODO: Provide a prestige table showing the various factors, both positive and ne
 - Destroy a Starbase (+)
 - Establish a new colony (+)
 - Max out the population of a colony (+)
-- Increase the a planet's class via terraforming (+)
+- Increase a planet's class via terraforming (+)
 - Excessive tax rate (-)
 - Invest IU above 50% of a colony's PU (+)
 - Achieve a new tech level (+)
@@ -244,7 +244,7 @@ TODO: Provide a prestige table showing the various factors, both positive and ne
 
 The standard unit of account in VB4X is the Satoshi (SAT), i.e. money. The power of a House is fueled by economic might, which in turn is a function of population growth and harvested resources.
 
-SATs flow across space on the Lightning network.
+SATs settle instanteously on the interdimensional Lightning network. (All comms and data are instaneous in this manner. Don't question; it's magic).
 
 ## XY\.1 Principles
 
@@ -254,9 +254,9 @@ SATs flow across space on the Lightning network.
 
 **Gross Colony Product (GCP)**: A monetary measure of the market value of all the final goods and services produced and rendered in a turn for each of your colonies, measured in SATs.
 
-GCP = (PU * RAW-INDEX + IU)*EL-MODIFIER
+GCP = (PU * raw_index + IU) * el_mod
 
-**RAW-INDEX Table**
+**RAW INDEX Table**
 
 | RAW       | Habitable | Desolate | Extreme |
 | --------- | --------- | -------- | ------- |
@@ -292,7 +292,7 @@ Technology upgrades may be purchased in the first and sixth months of the Terran
 
 EL = Economic Tech Level
 
-TODO: EL-MODIFIER
+TODO: el_mod
 
 # 3.0 Construction
 
