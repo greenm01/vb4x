@@ -66,8 +66,6 @@ Roll on the planet class and system resources tables below to determine the attr
 
 Note that each newly established colony begins as an outpost and has potential to develop into the max Population Unit (PU) for that planet. Transport colonists from larger colonies to smaller colonies to increase population growth over the natural birth rate. 
 
-Colonists love making babies and the population growth rate under normal conditions is 2% per month (turn), up to the max allowed PU for that planet. 
-
 Advances in terraforming tech will allow planets to upgrade class and living conditions.
 
 **Planet Class Table**
@@ -86,45 +84,43 @@ Advances in terraforming tech will allow planets to upgrade class and living con
 
 **System Resources Table**
 
-| Mudified Roll 1D10 | Raw       |
-| ------------------ | --------- |
-| 0                  | Very Poor |
-| 2, 3               | Poor      |
-| 4 - 7              | Normal    |
-| 8, 9               | Rich      |
-| 10+                | Very Rich |
+| Mudified Roll 1D10 | Raw Materials |
+| ------------------ | ------------- |
+| 0                  | Very Poor     |
+| 2, 3               | Poor          |
+| 4 - 7              | Normal        |
+| 8, 9               | Rich          |
+| 10+                | Very Rich     |
 
 ## 2.3 Ships, Squadrons, Fleets, and Task Forces
 
-### 2\.3.1 Ships
+### 2\.3.1 Space Force Ships
 
-#### 2\.3.1.1 Space Force
-
-The base game includes a number of imperial classed space combatants, listed in Section 9.
+The base game includes a number of imperial classed space combatants listed in Section 9.
 
 Feel free to create your own ships and races for asymmetrical warfare or narrative purposes.
 
-#### 2\.3.1.2 Merchant Marine
+### 2\.3.2 Merchant Marine Ships
 
 The Merchant marine fleet comprises civilian crewed ships that provide commerce and transport services for the House. They have no weapons technology or defense, and are easily captured or destroyed by enemy combat ships. Guard them wisely with military escorts.
 
 Merchant Marine attributes are listed in Section 9.
 
-##### **2.3.1.2.1 Environmental Transformation And Colonization (ETAC)**
+#### 2.3.2.1 Environmental Transformation And Colonization (ETAC)
 
 ETACs are used to terraform and colonize uninhabited planets. After use they are scrapped and used by the colony to continue the terraforming process. They have a Carry Limit (CL) of one and must be pre-loaded with PTUs to colonize. Terraforming does not require a PU.
 
-##### **2.3.1.2.2 Trader**
+#### 2.3.2.2 Trader
 
 Traders earn SATs by trading between colonies within the House or with trade partners. They must have an uncontested path back across jump lanes to a House colony in order facilitate merchant activity and earn. Systems may only have one operational trader assigned per House.
 
-##### 2.3.1.2.3 Transport
+#### 2.3.2.3 Transport
 
 Transports are large ships used to ferry PTU or Space Marines between systems. They have a CL of one.
 
 This ship will drop Marines on an enemy planet during an invasion or blitz. They also transfer population between colonies.
 
-### 2\.3.2 Squadrons
+### 2\.3.3 Squadrons
 
 The Space Force is organized by squadrons. Each squadron is commanded by a flagship with a Command Rating (CR) that will accommodate ships with a Command Cost (CC) that sum to less than or equal to the CR. This enables players to tactically group various classes of ships to balance combat effectiveness.
 
@@ -134,11 +130,11 @@ In non-hostile systems, ships in a squadron may be reassigned to an already exis
 
 Squadrons are only commissioned in systems with a functioning shipyard.
 
-### 2\.3.3 Fleets
+### 2\.3.4 Fleets
 
 Squadrons are grouped together into fleets for the purpose of traversing jump lanes. Fleets may be joined or split off (creating new fleets) for strategic purposes in any non-hostile system. There is no limit to the number of squadrons assigned to a fleet.
 
-### 2\.3.4 Task Force
+### 2\.3.5 Task Force
 
 A Task Force is temporary grouping of squadrons organized for combat. After the cessation of hostilities the task force is disbanded and surviving squadrons return to their respective fleets.
 
@@ -200,6 +196,104 @@ Armies garrison your colonies and eradicate invaders. Their orders are to take n
 
 Marines fight alongside the Army if garrisoned planetside.
 
+# X\.0 Prestige
+
+Prestige is the key to victory. The House with the highest Prestige takes the title of Emperor.
+
+There are several paths to the throne:
+
+1. Destroy all of your rival's assets.
+2. Crush your opponent's will and force them to capitulate.
+3. Set a game end year, and employ a combination of tactical prowess and subversion to outfox your opponents.
+4. Focus on economic development and population growth to outperform everyone else.
+5. Let your rivals destroy one another, then clean House afterwards.
+6. Outlast everyone.
+7. All of the above.
+8. Whatever the game allows.
+
+Prestige points are won through a combination of military victory, population growth, production, subversion, technological development, and various other factors.
+
+Performing poorly, mismanaging your colonies, acts of sabotage, and acts of subterfuge by other Houses will lower your prestige.
+
+To prevent an open-ended stalemate, it may be prudent to set a game ending year. The goal of VB4X is to provide enough assymetry to prevent such a condition.
+**(work in progress..... need help playtesting and regression analysis)**
+
+TODO: Provide a prestige table showing the various factors, both positive and negative.
+
+- Completely destroy a Task Force (+)
+- Force a task force to retreat (+)
+- Invade or blitz a planet (++)
+- Capture merchant marine vessels (+)
+- Lose a planet (--)
+- Lose merchant marine vessels (-)
+- Get surprised by a rogue fleet (-)
+- Get ambushed by a rogue fleet (-)
+- Lose a Starbase (-)
+- Destroy a Starbase (+)
+- Establish a new colony (+)
+- Max out the population of a colony (+)
+- Increase the a planet's class via terraforming (+)
+- Excessive tax rate (-)
+- Invest IU above 50% of a colony's PU (+)
+- Achieve a new tech level (+)
+- Sabotage an enemy Shipyard (+)
+- Spy on an enemy's colony (+)
+- And so on.... get creative
+
+# XY\.0 Economics
+
+The standard unit of account in VB4X is the Satoshi (SAT), i.e. money. The power of a House is fueled by economic might, which in turn is a function of population growth and harvested resources.
+
+SATs flow across space on the Lightning network.
+
+## XY\.1 Principles
+
+**Population Unit (PU)**: A unit of colony population that provides 1 SAT of productivity to the House.
+
+**Population Transfer Unit (PTU)**: A representative unit of colony population and associated cost of cargo and life support gear to colonize a planet or transfer to another colony. ETACs and transports move PTU between systems.
+
+**Gross Colony Product (GCP)**: A monetary measure of the market value of all the final goods and services produced and rendered in a turn for each of your colonies, measured in SATs.
+
+GCP = (PU * RAW-INDEX + IU)*EL-MODIFIER
+
+**RAW-INDEX Table**
+
+| RAW       | Habitable | Desolate | Extreme |
+| --------- | --------- | -------- | ------- |
+| Very Poor | 60%       | 60%      | 60%     |
+| Poor      | 80%       | 75%      | 70%     |
+| Normal    | 100%      | 90%      | 80%     |
+| Rich      | 120%      | 105%     | 90%     |
+| Very Rich | 140%      | 120%     | 100%    |
+
+Look up the Raw Material classification of your colony's system in the RAW column, and cross index with the planet's habital conditions.
+
+**Net Colony Value (NCV)**: The net value of taxes collected from each of you colonies.
+
+NCV = GCP * tax_rate
+
+**Tax Rate**: The tax rate that applies to all of your colonies. Setting the tax rate above 65% will result in a negative impact to your prestige as a ruler, and slow population growth.
+
+**House Treasury**: The total sum of NCV collected from colonies is transfered to the House treasury at the beginning of each month (turn). Unspent SATs from each turn rollover and earn 2% interest from *the galactic banking cabal that controls the layer two Lightning channels*.
+
+**Industrial Units (IU)**: The house may invest in the planetary industry of each colony. IUs may be placed on Small colonies (D1 class planets) or larger. IU invested above 50% of the planet's PU will be donated to the colony and increase House prestige.
+
+## XY\.2 Population Growth
+
+Colonists love making babies and the population growth rate under normal conditions is 2% per month (turn), up to the max allowed PU for that planet.
+
+## XY\.3 Trading & Mining
+
+## XX\.4 Maintenance Costs
+
+# XYZ\.0 Research & Technology
+
+Technology upgrades may be purchased in the first and sixth months of the Terran calendar, i.e. the first and sixth turns of each game year.
+
+EL = Economic Tech Level
+
+TODO: EM-MODIFIER
+
 # 3.0 Construction
 
 Construction and repair of House assets is accomplished planetside or in orbit, with restrictions.  
@@ -240,7 +334,7 @@ Merchant Marine ships may join a fleet for escort.
 
 # 5\.0 Combat
 
-## 5\.1 Basic Principles
+## 5\.1 Principles
 
 ### 5\.1.1 Rules of Engagement (ROE)
 
@@ -435,20 +529,6 @@ In the special circumstance that a Starbase is orphaned by a retreating Task For
 ## 5\.6 Planetary Bombardment
 
 ## 5\.7 Planetary Invasion, Blitz, and Ground Combat
-
-# 6\.0 Economics
-
-The standard unit of account in VB4X is the Satoshi (SAT), i.e. money. The power of a House is fueled by economic might, which in turn is a function of population growth and harvested resources.
-
-## 6\.1 Population Growth
-
-## 6\.2 Trading & Mining
-
-## 6\.3 Maintenance Costs
-
-# 7\.0 Research & Technology
-
-Technology upgrades may be purchased in the first and sixth months of the Terran calendar, i.e. the first and sixth turns of each game year.
 
 # 8\.0 Diplomacy & Subversion
 
