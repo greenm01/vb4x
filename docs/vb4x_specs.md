@@ -292,7 +292,7 @@ Technology upgrades may be purchased in the first and sixth months of the Terran
 
 EL = Economic Tech Level
 
-TODO: EM-MODIFIER
+TODO: EL-MODIFIER
 
 # 3.0 Construction
 
