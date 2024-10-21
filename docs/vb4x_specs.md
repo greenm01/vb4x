@@ -108,7 +108,7 @@ Merchant Marine attributes are listed in Section 9.
 
 #### 2.3.2.1 Environmental Transformation And Colonization (ETAC)
 
-ETACs are used to terraform and colonize uninhabited planets. After use they are scrapped and used by the colony to continue the terraforming process. They have a Carry Limit (CL) of one and must be pre-loaded with PTUs to colonize. Terraforming does not require a PU.
+ETACs are used to terraform and colonize uninhabited planets. After use they are scrapped and used by the colony to continue the terraforming process. They have a Carry Limit (CL) of one and must be pre-loaded with PTUs to colonize.
 
 #### 2.3.2.2 Trader
 
