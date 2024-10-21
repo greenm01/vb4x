@@ -88,7 +88,7 @@ Advances in terraforming tech will allow planets to upgrade class and living con
 | ------------------ | ------------- |
 | 0                  | Very Poor     |
 | 2, 3               | Poor          |
-| 4 - 7              | Normal        |
+| 4 - 7              | Abundant      |
 | 8, 9               | Rich          |
 | 10+                | Very Rich     |
 
@@ -262,7 +262,7 @@ GCP = (PU * raw_index + IU) * el_mod
 | --------- | --------- | -------- | ------- |
 | Very Poor | 60%       | 60%      | 60%     |
 | Poor      | 80%       | 75%      | 70%     |
-| Normal    | 100%      | 90%      | 80%     |
+| Abundant  | 100%      | 90%      | 80%     |
 | Rich      | 120%      | 105%     | 90%     |
 | Very Rich | 140%      | 120%     | 100%    |
 
@@ -282,17 +282,31 @@ NCV = GCP * tax_rate
 
 Colonists love making babies and the population growth rate under normal conditions is 2% per month (turn), up to the max allowed PU for that planet.
 
-## XY\.3 Trading & Mining
+## XY\.3 Trade
 
 ## XX\.4 Maintenance Costs
 
 # XYZ\.0 Research & Technology
 
-Technology upgrades may be purchased in the first and sixth months of the Terran calendar, i.e. the first and sixth turns of each game year.
+## XYZ\.1 Upgrades
+Houses may invest SATs to upgrade technologies, which are purchased in levels. 
+TODO: table with cost
 
+Technology upgrades may be purchased in the first and sixth months of the Terran calendar, i.e. the first and sixth turns of each game year. Levels must be purchased in sequential order, and only one level per technology each upgrade cycle.
+
+## XYZ\.2 Weapons
+Uprades improve ship Attack Strength (AS) and Defence Strength (DS) by one point for each tech level. The ship Production Cost (PC) also increase by one point. Note that ships are limited in tech level by their rated Hull Size (HS).
+
+## XYZ\.3 Terraforming
+Terraforming improve a planet's livable conditions, and thus the population limit. There are seven tech levels that correspond directly with the planet classes: E0 -> E1 -> D0 -> D1 -> H0 -> H1 -> H2. 
+
+A planet may not skip a class, and each step costs the upper PU bound in SATs for the desired planet class. Example: Upgrading a D1 planet to a H0 planet requires level five terraforming and 1k SATs.
+
+## XYZ\.4 Economics
 EL = Economic Tech Level
-
 TODO: el_mod
+## XYZ\.5 Stealth
+## XYZ\.6 Sabotage & Subversionn
 
 # 3.0 Construction
 
@@ -534,31 +548,31 @@ In the special circumstance that a Starbase is orphaned by a retreating Task For
 
 ## 5\.7 Planetary Invasion, Blitz, and Ground Combat
 
-# 8\.0 Diplomacy & Subversion
+# 8\.0 Diplomacy, Sabotage & Subversionn
 
 # 9\.0 Asset Tables
 
 ## 9\.1 Imperial Space Force
 
-PC = Production Cost, MC = Maintenance Cost, AS = Attack Strength, 
+PC = Production Cost, MC = Maintenance Cost, AS = Attack Strength, HS = Hull Size,
 
 DS = Defensive Strength, CC= Command Cost, CR = Command Rating, CL = Carry Limit
 
-| Class | Name             | PC  | MC    | AS  | DS  | CC  | CR  | CL  |
-|:-----:| ---------------- |:---:|:-----:|:---:|:---:|:---:|:---:|:---:|
-| CT    | Corvette         | 2   | 0\.1  | 1   | 2   | 1   | 2   | 0   |
-| FF    | Frigate          | 3   | 0\.2  | 2   | 3   | 2   | 3   | 0   |
-| DD    | Destroyer        | 4   | 0\.3  | 3   | 4   | 2   | 4   | 0   |
-| CA    | Cruiser          | 5   | 0\.4  | 4   | 5   | 3   | 6   | 0   |
-| BC    | Battle Cruiser   | 6   | 0\.5  | 4   | 6   | 3   | 8   | 0   |
-| BB    | Battleship       | 8   | 1\.0  | 6   | 8   | 3   | 9   | 0   |
-| DN    | Dreadnought      | 10  | 1\.25 | 9   | 9   | 4   | 10  | 0   |
-| CV    | Carrier          | 8   | 1\.0  | 1   | 6   | 3   | 8   | 3   |
-| CX    | Super Carrier    | 10  | 1\.5  | 1   | 9   | 4   | 10  | 5   |
-| FR    | Fighter Squadron | 3   | 0\.2  | 3   | 2   | 0   | 0   | 0   |
-| RR    | Raider           | 7   | 0\.5  | 4   | 6   | 3   | 4   | 0   |
-| SC    | Scout            | 5   | 0\.1  | 0   | 1   | 1   | 0   | 0   |
-| SB    | Starbase         | 50  | 2     | 35  | 50  | 0   | 0   | 0   |
+| Class | Name             | HS  | PC  | MC    | AS  | DS  | CC  | CR  | CL  |
+|:-----:| ---------------- |:---:|:---:|:-----:|:---:|:---:|:---:|:---:|:---:|
+| CT    | Corvette         | 1   | 2   | 0\.1  | 1   | 2   | 1   | 2   | 0   |
+| FF    | Frigate          | 1   | 3   | 0\.2  | 2   | 3   | 2   | 3   | 0   |
+| DD    | Destroyer        | 1   | 4   | 0\.3  | 3   | 4   | 2   | 4   | 0   |
+| CA    | Cruiser          | 2   | 5   | 0\.4  | 4   | 5   | 3   | 6   | 0   |
+| BC    | Battle Cruiser   | 2   | 6   | 0\.5  | 4   | 6   | 3   | 8   | 0   |
+| BB    | Battleship       | 3   | 8   | 1\.0  | 6   | 8   | 3   | 9   | 0   |
+| DN    | Dreadnought      | 3   | 10  | 1\.25 | 9   | 9   | 4   | 10  | 0   |
+| CV    | Carrier          | 1   | 8   | 1\.0  | 1   | 6   | 3   | 8   | 3   |
+| CX    | Super Carrier    | 2   | 10  | 1\.5  | 1   | 9   | 4   | 10  | 5   |
+| FR    | Fighter Squadron | 1   | 3   | 0\.2  | 3   | 2   | 0   | 0   | 0   |
+| RR    | Raider           | 2   | 7   | 0\.5  | 4   | 6   | 3   | 4   | 0   |
+| SC    | Scout            | 1   | 5   | 0\.1  | 0   | 1   | 1   | 0   | 0   |
+| SB    | Starbase         | 4   | 50  | 2     | 35  | 50  | 0   | 0   | 0   |
 
 ## 9\.2 Merchant Marine
 
