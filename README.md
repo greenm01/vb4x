@@ -1,5 +1,7 @@
 EC4X is an asychronous turn based wargame of the classic eXplore, eXpand, eXploit, and eXterminate (4X) variety for muitiple players. 
 
+Inspired by Esterian Conquest and others.
+
 The initial release will be playable via email, chat, or tabletop play, with some light scripting tools tools to facilitate blind game moderation and fog of war. Future releases will be server/client based, and written in Rust.
 
 Upstart Houses battle over a small region of space to dominate usurpers and seize the imperial throne. The game starts at the dawn of the third imperium in year 2001. Each turn comprises one month of a thirteen month Terran Computational Calendar. Turns cycle every 24-hours in real life (IRL) time.
