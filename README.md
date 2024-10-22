@@ -10,4 +10,4 @@ EC4X is a simple and straight-forward framework that will also enable well organ
 
 Victory is won by crushing your rivals and earning the most Prestige by end of game.
 
-[Game Specification (work in progress)](https://github.com/greenm01/vb4x/blob/main/docs/vb4x_specs.md)
+[Game Specification (work in progress)](https://github.com/greenm01/ec4x/blob/main/docs/ec4x_specs.md)
