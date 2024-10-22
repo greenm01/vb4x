@@ -156,7 +156,7 @@ Scouts are autonomous drones outfitted with advanced sensors that aid with elect
 
 ### 2\.4.3 Raiders
 
-The Raider is the most advanced ship in the arsenol, outfitted with cloaking technology. They are expensive but have the firepower of a Battleship and shielding of a Cruiser.
+The Raider is the most advanced ship in the arsenal, outfitted with cloaking technology. They are expensive but have the firepower of a Battleship and shielding of a Cruiser.
 
 **Stealth Roll**
 
