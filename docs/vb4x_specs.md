@@ -64,7 +64,7 @@ Solar systems contain various F, G, K, and M class stars that are orbited by at 
 
 Roll on the planet class and system resources tables below to determine the attributes for each hex on the starmap, excluding homeworlds.
 
-Note that each newly established colony begins as an outpost and has potential to develop into the max Population Unit (PU) for that planet. Transport colonists from larger colonies to smaller colonies to increase population growth over the natural birth rate. 
+Note that each newly established colony begins as an outpost and has potential to develop into the max Population Unit (PU) for that planet. Ferry colonists from larger colonies to smaller colonies, via starliners, to increase population growth over the natural birth rate. 
 
 Advances in terraforming tech will allow planets to upgrade class and living conditions.
 
@@ -75,10 +75,10 @@ Advances in terraforming tech will allow planets to upgrade class and living con
 | 0         | E0    | Extreme    | Outpost          | 1-20    |
 | 1         | E1    | Extreme    | Citadel          | 21-60   |
 | 2, 3      | D0    | Desolate   | Settlement       | 61-180  |
-| 4, 5      | D1    | Desolate   | Small            | 181-500 |
-| 6, 7      | H0    | Habitable  | Medium           | 501-1k  |
-| 8*        | H1    | Habitable  | Large            | 1.1k-2k |
-| 9*        | H2    | Habitable  | Very Large       | 2.1k+   |
+| 4, 5      | D1    | Desolate   | Village          | 181-500 |
+| 6, 7      | H0    | Habitable  | Town             | 501-1k  |
+| 8*        | H1    | Habitable  | City             | 1.1k-2k |
+| 9*        | H2    | Habitable  | Megatropolis     | 2.1k+   |
 
 \*Note: if the roll above is a natural eight (8), add a +1 modifier to your roll on the raw materials table. If the roll is a natural nine (9) add a +2 modifier.
 
@@ -108,17 +108,17 @@ Merchant Marine attributes are listed in Section 9.
 
 #### 2.3.2.1 Environmental Transformation And Colonization (ETAC)
 
-ETACs are used to terraform and colonize uninhabited planets. After use they are scrapped and used by the colony to continue the terraforming process. They have a Carry Limit (CL) of one and must be pre-loaded with PTUs to colonize.
+ETACs are used to terraform and colonize uninhabited planets. After use they are scrapped and used by the colony to continue the terraforming process. They have a Carry Limit (CL) of one and must be pre-loaded with a Population Transfer Unit (PTU) in order to colonize.
 
-#### 2.3.2.2 Trader
+#### 2.3.2.2 Traders
 
 Traders earn SATs by trading between colonies within the House or with trade partners. They must have an uncontested path back across jump lanes to a House colony in order facilitate merchant activity and earn. Systems may only have one operational trader assigned per House.
 
-#### 2.3.2.3 Transport
+#### 2.3.2.3 Starliners & Troop Transports
 
-Transports are large ships used to ferry PTU or Space Marines between systems. They have a CL of one.
+Starliners ferry Pilgrims between existing colonies. Passengers travel in stasis to optimize space, along with their associated life support equipment, factories, and supplies to make them economically productive at the new destination. They have a Carry Limit (CL) of ten and move PTU.
 
-This ship will drop Marines on an enemy planet during an invasion or blitz. They also transfer population between colonies.
+Troop Transports are specialized ships that taxi Space Marine divisions between solar systems, along with their required combat gear, armored vehicles, and ammunition. They have a CL of one.
 
 ### 2\.3.3 Squadrons
 
@@ -192,6 +192,8 @@ Ground batteries are the only units that are constructed in the span of a single
 
 Space Marines are ferocious devil dogs that capture enemy planets. They deploy in division sized units and will never surrender or abandon one of their own.
 
+Marines are dropped on enemy planets by troop transports during an invasion or blitz.
+
 Armies garrison your colonies and eradicate invaders. Their orders are to take no prisoners and protect the colony at all cost.
 
 Marines fight alongside the Army if garrisoned planetside.
@@ -250,7 +252,7 @@ SATs settle instanteously on the interdimensional Lightning network. (All comms 
 
 **Population Unit (PU)**: A unit of colony population that provides 1 SAT of productivity to the House.
 
-**Population Transfer Unit (PTU)**: A representative unit of colony population and associated cost of cargo and life support gear to colonize a planet or transfer to another colony. ETACs and transports move PTU between systems.
+**Population Transfer Unit (PTU)**: A representative unit of colony population and associated cost of cargo, factories, and life support equipment to colonize a planet or transfer to another colony. ETACs and starliners move PTU(s) between solar systems.
 
 **Gross Colony Product (GCP)**: A monetary measure of the market value of all the final goods and services produced and rendered in a turn for each of your colonies, measured in SATs.
 
@@ -289,23 +291,31 @@ Colonists love making babies and the population growth rate under normal conditi
 # XYZ\.0 Research & Technology
 
 ## XYZ\.1 Upgrades
+
 Houses may invest SATs to upgrade technologies, which are purchased in levels. 
 TODO: table with cost
 
 Technology upgrades may be purchased in the first and sixth months of the Terran calendar, i.e. the first and sixth turns of each game year. Levels must be purchased in sequential order, and only one level per technology each upgrade cycle.
 
 ## XYZ\.2 Weapons
+
 Uprades improve ship Attack Strength (AS) and Defence Strength (DS) by one point for each tech level. The ship Production Cost (PC) also increase by one point. Note that ships are limited in tech level by their rated Hull Size (HS).
 
 ## XYZ\.3 Terraforming
+
 Terraforming improve a planet's livable conditions, and thus the population limit. There are seven tech levels that correspond directly with the planet classes: E0 -> E1 -> D0 -> D1 -> H0 -> H1 -> H2. 
 
 A planet may not skip a class, and each step costs the upper PU bound in SATs for the desired planet class. Example: Upgrading a D1 planet to a H0 planet requires level five terraforming and 1k SATs.
 
+ETACs set the initial livable conditions for an outpost. Further terraforming is completed by colonists on the surface and do not require additional ETACs.
+
 ## XYZ\.4 Economics
+
 EL = Economic Tech Level
 TODO: el_mod
+
 ## XYZ\.5 Stealth
+
 ## XYZ\.6 Sabotage & Subversionn
 
 # 3.0 Construction
@@ -461,7 +471,9 @@ Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by 
 
 Orphaned fighter squadrons are scuttled if there is no carrier capacity available during a retreat.
 
-Transports are captured and colonists enslaved if their escort fleet was destroyed or the transports were un-escorted at the commencement of hostilities. Space Marines never surrender and self-detonate the ship.
+Starliners are captured and colonists enslaved if their escort fleet was destroyed or the transports were un-escorted at the commencement of hostilities. 
+
+Space Marines never surrender and self-detonate their troop transports.
 
 ETACs and traders rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
 
@@ -576,12 +588,13 @@ DS = Defensive Strength, CC= Command Cost, CR = Command Rating, CL = Carry Limit
 
 ## 9\.2 Merchant Marine
 
-| **Class** | **Name**  | **PC** | MC  | CL  |
-|:---------:| --------- |:------:|:---:|:---:|
-| SS        | Shipyard  | 25     | 1.0 | 1   |
-| ET        | ETAC      | 15     | 0.5 | 1   |
-| TR        | Trader    | 6      | 0.5 | 0   |
-| TT        | Transport | 5      | 0.2 | 1   |
+| **Class** | **Name**        | **PC** | MC  | CL  |
+|:---------:| --------------- |:------:|:---:|:---:|
+| SS        | Shipyard        | 25     | 1.0 | 1   |
+| ET        | ETAC            | 15     | 0.5 | 1   |
+| TR        | Trader          | 6      | 0.5 | 0   |
+| TT        | Troop Transport | 5      | 0.2 | 1   |
+| SL        | Starliner       | 12     | 0.5 | 12  |
 
 ## 9\.3 Planet Based Units
 
