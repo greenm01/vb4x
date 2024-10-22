@@ -1,4 +1,4 @@
-# VB4X Specification v0.1
+# EC4X Specification v0.1
 
 Written by Mason A. Green
 
@@ -6,13 +6,13 @@ In memory of Jonathan F. Pratt.
 
 # Introduction
 
-VB4X is an asynchronous turn based wargame of the classic eXplore, eXpand, eXploit, and eXterminate (4X) variety.
+EC4X is an asynchronous turn based wargame of the classic eXplore, eXpand, eXploit, and eXterminate (4X) variety.
 
 Upstart houses battle over a small region of space to dominate usurpers and seize the imperial throne. The game begins at the dawn of the third imperium in the year 2001. Each turn comprises one month of a thirteen month [Terran Computational Calendar](<https://www.terrancalendar.com/> "Terran Computational Calendar"). Turns cycle every 24-hours in real life (IRL) time.
 
-The game is designed to facilitate remote play between friends over email via Excel and Python scripting. Future releases will be server/client based and written in Rust. VB4X is a flexible framework; adapt it to your own requirements.
+The game is designed to facilitate remote play between friends over email or local tabletop play. Future releases will be server/client based and written in Rust. EC4X is a flexible framework; adapt it to your own requirements.
 
-VB4X pays homage and is influenced by the following great titles:
+EC4X pays homage and is influenced by the following great titles:
 
 - Esterian Conquest (EC)
 - Victory by Any Means (VBAM)
@@ -25,7 +25,7 @@ Although not required, it is highly recommended to purchase physical copies of t
 
 Esterian Conquest was a bulletin board system (BBS) door game from the early 1990's that initially inspired this project. EC was THE greatest game of all time (no arguments).
 
-While not intended to be an accounting exercise, there is enough complexity in VB4X to allow for dynamic strategic decision making and surprising outcomes.
+While not intended to be an accounting exercise, there is enough complexity in EC4X to allow for dynamic strategic decision making and surprising outcomes.
 
 Victory is won by crushing your rivals and earning the most Prestige by end of game.
 
@@ -64,7 +64,7 @@ Solar systems contain various F, G, K, and M class stars that are orbited by at 
 
 Roll on the planet class and system resources tables below to determine the attributes for each hex on the starmap, excluding homeworlds.
 
-Note that each newly established colony begins as an outpost and has potential to develop into the max Population Unit (PU) for that planet. Ferry colonists from larger colonies to smaller colonies, via starliners, to increase population growth over the natural birth rate. 
+Note that each newly established colony begins as Level 1 and has potential to develop into the max Population Unit (PU) for that planet. Ferry colonists from larger colonies to smaller colonies, via starliners, to increase population growth over the natural birth rate. 
 
 Advances in terraforming tech will allow planets to upgrade class and living conditions.
 
@@ -72,13 +72,13 @@ Advances in terraforming tech will allow planets to upgrade class and living con
 
 | Roll 1D10 | Class | Conditions | Colony Potential | PUs     |
 |:---------:|:-----:| ---------- | ---------------- |:-------:|
-| 0         | E0    | Extreme    | Outpost          | 1-20    |
-| 1         | E1    | Extreme    | Citadel          | 21-60   |
-| 2, 3      | D0    | Desolate   | Settlement       | 61-180  |
-| 4, 5      | D1    | Desolate   | Village          | 181-500 |
-| 6, 7      | H0    | Habitable  | Town             | 501-1k  |
-| 8*        | H1    | Habitable  | City             | 1.1k-2k |
-| 9*        | H2    | Habitable  | Megatropolis     | 2.1k+   |
+| 0         | E0    | Extreme    | Level I          | 1-20    |
+| 1         | E1    | Extreme    | Level II         | 21-60   |
+| 2, 3      | D0    | Desolate   | Level III        | 61-180  |
+| 4, 5      | D1    | Desolate   | Level IV         | 181-500 |
+| 6, 7      | H0    | Habitable  | Level V          | 501-1k  |
+| 8*        | H1    | Habitable  | Level VI         | 1.1k-2k |
+| 9*        | H2    | Habitable  | Level VII        | 2.1k+   |
 
 \*Note: if the roll above is a natural eight (8), add a +1 modifier to your roll on the raw materials table. If the roll is a natural nine (9) add a +2 modifier.
 
@@ -108,7 +108,7 @@ Merchant Marine attributes are listed in Section 9.
 
 #### 2.3.2.1 Environmental Transformation And Colonization (ETAC)
 
-ETACs are used to terraform and colonize uninhabited planets. After use they are scrapped and used by the colony to continue the terraforming process. They have a Carry Limit (CL) of one and must be pre-loaded with a Population Transfer Unit (PTU) in order to colonize.
+ETACs are used to terraform and colonize uninhabited planets. After use they are scrapped and used by the colony to continue the terraforming process. They have a Carry Limit (CL) of one Population Transfer Unit (PTU) and must be pre-loaded with colonists.
 
 #### 2.3.2.2 Traders
 
@@ -116,9 +116,9 @@ Traders earn SATs by trading between colonies within the House or with trade par
 
 #### 2.3.2.3 Starliners & Troop Transports
 
-Starliners ferry Pilgrims between existing colonies. Passengers travel in stasis to optimize space, along with their associated life support equipment, factories, and supplies to make them economically productive at the new destination. They have a Carry Limit (CL) of twelve and move PTU.
+Starliners are massive ships that ferry Pilgrims between existing colonies. Passengers travel in stasis to optimize space, along with their associated life support equipment, factories, and supplies to make them economically productive at the new destination. They have a Carry Limit (CL) of 100 PTU.
 
-Troop Transports are specialized ships that taxi Space Marine divisions between solar systems, along with their required combat gear, armored vehicles, and ammunition. They have a CL of one.
+Troop Transports are specialized ships that taxi Space Marine divisions between solar systems, along with their required combat gear, armored vehicles, and ammunition. They have a CL of one MM.
 
 ### 2\.3.3 Squadrons
 
@@ -156,9 +156,19 @@ Scouts are autonomous drones outfitted with advanced sensors that aid with elect
 
 ### 2\.4.3 Raiders
 
-Raiders are the only ships outfitted with cloaking technology. They are not available until cloaking technology is researched and developed.
+The Raider is the most advanced ship in the arsenol, outfitted with cloaking technology. They are expensive but have the firepower of a Battleship and shielding of a Cruiser.
 
-Fleets containing a Raider have a 33% chance (roll 1 or 2 on a 1D6) of going undetected. The number of Raiders in the fleet does not affect the roll, nor rate multiple chances.
+**Stealth Roll**
+
+| Stealth Tech Level | % Chance | 1D20 Roll |
+|:------------------:|:--------:|:---------:|
+| 0                  | 00       | NA        |
+| 1                  | 15       | 18 - 2 0  |
+| 2                  | 30       | 15 - 20   |
+| 3                  | 45       | 12 - 20   |
+| 4                  | 60       | 8 - 20    |
+
+Fleets containing a Raider roll a 1D20 on the table above, with the approproate Stealth tech level, for a chance of going undetected by rival forces. The number of Raiders in the fleet does not affect the roll, nor rate multiple chances.
 
 ### 2\.4.4 Starbases
 
@@ -177,6 +187,8 @@ Spaceports require two months (two turns) to construct planetside, and are used 
 Shipyards are gateways to the stars. They are large bases constructed in orbit and require a spaceport to build over a period of three months (three turns).
 
 The majority of ship construction and repair will occur at these important facilities. 
+
+Shipyards are equipped with 10 docks for construction and repair. There is no limit on the number of Shipyards orbiting a colony.
 
 ### 2\.4.7 Planetary Shields & Ground Batteries
 
@@ -217,7 +229,7 @@ Prestige points are won through a combination of military victory, population gr
 
 Performing poorly, mismanaging your colonies, acts of sabotage, and acts of subterfuge by other Houses will lower your prestige.
 
-To prevent an open-ended stalemate, it may be prudent to set a game ending year. The goal of VB4X is to provide enough assymetry to prevent such a condition.
+To prevent an open-ended stalemate, it may be prudent to set a game ending year. The goal of EC4X is to provide enough assymetry to prevent such a condition.
 **(work in progress..... need help playtesting and regression analysis)**
 
 TODO: Provide a prestige table showing the various factors, both positive and negative.
@@ -244,7 +256,7 @@ TODO: Provide a prestige table showing the various factors, both positive and ne
 
 # XY\.0 Economics
 
-The standard unit of account in VB4X is the Satoshi (SAT), i.e. money. The power of a House is fueled by economic might, which in turn is a function of population growth and harvested resources.
+The standard unit of account in EC4X is the Satoshi (SAT), i.e. money. The power of a House is fueled by economic might, which in turn is a function of population growth and harvested resources.
 
 SATs settle instanteously on the interdimensional Lightning network. (All comms and data are instaneous in this manner. Don't question; it's magic).
 
@@ -252,7 +264,15 @@ SATs settle instanteously on the interdimensional Lightning network. (All comms 
 
 **Population Unit (PU)**: A unit of colony population that provides 1 SAT of productivity to the House.
 
-**Population Transfer Unit (PTU)**: A representative unit of colony population and associated cost of cargo, factories, and life support equipment to colonize a planet or transfer to another colony. ETACs and starliners move PTU(s) between solar systems.
+**Population Transfer Unit (PTU)**: A representative unit of colony population and associated cost of cargo, factories, and life support equipment to colonize a planet or transfer to another colony. ETACs and starliners move PTUs between solar systems.
+
+PTUs enables transferring Pilgrims from larger collonies to smaller collonies without a signficant loss of PU from the mother-colony. 
+
+PU = XXX
+
+PTU = XXXX
+
+The assumption is that this calculation will be performed in Excel or code. 
 
 **Gross Colony Product (GCP)**: A monetary measure of the market value of all the final goods and services produced and rendered in a turn for each of your colonies, measured in SATs.
 
@@ -290,6 +310,8 @@ Colonists love making babies and the population growth rate under normal conditi
 
 # XYZ\.0 Research & Technology
 
+In a standard game, all tech levels start at zero.
+
 ## XYZ\.1 Upgrades
 
 Houses may invest SATs to upgrade technologies, which are purchased in levels. 
@@ -299,7 +321,7 @@ Technology upgrades may be purchased in the first and sixth months of the Terran
 
 ## XYZ\.2 Weapons
 
-Uprades improve ship Attack Strength (AS) and Defence Strength (DS) by one point for each tech level. The ship Production Cost (PC) also increase by one point. Note that ships are limited in tech level by their rated Hull Size (HS).
+Uprades improve the Attack Strength (AS) and Defence Strength (DS) of combat ships by 20% for each tech level (rounded down). The ship Production Costs (PC) also increases by 20%. Note that ships are limited in weapons tech level by their rated Hull Size (HS).
 
 ## XYZ\.3 Terraforming
 
@@ -307,7 +329,7 @@ Terraforming improve a planet's livable conditions, and thus the population limi
 
 A planet may not skip a class, and each step costs the upper PU bound in SATs for the desired planet class. Example: Upgrading a D1 planet to a H0 planet requires level five terraforming and 1k SATs.
 
-ETACs set the initial livable conditions for an outpost. Further terraforming is completed by colonists on the surface and do not require additional ETACs.
+ETACs set the initial livable conditions for a Level I colony. Further terraforming is completed by colonists on the surface and do not require additional ETACs.
 
 ## XYZ\.4 Economics
 
@@ -564,7 +586,7 @@ In the special circumstance that a Starbase is orphaned by a retreating Task For
 
 # 9\.0 Asset Tables
 
-## 9\.1 Imperial Space Force
+## 9\.1 Imperial Space Force (Weapons Level 0)
 
 PC = Production Cost, MC = Maintenance Cost, AS = Attack Strength, HS = Hull Size,
 
@@ -572,36 +594,36 @@ DS = Defensive Strength, CC= Command Cost, CR = Command Rating, CL = Carry Limit
 
 | Class | Name             | HS  | PC  | MC    | AS  | DS  | CC  | CR  | CL  |
 |:-----:| ---------------- |:---:|:---:|:-----:|:---:|:---:|:---:|:---:|:---:|
-| CT    | Corvette         | 1   | 2   | 0\.1  | 1   | 2   | 1   | 2   | 0   |
-| FF    | Frigate          | 1   | 3   | 0\.2  | 2   | 3   | 2   | 3   | 0   |
-| DD    | Destroyer        | 1   | 4   | 0\.3  | 3   | 4   | 2   | 4   | 0   |
-| CA    | Cruiser          | 2   | 5   | 0\.4  | 4   | 5   | 3   | 6   | 0   |
-| BC    | Battle Cruiser   | 2   | 6   | 0\.5  | 4   | 6   | 3   | 8   | 0   |
-| BB    | Battleship       | 3   | 8   | 1\.0  | 6   | 8   | 3   | 9   | 0   |
-| DN    | Dreadnought      | 3   | 10  | 1\.25 | 9   | 9   | 4   | 10  | 0   |
-| CV    | Carrier          | 1   | 8   | 1\.0  | 1   | 6   | 3   | 8   | 3   |
-| CX    | Super Carrier    | 2   | 10  | 1\.5  | 1   | 9   | 4   | 10  | 5   |
-| FR    | Fighter Squadron | 1   | 3   | 0\.2  | 3   | 2   | 0   | 0   | 0   |
-| RR    | Raider           | 2   | 7   | 0\.5  | 4   | 6   | 3   | 4   | 0   |
-| SC    | Scout            | 1   | 5   | 0\.1  | 0   | 1   | 1   | 0   | 0   |
-| SB    | Starbase         | 4   | 50  | 2     | 35  | 50  | 0   | 0   | 0   |
+| CT    | Corvette         | 1   | 2   | 0\.1  | 1   | 2   | 1   | 2   | NA  |
+| FF    | Frigate          | 1   | 3   | 0\.2  | 2   | 3   | 2   | 3   | NA  |
+| DD    | Destroyer        | 1   | 4   | 0\.3  | 3   | 4   | 2   | 4   | NA  |
+| CA    | Cruiser          | 2   | 5   | 0\.4  | 4   | 5   | 3   | 6   | NA  |
+| BC    | Battle Cruiser   | 2   | 6   | 0\.5  | 4   | 6   | 3   | 8   | NA  |
+| BB    | Battleship       | 3   | 8   | 1\.0  | 6   | 8   | 3   | 9   | NA  |
+| DN    | Dreadnought      | 3   | 10  | 1\.25 | 9   | 9   | 4   | 10  | NA  |
+| CV    | Carrier          | 1   | 8   | 1\.0  | 2   | 6   | 3   | 8   | 3   |
+| CX    | Super Carrier    | 2   | 10  | 1\.5  | 3   | 9   | 4   | 10  | 5   |
+| FR    | Fighter Squadron | 1   | 3   | 0\.2  | 3   | 2   | NA  | NA  | NA  |
+| RR    | Raider           | 2   | 25  | 0\.5  | 6   | 5   | 3   | 4   | 0   |
+| SC    | Scout            | 1   | 5   | 0\.1  | 0   | 1   | 1   | NA  | NA  |
+| SB    | Starbase         | 3   | 50  | 2.5   | 45  | 50  | NA  | NA  | NA  |
 
 ## 9\.2 Merchant Marine
 
-| **Class** | **Name**        | **PC** | MC  | CL  |
-|:---------:| --------------- |:------:|:---:|:---:|
-| SS        | Shipyard        | 25     | 1.0 | 1   |
-| ET        | ETAC            | 15     | 0.5 | 1   |
-| TR        | Trader          | 6      | 0.5 | 0   |
-| TT        | Troop Transport | 5      | 0.2 | 1   |
-| SL        | Starliner       | 12     | 0.5 | 12  |
+| **Class** | **Name**        | **PC** | MC  | CL      |
+|:---------:| --------------- |:------:|:---:|:-------:|
+| SS        | Shipyard        | 30     | 3   | 10      |
+| ET        | ETAC            | 15     | 0.5 | 1 PTU   |
+| TR        | Trader          | 6      | 0.5 | NA      |
+| TT        | Troop Transport | 5      | 0.5 | 1 MM    |
+| SL        | Starliner       | 15     | 2.0 | 100 PTU |
 
 ## 9\.3 Planet Based Units
 
 | **Class** | **Name**         | **PC** | MC  |
 |:---------:| ---------------- |:------:|:---:|
-| PY        | Spaceport        | 20     | 1   |
-| PS        | Planetary Shield | 35     | 2   |
+| PY        | Spaceport        | 20     | 1.0 |
+| PS        | Planetary Shield | 35     | 2.0 |
 | GB        | Ground Batteries | 4      | 0.1 |
 | AA        | Armies           | 2      | 0.2 |
 | MM        | Space Marines    | 3      | 0.2 |
