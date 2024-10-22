@@ -116,7 +116,7 @@ Traders earn SATs by trading between colonies within the House or with trade par
 
 #### 2.3.2.3 Starliners & Troop Transports
 
-Starliners ferry Pilgrims between existing colonies. Passengers travel in stasis to optimize space, along with their associated life support equipment, factories, and supplies to make them economically productive at the new destination. They have a Carry Limit (CL) of ten and move PTU.
+Starliners ferry Pilgrims between existing colonies. Passengers travel in stasis to optimize space, along with their associated life support equipment, factories, and supplies to make them economically productive at the new destination. They have a Carry Limit (CL) of twelve and move PTU.
 
 Troop Transports are specialized ships that taxi Space Marine divisions between solar systems, along with their required combat gear, armored vehicles, and ammunition. They have a CL of one.
 
