@@ -64,7 +64,7 @@ Solar systems contain various F, G, K, and M class stars that are orbited by at 
 
 Roll on the planet class and system resources tables below to determine the attributes for each hex on the starmap, excluding homeworlds.
 
-Note that each newly established colony begins as Level 1 and has potential to develop into the max Population Unit (PU) for that planet. Ferry colonists from larger colonies to smaller colonies, via starliners, to increase population growth over the natural birth rate. 
+Note that each newly established colony begins as Level I and has potential to develop into the max Population Unit (PU) for that planet. Ferry colonists from larger colonies to smaller colonies, via starliners, to increase population growth over the natural birth rate. 
 
 Advances in terraforming tech will allow planets to upgrade class and living conditions.
 
@@ -302,7 +302,7 @@ NCV = GCP * tax_rate
 
 ## XY\.2 Population Growth
 
-Colonists love making babies and the population growth rate under normal conditions is 2% per month (turn), up to the max allowed PU for that planet.
+Colonists are hard at work making babies of the House, and the population growth rate under normal conditions is 1% per month (turn), up to the max allowed PU for that planet.
 
 ## XY\.3 Trade
 
