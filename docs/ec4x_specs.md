@@ -8,9 +8,11 @@ In memory of Jonathan F. Pratt.
 
 EC4X is an asynchronous turn based wargame of the classic eXplore, eXpand, eXploit, and eXterminate (4X) variety.
 
-Upstart houses battle over a small region of space to dominate usurpers and seize the imperial throne. The game begins at the dawn of the third imperium in the year 2001. Each turn comprises one month of a thirteen month [Terran Computational Calendar](<https://www.terrancalendar.com/> "Terran Computational Calendar"). Turns cycle every 24-hours in real life (IRL) time.
+Upstart Houses battle over a small region of space to dominate usurpers and seize the imperial throne. Your role is to serve as House Duke and lead your people to greatness. 
 
-The game is designed to facilitate remote play between friends over email or local tabletop play. Future releases will be server/client based and written in Rust. EC4X is a flexible framework; adapt it to your own requirements.
+The game begins at the dawn of the third imperium in the year 2001. Each turn comprises one month of a thirteen month [Terran Computational Calendar](<https://www.terrancalendar.com/> "Terran Computational Calendar"). Turns cycle every 24-hours in real life (IRL) time.
+
+EC4X is intended to facilitate remote play between friends over email or local tabletop play. Future releases will be server/client based and written in Rust. EC4X is a flexible framework; adapt it to your own requirements.
 
 EC4X pays homage and is influenced by the following great titles:
 
@@ -27,9 +29,52 @@ Esterian Conquest was a bulletin board system (BBS) door game from the early 199
 
 While not intended to be an accounting exercise, there is enough complexity in EC4X to allow for dynamic strategic decision making and surprising outcomes.
 
-Victory is won by crushing your rivals and earning the most Prestige by end of game.
+The background narrative of VB4X is wide open and only limited by the scope of your imagination.
 
-# 1.0 Turns
+# 1.0 How to Play
+
+## 1.1 Prestige
+
+Prestige is the key to victory. Crush your rivals and take the title of Emperor.
+
+There are several paths to the throne:
+
+1. Destroy all of your rival's assets.
+2. Crush your opponent's will and force them to capitulate.
+3. Set a game end year, and employ a combination of tactical prowess and subversion to outfox your opponents.
+4. Focus on economic development and population growth to outperform everyone else.
+5. Let your rivals destroy one another, then clean House afterwards.
+6. Outlast everyone.
+7. All of the above.
+8. Whatever the game allows.
+
+Prestige points are won through a combination of military victory, population growth, production, subversion, technological development, and various other factors.
+
+Performing poorly, mismanaging your colonies, acts of sabotage, and acts of subterfuge by other Houses will lower your prestige.
+
+To prevent an open-ended stalemate, it may be prudent to set a game ending year. The goal of EC4X is to provide enough asymmetry to prevent such a condition. **(work in progress..... need help play-testing and regression analysis)**
+
+TODO: Provide a prestige table showing the various factors, both positive and negative.
+
+- Completely destroy a Task Force (+)
+- Force a task force to retreat (+)
+- Invade or blitz a planet (++)
+- Lose a planet (--)
+- Get surprised by a rogue fleet (-)
+- Get ambushed by a rogue fleet (-)
+- Lose a Starbase (-)
+- Destroy a Starbase (+)
+- Establish a new colony (+)
+- Max out the population of a colony (+)
+- Increase a planet's class via terraforming (+)
+- Excessive tax rate (-)
+- Invest IU above 50% of a colony's PU (+)
+- Achieve a new tech level (+)
+- Sabotage a rival Shipyard (+)
+- Spy on an rival's colony (+)
+- And so on.... get creative
+
+## 1.2 Turns
 
 Each turn comprises four phases
 
@@ -54,9 +99,9 @@ There are three classes of jump lanes: restricted, minor, and major. The hub is 
 
 Movement across the lanes is explained in Section 4.
 
-Players start the game with one homeworld (Class H2 with rich raw materials and a settlement sized colony of 61 PU) 50 Satoshis (SAT) in the treasury, one spaceport, one shipyard, one fully loaded ETAC, a cruiser, two destroyers, and a scout. 
+Players start the game with one homeworld (Class P6 planet with a Rich solar system and 500 PU) 250 Satoshis (SAT) in the treasury, one spaceport, one shipyard, one fully loaded ETAC, a cruiser, two destroyers, and two scouts. 
 
-Each player's homeworld should be placed on the outer ring, as far as strategically possible from enemy home system(s).
+Each player's homeworld should be placed on the outer ring, as far as strategically possible from rival home system(s).
 
 ## 2\.2 Solar Systems
 
@@ -64,7 +109,7 @@ Solar systems contain various F, G, K, and M class stars that are orbited by at 
 
 Roll on the planet class and system resources tables below to determine the attributes for each hex on the starmap, excluding homeworlds.
 
-Note that each newly established colony begins as Level I and has potential to develop into the max Population Unit (PU) for that planet. Ferry colonists from larger colonies to smaller colonies, via starliners, to increase population growth over the natural birth rate. 
+Note that each newly established colony begins as Level I and has potential to develop into the max Population Unit (PU) for that planet. Move colonists from larger colonies to smaller colonies to increase population growth over the natural birth rate.
 
 Advances in terraforming tech will allow planets to upgrade class and living conditions.
 
@@ -72,19 +117,19 @@ Advances in terraforming tech will allow planets to upgrade class and living con
 
 | Roll 1D10 | Class | Conditions | Colony Potential | PUs     |
 |:---------:|:-----:| ---------- | ---------------- |:-------:|
-| 0         | E0    | Extreme    | Level I          | 1-20    |
-| 1         | E1    | Extreme    | Level II         | 21-60   |
-| 2, 3      | D0    | Desolate   | Level III        | 61-180  |
-| 4, 5      | D1    | Desolate   | Level IV         | 181-500 |
-| 6, 7      | H0    | Habitable  | Level V          | 501-1k  |
-| 8*        | H1    | Habitable  | Level VI         | 1.1k-2k |
-| 9*        | H2    | Habitable  | Level VII        | 2.1k+   |
+| 0         | P0    | Extreme    | Level I          | 1-20    |
+| 1         | P1    | Desolate   | Level II         | 21-60   |
+| 2, 3      | P2    | Hostile    | Level III        | 61-180  |
+| 4, 5      | P3    | Harsh      | Level IV         | 181-500 |
+| 6, 7      | P4    | Benign     | Level V          | 501-1k  |
+| 8*        | P5    | Lush       | Level VI         | 1.1k-2k |
+| 9*        | P6    | Eden       | Level VII        | 2.1k+   |
 
 \*Note: if the roll above is a natural eight (8), add a +1 modifier to your roll on the raw materials table. If the roll is a natural nine (9) add a +2 modifier.
 
 **System Resources Table**
 
-| Mudified Roll 1D10 | Raw Materials |
+| Modified Roll 1D10 | Raw Materials |
 | ------------------ | ------------- |
 | 0                  | Very Poor     |
 | 2, 3               | Poor          |
@@ -92,7 +137,7 @@ Advances in terraforming tech will allow planets to upgrade class and living con
 | 8, 9               | Rich          |
 | 10+                | Very Rich     |
 
-## 2.3 Ships, Squadrons, Fleets, and Task Forces
+## 2.3 Military
 
 ### 2\.3.1 Space Force Ships
 
@@ -100,23 +145,31 @@ The base game includes a number of imperial classed space combatants listed in S
 
 Feel free to create your own ships and races for asymmetrical warfare or narrative purposes.
 
-### 2\.3.2 Merchant Marine Ships
+### 2\.3.2 Spacelift Command
 
-The Merchant marine fleet comprises civilian crewed ships that provide commerce and transport services for the House. They have no weapons technology or defense, and are easily captured or destroyed by enemy combat ships. Guard them wisely with military escorts.
+The Spacelift Command provides commerce and transportation services in support of the House's expansion efforts. Assets are owned by the House and commanded by senior Space Force officers. Units are crewed and operated by the civilian Merchant Marine.
 
-Merchant Marine attributes are listed in Section 9.
+Spacelift assets have no offensive weapons capability, and un-escorted units are easily captured or destroyed by rival forces. 
 
-#### 2.3.2.1 Environmental Transformation And Colonization (ETAC)
+Spacelift Command attributes are listed in Section 9.
 
-ETACs are used to terraform and colonize uninhabited planets. After use they are scrapped and used by the colony to continue the terraforming process. They have a Carry Limit (CL) of one Population Transfer Unit (PTU) and must be pre-loaded with colonists.
+#### 2.3.2.1 Spaceports
 
-#### 2.3.2.2 Traders
+Spaceports are large ground based facilities that launch heavy-lift ships and equipment into orbit. They require two months (two turns) to build and have five docks available for planetside ship construction.
 
-Traders earn SATs by trading between colonies within the House or with trade partners. They must have an uncontested path back across jump lanes to a House colony in order facilitate merchant activity and earn. Systems may only have one operational trader assigned per House.
+#### 2.3.2.2 Shipyards
 
-#### 2.3.2.3 Starliners & Troop Transports
+Shipyards are gateways to the stars. They are large bases constructed in orbit and require a spaceport to build over a period of three months (three turns).
 
-Starliners are massive ships that ferry Pilgrims between existing colonies. Passengers travel in stasis to optimize space, along with their associated life support equipment, factories, and supplies to make them economically productive at the new destination. They have a Carry Limit (CL) of 100 PTU.
+The majority of ship construction and repair will occur at these important facilities.
+
+Shipyards are equipped with 10 docks for construction and repair, and are fixed in orbit.
+
+#### 2.3.2.3 Environmental Transformation And Colonization (ETAC)
+
+ETACs plant a seed by establishing colonies on uninhabited planets. After use they are scrapped and used by the colony to begin the long terraforming process. They have a Carry Limit (CL) of one Population Transfer Unit (PTU) and must be loaded with colonists.
+
+#### 2.3.2.4 Troop Transports
 
 Troop Transports are specialized ships that taxi Space Marine divisions between solar systems, along with their required combat gear, armored vehicles, and ammunition. They have a CL of one MM.
 
@@ -168,7 +221,7 @@ The Raider is the most advanced ship in the arsenal, outfitted with cloaking tec
 | 3                  | 45       | 12 - 20   |
 | 4                  | 60       | 8 - 20    |
 
-Fleets containing a Raider roll a 1D20 on the table above, with the approproate Stealth tech level, for a chance of going undetected by rival forces. The number of Raiders in the fleet does not affect the roll, nor rate multiple chances.
+Fleets containing a Raider roll a 1D20 on the table above, with the appropriate Stealth tech level, for a chance of going undetected by rival forces. The number of Raiders in the fleet does not affect the roll, nor rate multiple chances.
 
 ### 2\.4.4 Starbases
 
@@ -176,19 +229,7 @@ Starbases are powerful orbital fortresses that facilitate planetary defense and 
 
 Starbases require five months (five turns) to construct require a shipyard.
 
-Starbases boost the morale of a colony by XYZ and production by XYZ every turn. Crippled starbases operate at 50% capacity and contribute half their normal morale and SATs to the colony.
-
-### 2.4.5 Spaceports
-
-Spaceports require two months (two turns) to construct planetside, and are used for launching heavy-lift ships and equipment into orbit.
-
-### 2\.4.6 Shipyards
-
-Shipyards are gateways to the stars. They are large bases constructed in orbit and require a spaceport to build over a period of three months (three turns).
-
-The majority of ship construction and repair will occur at these important facilities. 
-
-Shipyards are equipped with 10 docks for construction and repair. There is no limit on the number of Shipyards orbiting a colony.
+Starbases boost the morale of a colony by XYZ and production by XYZ every turn. Crippled starbases operate at 50% capacity and contribute half their normal morale and SATs to the colony.  
 
 ### 2\.4.7 Planetary Shields & Ground Batteries
 
@@ -202,75 +243,44 @@ Ground batteries are the only units that are constructed in the span of a single
 
 ### 2\.4.8 Space Marines & Armies
 
-Space Marines are ferocious devil dogs that capture enemy planets. They deploy in division sized units and will never surrender or abandon one of their own.
+Space Marines are ferocious devil dogs that capture rival planets. They deploy in division sized units and will never surrender or abandon one of their own.
 
-Marines are dropped on enemy planets by troop transports during an invasion or blitz.
+Marines are dropped on rival planets by troop transports during an invasion or blitz.
 
 Armies garrison your colonies and eradicate invaders. Their orders are to take no prisoners and protect the colony at all cost.
 
 Marines fight alongside the Army if garrisoned planetside.
 
-# X\.0 Prestige
+## 2.5 Space Guilds
 
-Prestige is the key to victory. The House with the highest Prestige takes the title of Emperor.
+A vast decentralized network of trade, commerce, transport, industry, tech, and mining activities occur between and within House colonies. Most of this activity is abstracted away and occurs in the background of EC4X's strategic focus. Commercial civilian ships freely ply the jump lanes between colonies.
 
-There are several paths to the throne:
+Numerous Space Guilds compete for business in unregulated, private capital markets. This is Minarchy at its finest.
 
-1. Destroy all of your rival's assets.
-2. Crush your opponent's will and force them to capitulate.
-3. Set a game end year, and employ a combination of tactical prowess and subversion to outfox your opponents.
-4. Focus on economic development and population growth to outperform everyone else.
-5. Let your rivals destroy one another, then clean House afterwards.
-6. Outlast everyone.
-7. All of the above.
-8. Whatever the game allows.
-
-Prestige points are won through a combination of military victory, population growth, production, subversion, technological development, and various other factors.
-
-Performing poorly, mismanaging your colonies, acts of sabotage, and acts of subterfuge by other Houses will lower your prestige.
-
-To prevent an open-ended stalemate, it may be prudent to set a game ending year. The goal of EC4X is to provide enough assymetry to prevent such a condition.
-**(work in progress..... need help playtesting and regression analysis)**
-
-TODO: Provide a prestige table showing the various factors, both positive and negative.
-
-- Completely destroy a Task Force (+)
-- Force a task force to retreat (+)
-- Invade or blitz a planet (++)
-- Capture merchant marine vessels (+)
-- Lose a planet (--)
-- Lose merchant marine vessels (-)
-- Get surprised by a rogue fleet (-)
-- Get ambushed by a rogue fleet (-)
-- Lose a Starbase (-)
-- Destroy a Starbase (+)
-- Establish a new colony (+)
-- Max out the population of a colony (+)
-- Increase a planet's class via terraforming (+)
-- Excessive tax rate (-)
-- Invest IU above 50% of a colony's PU (+)
-- Achieve a new tech level (+)
-- Sabotage an enemy Shipyard (+)
-- Spy on an enemy's colony (+)
-- And so on.... get creative
+The Guilds may be contracted to provide various critical services to the House, most notably the transport of PTU and goods between colonies. Space Guilds are also known to deal freely in the black arts of subversion and subterfuge, for a price.
 
 # XY\.0 Economics
 
 The standard unit of account in EC4X is the Satoshi (SAT), i.e. money. The power of a House is fueled by economic might, which in turn is a function of population growth and harvested resources.
 
-SATs settle instanteously on the interdimensional Lightning network. (All comms and data are instaneous in this manner. Don't question; it's magic).
+SATs settle instantaneously on the inter-dimensional Lightning network. (All comms and data transfers are instantaneous in this manner. Don't question; it's magic).
 
 ## XY\.1 Principles
 
-**Population Unit (PU)**: A unit of colony population that provides 1 SAT of productivity to the House.
+**Population Unit (PU)**: A colony population unit that provides 1 SAT of productivity to the House.
 
-**Population Transfer Unit (PTU)**: A representative unit of colony population and associated cost of cargo, factories, and life support equipment to colonize a planet or transfer to another colony. ETACs and starliners move PTUs between solar systems.
+**Population Transfer Unit (PTU)**: A measure of colony population and the associated cost of cargo, industry, and life support technology to colonize a planet or transfer to another colony. 
 
-PTUs enables transferring Pilgrims from larger collonies to smaller collonies without a signficant loss of PU from the mother-colony. 
+PTUs enable the transfer of population from larger colonies to smaller colonies without a significant degradation of PU from the donor colony. A conversion table between PU and PTU is provided below (preliminary).
 
-PU = XXX
+The relationship is exponential after Level III, as colony population and industry hit critical mass.
 
-PTU = XXXX
+| PU      | Colony Size    | PTU      | PU to PTU             | PTU to PU            |
+|:-------:|:--------------:|:--------:|:---------------------:|:--------------------:|
+| 1 - 20  | Level I        | 1 - 20   | 1:1                   | 1:1                  |
+| 21 - 60 | Level II       | 21- 60   | 1:1                   | 1:1                  |
+| 61- 180 | Level III      | 61 - 180 | 1:1                   | 1:1                  |
+| 181+    | Level IV - VII | 181+     | 182\*exp(2.645E-3*PU) | ln(PTU/182)/2.645E-3 |
 
 The assumption is that this calculation will be performed in Excel or code. 
 
@@ -280,13 +290,13 @@ GCP = (PU * raw_index + IU) * el_mod
 
 **RAW INDEX Table**
 
-| RAW       | Habitable | Desolate | Extreme |
-| --------- | --------- | -------- | ------- |
-| Very Poor | 60%       | 60%      | 60%     |
-| Poor      | 80%       | 75%      | 70%     |
-| Abundant  | 100%      | 90%      | 80%     |
-| Rich      | 120%      | 105%     | 90%     |
-| Very Rich | 140%      | 120%     | 100%    |
+| RAW       | Eden | Lush | Benign | Harsh | Hostile | Desolate | Extreme |
+| --------- |:----:|:----:|:------:|:-----:|:-------:|:--------:|:-------:|
+| Very Poor | 60%  | 60%  | 60%    | 60%   | 60%     | 60%      | 60%     |
+| Poor      | 80%  | 75%  | 70%    | 65%   | 64%     | 63%      | 62%     |
+| Abundant  | 100% | 90%  | 80%    | 70%   | 68%     | 66%      | 64%     |
+| Rich      | 120% | 105% | 90%    | 75%   | 72%     | 69%      | 66%     |
+| Very Rich | 140% | 120% | 100%   | 80%   | 76%     | 73%      | 68%     |
 
 Look up the Raw Material classification of your colony's system in the RAW column, and cross index with the planet's habital conditions.
 
@@ -296,7 +306,7 @@ NCV = GCP * tax_rate
 
 **Tax Rate**: The tax rate that applies to all of your colonies. Setting the tax rate above 65% will result in a negative impact to your prestige as a ruler, and slow population growth.
 
-**House Treasury**: The total sum of NCV collected from colonies is transfered to the House treasury at the beginning of each month (turn). Unspent SATs from each turn rollover and earn 2% interest from *the galactic banking cabal that controls the layer two Lightning channels*.
+**House Treasury**: The total sum of NCV collected from colonies is transferred to the House treasury at the beginning of each month (turn). Unspent SATs from each turn rollover and earn 2% interest from *the galactic banking cabal that controls the layer two Lightning channels*.
 
 **Industrial Units (IU)**: The house may invest in the planetary industry of each colony. IUs may be placed on Small colonies (D1 class planets) or larger. IU invested above 50% of the planet's PU will be donated to the colony and increase House prestige.
 
@@ -304,7 +314,25 @@ NCV = GCP * tax_rate
 
 Colonists are hard at work making babies of the House, and the population growth rate under normal conditions is 1% per month (turn), up to the max allowed PU for that planet.
 
-## XY\.3 Trade
+## XY.3 Colonization
+
+ETACs plant a flag in unoccupied Solar Systems and set the initial conditions for terraforming. Their capacity to move PTU is limited to one unit.
+
+The Space Guilds are contracted to transfer larger populations between existing Colonies in civilian Starliners. Passengers are kept in status to minimize living space, and all of their supplies and equipment for their new destination are tightly packed into the cargo hold. 
+
+The cost is expensive and dependent upon the livable conditions of the destination planet. The logistics are abstracted for game purposes; delivery time (turns) across jump lanes is in accordance with Section 4.0.
+
+| Conditions | SATs/PTU |
+| ---------- |:--------:|
+| Eden       | 5        |
+| Lush       | 6        |
+| Benign     | 8        |
+| Harsh      | 11       |
+| Hostile    | 14       |
+| Desolate   | 18       |
+| Extreme    | 25       |
+
+Colonists do not start contributing to the colony's economic production for at least one full turn after arrival.
 
 ## XX\.4 Maintenance Costs
 
@@ -325,9 +353,11 @@ Uprades improve the Attack Strength (AS) and Defence Strength (DS) of combat shi
 
 ## XYZ\.3 Terraforming
 
-Terraforming improve a planet's livable conditions, and thus the population limit. There are seven tech levels that correspond directly with the planet classes: E0 -> E1 -> D0 -> D1 -> H0 -> H1 -> H2. 
+Terraforming improve a planet's livable conditions, and thus the population limit. There are seven tech levels that correspond directly with the planet classes: 
 
-A planet may not skip a class, and each step costs the upper PU bound in SATs for the desired planet class. Example: Upgrading a D1 planet to a H0 planet requires level five terraforming and 1k SATs.
+P0 -> P1 -> P2 -> P3 -> P4 -> P5 -> P6 
+
+A planet may not skip a class, and each step costs the upper PU bound for the upgraded planet class in SATs. Example: Upgrading a P3 planet to a P4 planet requires level four terraforming and 1k SATs.
 
 ETACs set the initial livable conditions for a Level I colony. Further terraforming is completed by colonists on the surface and do not require additional ETACs.
 
@@ -374,9 +404,7 @@ The logistics of repairing a ship planetside and returning it to orbit make it e
 
 ## 4\.1 Escorts
 
-If Shipyards or Starbases are ordered to move, they must be accompanied by a fleet escort. They can not move across jump lanes unassisted.
-
-Merchant Marine ships may join a fleet for escort.
+Starbases and Spacelift ships must be accompanied by a fleet escort. They can not jump across lanes unassisted, nor cross restricted lanes.
 
 # 5\.0 Combat
 
@@ -475,7 +503,7 @@ Fighter squadrons deploy to their player's respective Task Force as independent 
 
 Fleets that are cloaked, and remain undetected, may continue traveling through jump lanes in a contested star system. Otherwise the fleet will join their player's respective Task Force for battle.
 
-Starbases, Orbital Shipyards, and Merchant Marine ships are screened behind the Task Force during combat operations and do not engage.
+Starbases and Spacelift units are screened behind the Task Force during combat operations and do not engage.
 
 ## 5\.3 Retreat
 
@@ -489,17 +517,13 @@ Starbases never retreat from a solar system because of their massive size. They 
 
 Refer to Section 5.5 for handling orphaned assets if a Starbase is abandoned by a fleeing Task Force.
 
-### 5\.3.2 Fighter Squadrons & Merchant Marine
+### 5\.3.2 Fighter Squadrons & Spacelift Units
 
 Orphaned fighter squadrons are scuttled if there is no carrier capacity available during a retreat.
 
-Starliners are captured and colonists enslaved if their escort fleet was destroyed or the transports were un-escorted at the commencement of hostilities. 
-
 Space Marines never surrender and self-detonate their troop transports.
 
-ETACs and traders rejoin their surviving escort fleets. If the fleet was destroyed or the ships were unescorted before hostilities, they are captured as spoils of war.
-
-Like Starbases, Orbital Shipyards are too large and complex to retreat in an expedited manner. They are rigged to self-detonate before capture.
+ETACs rejoin their surviving escort fleets. If the fleet was destroyed or the ETACs were unescorted before hostilities, they are captured as spoils of war.
 
 This section is null and void if Section 5.3.1 is in effect.
 
@@ -545,9 +569,9 @@ Additionally, if a player takes a critical hit and is unable to reduce a unit ac
 
 ### 5\.4.3 End of Round
 
-After all hits are applied and squadrons are appropriately reduced (crippled or destroyed), recalculate the totel AS of all Task Forces.
+After all hits are applied and squadrons are appropriately reduced (crippled or destroyed), recalculate the total AS of all Task Forces.
 
-Check each Task Force's ROE on the table in Section 5.1.1 by comparing AS strengths and determine if a retreat is warrented. If more than one Task Force remains in the fight, the next round commences via the same procedure as described above. 
+Check each Task Force's ROE on the table in Section 5.1.1 by comparing AS strengths and determine if a retreat is warranted. If more than one Task Force remains in the fight, the next round commences via the same procedure as described above.
 
 Otherwise proceed to End of Combat.
 
@@ -582,11 +606,13 @@ In the special circumstance that a Starbase is orphaned by a retreating Task For
 
 ## 5\.7 Planetary Invasion, Blitz, and Ground Combat
 
-# 8\.0 Diplomacy, Sabotage & Subversionn
+# 8\.0 Diplomacy, Sabotage & Subversion
 
 # 9\.0 Asset Tables
 
-## 9\.1 Imperial Space Force (Weapons Level 0)
+All tables are preliminary place holders.
+
+## 9\.1 Space Force (Weapons Level 0)
 
 PC = Production Cost, MC = Maintenance Cost, AS = Attack Strength, HS = Hull Size,
 
@@ -608,24 +634,22 @@ DS = Defensive Strength, CC= Command Cost, CR = Command Rating, CL = Carry Limit
 | SC    | Scout            | 1   | 5   | 0\.1  | 0   | 1   | 1   | NA  | NA  |
 | SB    | Starbase         | 3   | 50  | 2.5   | 45  | 50  | NA  | NA  | NA  |
 
-## 9\.2 Merchant Marine
+## 9.3 Ground Units
 
-| **Class** | **Name**        | **PC** | MC  | CL      |
-|:---------:| --------------- |:------:|:---:|:-------:|
-| SS        | Shipyard        | 30     | 3   | 10      |
-| ET        | ETAC            | 15     | 0.5 | 1 PTU   |
-| TR        | Trader          | 6      | 0.5 | NA      |
-| TT        | Troop Transport | 5      | 0.5 | 1 MM    |
-| SL        | Starliner       | 15     | 2.0 | 100 PTU |
+| **Class** | **Name**         | **PC** | MC  | AS  | DS  |
+| --------- | ---------------- | ------ | --- |:---:|:---:|
+| PS        | Planetary Shield | 35     | 2.0 | 0   | 50  |
+| GB        | Ground Batteries | 4      | 0.1 | 6   | 2   |
+| AA        | Armies           | 2      | 0.2 | 2   | 3   |
+| MM        | Space Marines    | 3      | 0.2 | 3   | 2   |
 
-## 9\.3 Planet Based Units
+## 9\.2 Spacelift Command
 
-| **Class** | **Name**         | **PC** | MC  |
-|:---------:| ---------------- |:------:|:---:|
-| PY        | Spaceport        | 20     | 1.0 |
-| PS        | Planetary Shield | 35     | 2.0 |
-| GB        | Ground Batteries | 4      | 0.1 |
-| AA        | Armies           | 2      | 0.2 |
-| MM        | Space Marines    | 3      | 0.2 |
+| **Class** | **Name**         | **PC** | MC  | CL  |
+|:---------:| ---------------- |:------:|:---:|:---:|
+| PY        | Spaceport        | 20     | 1.0 | 10  |
+| SS        | Shipyard         | 30     | 2.0 | 10  |
+| ET        | ETAC             | 15     | 0.3 | 1   |
+| TT        | Troop Transports | 5      | 0.2 | 1   |
 
 # 10\.0 Play By Excel
