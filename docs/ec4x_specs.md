@@ -312,7 +312,7 @@ NCV = GCP * tax_rate
 
 ## XY\.2 Population Growth
 
-Colonists are hard at work making babies of the House, and the population growth rate under normal conditions is 1% per month (turn), up to the max allowed PU for that planet.
+Colonists are hard at work making babies for the House, and the population growth rate under normal conditions is 1% per month (turn), up to the max allowed PU for that planet.
 
 ## XY.3 Colonization
 
