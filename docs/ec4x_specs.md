@@ -257,7 +257,7 @@ A vast decentralized network of trade, commerce, transport, industry, tech, and 
 
 Numerous Space Guilds compete for business in unregulated, private capital markets. This is Minarchy at its finest.
 
-The Guilds may be contracted to provide various critical services to the House, most notably the transport of PTU and goods between colonies. Space Guilds are also known to deal freely in the black arts of subversion and subterfuge, for a price.
+The Guilds may be contracted to provide various critical services to the House, most notably the transport of PTU and goods between colonies. Space Guilds are also known to deal in the black arts of subversion and subterfuge, for a price.
 
 # XY\.0 Economics
 
