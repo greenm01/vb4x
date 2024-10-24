@@ -296,7 +296,7 @@ GCP = (PU * raw_index + IU) * el_mod
 | Poor      | 80%  | 75%  | 70%    | 65%   | 64%     | 63%      | 62%     |
 | Abundant  | 100% | 90%  | 80%    | 70%   | 68%     | 66%      | 64%     |
 | Rich      | 120% | 105% | 90%    | 75%   | 72%     | 69%      | 66%     |
-| Very Rich | 140% | 120% | 100%   | 80%   | 76%     | 73%      | 68%     |
+| Very Rich | 140% | 120% | 100%   | 80%   | 76%     | 72%      | 68%     |
 
 Look up the Raw Material classification of your colony's system in the RAW column, and cross index with the planet's habital conditions.
 
